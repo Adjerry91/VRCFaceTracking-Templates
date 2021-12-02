@@ -1,0 +1,150 @@
+Made by Dreadrith#3238
+Server: https://discord.gg/ZsPfrGn
+Github: https://github.com/Dreadrith/DreadScripts
+Gumroad: https://gumroad.com/dreadrith
+Ko-fi: https://ko-fi.com/dreadrith
+
+Version: v2.5.8
+Controller Editor is made to simplify working with Controllers as much as possible.
+
+Controller Editor Patches
+-------------------------
+These are patches implemented through 0Harmony, Adds/Changes the way Unity works internally to improve experience and allow flexible control
+
+Layers View Patches:	~ Added "Duplicate", "Copy", "Paste", and "Build Mask"* to Layer Context Menu (Right-Click).
+						~ Scrollbar will no longer reset after layer edits
+						~ Scrollbar will scroll down to newly created layer upon new layer creation
+						~ Clicking the Controller Path at the bottom of the graph will highlight the Controller in the assets.
+
+Build Mask*:			~ Generic: Instantly creates a Mask that includes all the transforms used by the target Layer.
+						~ From Animator: Same as Generic but filters the Transforms based on valid Paths from the selected Animator Root
+						~ Cumulative: Creates a Mask that merges all the Masks of the layer Additively
+						~ Build Mask will attempt to also include setting the Humanoid Body Parts active properly
+
+Node Patches:			~ Double Clicking a Node will enter Multi-Transitioning mode. Single Click to connect and continue. Double Click to connect and transfer to destination. Click elsewhere to stop.
+[Entry, Any, State]		~ Added "Make Multiple Transitions" to Context Menu
+						~ Added the ability to change node colors thruogh the settings Cosmetic tab
+
+Animator State Patches:	~ Added "Edit Blendtree" to Animator State context menu.
+						~ Added "Select Shared Transitions", "Select Out Transitions" and "Select In Transitions" to AnimatorState context menu.
+						~ Added "Pack Into StateMachine" to AnimatorState context menu. Puts Selected States and StateMachines in a new StateMachine
+
+							- Make Multiple Transition: Makes a transition from the previously selected Nodes (Step 1) directed to the selected Nodes afterwards (Step 2).
+									Step 1: Select Nodes to make a transition FROM. Turn on "Make Multiple Transitions".
+									Step 2: Select Nodes to make a transition TO. Turn off "Make Multiple Transition".
+
+StateMachine Patches:	~ Added "Select All Transitions" and "Select All States" to StateMachine context menu
+						~ Added "Make Multiple Transitions" to StateMachine Context menu.
+						~ Added "Unpack StateMachine" to StateMachine context
+						~ Added the ability to change the graph colors through the settings Cosmetic tab
+
+Transition Patches:		~ Implemented a Transitions context menu which appears when Right-Clicking transitions when a transition is selected
+						~ Added the ability to change the transitions colors through the settings Cosmetic tab
+						~ Added "Reverse", "Replicate", "Redirect", "From/To Any" Transitions to the Transitions Context Menu.
+
+							- Reverse: Makes a copy of the transition and switches its Source and Destination.
+
+							- Replicate Transitions: Makes a copy of the selected transitions (Step 1) going out of the selected states (Step 2).
+								Step 1: Select Transitions to Replicate. Turn on "Replicate Transitions".
+								Step 2: Select States to Replicate FROM. Turn off "Replicate Transitions".
+
+							- Redirect Transitions: Makes a copy of the selected transitions (Step 1) directed to the selected States (Step 2).
+								Step 1: Select Transitions to Redirect. Turn on "Redirect Transitions".
+								Step 2: Select States to Redirect TO. Turn off "Redirect Transitions".
+
+							- From/To Any:	Transforms the selected <State to State> Transitions into an AnyState Transition.
+								Transforms the selected AnyState Transitions into transitions outbound from each state in the Active Statemachine to the same destination.
+								Note: An AnyState transition is shared among all Statemachines in the layer, this function only converts it from AnyState in the current Statemachine.
+
+Asset Creation Patches:	~ Set default settings for newly created Transitions and States in the Settings Window (DreadTools > Scripts Settings > Controller Editor)
+						~ Set Newly Created layers default weight; 
+						~ Set Entry and Selected Transition Color in the Settings Window
+
+
+Controller Editor Window
+-------------------------
+Instructions are mostly explained Top to Bottom of the window.
+
+Most Sub-Parts are expanded by clicking their Button and folded by clicking the thin line to their right.
+
+Main Parts Include: Transitions - States - Controller.
+
+- Transitions - States - Controller: Enable and Disable main parts made for the editing of the respective part.
+- (Active Machine Name)
+
+~ Transitions:
+	~ Transitions Settings: Allows the Multi-Editing of the selected transitions.
+		- Save Icon: Copies the settings of a single selected transitions to paste it onto others.
+		- Clipboard Icon: Pastes the settings of the previously copied transition setting onto the selected transitions.
+		
+	~ Conditions Header:
+		- Red Button: Switch between "Shared Conditions" and "All Conditions" using the red button.
+			- Shared Conditions: Shows and edits the conditions that are similar between selected transitions.
+			- All Conditions: Shows and edits all the conditions of the selected transitions. Stacks based on selection order. 
+		- Save Icon: Copies the shown conditions to paste them onto selected transitions.
+		- Clipboard Icon: Adds the conditions copied previously to the selected transitions.
+		- Arrows Icon: Reverses the Mode of the Shown Conditions. i.e: Equal -> Not Equal.
+		- Transition Icon ("Merge"): Merges the conditions of the selected transitions that share the same source and destination onto one transition.
+		- Blendtree Icon ("Separate"): Separates the conditions of the selected transitions to be one condition per transition. 
+
+	~ Transitions Count: Displays the selected Transitions. May be used to deselect certain Transitions.
+		Clicking a transition puts the Conditions onto SubTransition mode, which allows the editing of the conditions of that transition alone. Similar to only selecting that transition in the controller.
+			
+			- Rename Empty/All Transitions: Renames Selected Transitions to Source -> Destination to properly display them in Transitions Count
+
+
+~ States: 
+	~ States Count:
+		~ States Display: Displays the selected States. May be used to deselect certain States. If the state has a motion, may click the "Play" button to highlight its motion in the assets.
+			- Out: Selects the transitions going outwards of the respectively displayed state.
+			- In: Selects the transitions going inwards towards the respectively displayed state.
+
+		- Up 0.25: Moves selected states upwards by 1/4 of a square.
+		- Right 0.25: Moves selected states right by 1/4 of a square
+		- Align Vertical: Aligns the selected states vertically with the highest selected state.
+		- Align Horizontal: Aligns the selected states horizontally with the rightest selected state.
+		Note: Any State and Exit position need to be refreshed by switching layers to update visuals.
+
+	~ States Settings: Allows the editing of the selected States settings. Similarly to inspector editing of States.
+
+	(VRC)
+	~ VRC Parameter Drivers: Allows the Multi-Editing of Parameter drivers of the selected states. Works similarly to "Shared Conditions", only shows Parameter Drivers that have the same settings.
+
+
+~ Controller: Has a variety of functions to manage the controller:
+	~ Action:
+		- Replace Parameter: Replaces the Parameters names that match (Parameter 1) in the Target* (Popup Field) with the new Parameter (Parameter 2).
+		- Remove Parameter: Removes the Parameters names that match (Parameter) in the Target* (Popup Field). Deletes the conditions affected and automatically deletes transitions if it has no more conditions.
+			- Match Whole Word: Chooses whether Matching is based on being Exactly (Parameter 1) or Contains (Parameter 1).
+		~ Copy: Duplicates the Source layers (Popup Field 1) and places them in the Target* (Popup Field 2).
+			- Add Required Parameters: If the Parameters used by the new copied layers doesn't exist in the target, adds them. Automatically Suffixes Parameters if Suffix is entered.
+			- Suffix: Adds a suffix to the parameters used by the new copied Layers. (VRC: Automatically ignores Parameters that are built-in).
+		- Tag Current Layer With: Tags the current layer with (Text Field). Used for easier management of the controller. (Details: Tag is based on the name of the AnyState transitions of the layer that have no destination and are marked as Exit).
+		- Remove Layers with Tag: Removes Layers that contain (Text Field) in their tags in the current controller.
+		- Remove Tag: Removes the Tag (Text Field) from the Target* layers.
+			
+		Target*: The objects that should be affected
+		- Controller: All the layers and their statemachines of the current controller.
+		- Layers Tagged With: The Layers and their statemachines that contain the Tag (Text Field).
+		- Current Layer: The Currently active Layer and its Statemachines
+		- Current Statemachine: The Currently active Statemachine only.
+			
+		- Apply: Confirms and Applies the set settings.
+
+
+	- Explore Controller Sub-Assets: Shows the Sub-Assets* of the current controller.
+	- Cleanup unused Sub-Assets: Deletes the Sub-Assets* of the controller that aren't used by the actual controller. Some cases in usage of this script may have residue in the Sub-Assets and using this should clean it up.
+	Sub-Assets*: Sub-Assets are regular Assets or Objects that are embedded into the Main-Asset (Controller) just like FBX's Expanded assets, only Controller's sub-assets are hidden. This includes Statemachines, States, Transitions, Blendtrees and Behaviors.
+
+Controller Editor Settings
+--------------------------
+ ~ Default Transition: Set the settings of newly created Transitions. Saved under the Defaults Assets Path
+ ~ Default State: Set the settings of newly Created States. Saved under the Default Assets Path.
+ ~ Other:
+	- Targeted Animator: The animator that "Build Mask" will use for filtering transforms.
+		- Always use: As long as the animator exists, use it without prompting for confirmation.
+
+	- Default Layer Weight: The weight of newly created Layers
+	- Default Assets Path: Where to place created assets. This includes the Default Transition, Default State and Masks Built.
+
+~ Cosmetic: Change the way the Graph looks on Controllers by changing their colors.
