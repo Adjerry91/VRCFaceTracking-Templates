@@ -1348,32 +1348,6 @@ MonoBehaviour:
   trackingEyes: 2
   trackingMouth: 0
   debugString: 
---- !u!1102 &-4101418283279030433
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Tongue Y
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 3960352054661636610}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1102 &-4041759867324493029
 AnimatorState:
   serializedVersion: 6
@@ -2074,7 +2048,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Upper Up
+  m_Name: Mouth Upper Up Combined
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -2125,7 +2099,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Upper Up
+  m_Name: Mouth Upper Up Combined
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1735273259760214481}
@@ -2338,6 +2312,32 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 1100, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 5570479311013732743}
+--- !u!1102 &-1153182529676040992
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tongue Long Step 2 Blend
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 20600000, guid: 0c6ec9c3601a547468a0545e2e00fe2f, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!114 &-1074686748531773520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3172,7 +3172,7 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Mouth Upper Up
+    m_Name: Mouth Upper Up Combined
     m_StateMachine: {fileID: -1501003359346282104}
     m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
     m_Motions: []
@@ -3208,7 +3208,7 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Tongue Y
+    m_Name: Tongue Long Step 2
     m_StateMachine: {fileID: 1060192011635660270}
     m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
     m_Motions: []
@@ -3793,11 +3793,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Tongue Y
+  m_Name: Tongue Long Step 2
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -4101418283279030433}
-    m_Position: {x: 300, y: 110, z: 0}
+    m_State: {fileID: -1153182529676040992}
+    m_Position: {x: 370, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -3807,7 +3807,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -4101418283279030433}
+  m_DefaultState: {fileID: -1153182529676040992}
 --- !u!1102 &1069144971164990271
 AnimatorState:
   serializedVersion: 6
@@ -4517,45 +4517,6 @@ BlendTree:
   m_BlendParameter: MouthUpperUpLeft
   m_BlendParameterY: EyesY
   m_MinThreshold: 0.1
-  m_MaxThreshold: 0.3
-  m_UseAutomaticThresholds: 0
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
---- !u!206 &3960352054661636610
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Tongue Y
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 822fd40d4cf13184781988676b0b337d, type: 2}
-    m_Threshold: -0.3
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyesY
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 68f8d39f7f5e30e4da1dc6fae51b96d9, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyesY
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: a1bc23c4d992a9e46b62186595853859, type: 2}
-    m_Threshold: 0.3
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyesY
-    m_Mirror: 0
-  m_BlendParameter: TongueY
-  m_BlendParameterY: EyesY
-  m_MinThreshold: -0.3
   m_MaxThreshold: 0.3
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0

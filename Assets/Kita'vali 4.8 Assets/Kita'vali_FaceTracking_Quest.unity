@@ -121,6 +121,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &628985004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4598113263083966807, guid: ac88202041155564fa69e83bf3c9ed14,
+    type: 3}
+  m_PrefabInstance: {fileID: 3679069772032088855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &628985009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628985004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
 --- !u!1 &961357380
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,7 +281,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -289,8 +308,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508428470}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.5, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+  m_LocalPosition: {x: 0, y: 0.43547407, z: 0.3810398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -332,6 +351,7 @@ MonoBehaviour:
   DefaultAnimatorToDebug: 0
   RestartEmulator: 0
   CreateNonLocalClone: 0
+  CreateNonLocalCloneCount: 0
   legacySubAnimatorParameterDriverMode: 0
   runtimes: []
 --- !u!95 &2107248439
@@ -374,6 +394,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 27999852, guid: ad11d0ebf28f8c74f9bd72c414a13ef8, type: 3}
+      propertyPath: baseAnimationLayers.Array.data[1].isDefault
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2879636708372131266, guid: ad11d0ebf28f8c74f9bd72c414a13ef8,
         type: 3}
       propertyPath: m_Name
@@ -451,6 +475,14 @@ PrefabInstance:
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.size
       value: 78
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
+      propertyPath: animationHashSet.Array.data[2].hash
+      value: -1333591051
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
+      propertyPath: animationHashSet.Array.data[2].name
+      value: Eye Armature Combined
       objectReference: {fileID: 0}
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.data[3].hash
@@ -874,7 +906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.data[56].hash
-      value: 1300932266
+      value: 203221561
       objectReference: {fileID: 0}
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.data[56].name
@@ -898,11 +930,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.data[59].hash
-      value: -1087207678
+      value: 1269887495
       objectReference: {fileID: 0}
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.data[59].name
-      value: Tongue Y
+      value: Tongue Long Step 2 Blend
       objectReference: {fileID: 0}
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.data[60].hash
@@ -1047,6 +1079,14 @@ PrefabInstance:
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: animationHashSet.Array.data[77].name
       value: RGB_ON_v2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
+      propertyPath: baseAnimationLayers.Array.data[1].isDefault
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
+      propertyPath: baseAnimationLayers.Array.data[2].isDefault
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3784174919581010925, guid: ac88202041155564fa69e83bf3c9ed14,
         type: 3}
