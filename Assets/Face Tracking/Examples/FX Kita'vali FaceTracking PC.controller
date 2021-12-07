@@ -43,32 +43,6 @@ MonoBehaviour:
   goalWeight: 1
   blendDuration: 0
   debugString: 
---- !u!1102 &-9034872940151191696
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Smile Sad Combined
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 20600000, guid: cebb960ceeb5f1a409f382715e3c58fa, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!206 &-8482108742906431964
 BlendTree:
   m_ObjectHideFlags: 1
@@ -141,11 +115,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Smile Sad Combined
+  m_Name: Smile Sad Left
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -9034872940151191696}
-    m_Position: {x: 330, y: 120, z: 0}
+    m_State: {fileID: 6543003092014571439}
+    m_Position: {x: 290, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -155,7 +129,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -9034872940151191696}
+  m_DefaultState: {fileID: 6543003092014571439}
 --- !u!114 &-8262141870258437629
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -465,7 +439,7 @@ BlendTree:
   m_Name: Mouth Upper
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b38085733470b754fb69d25310fe54d9, type: 2}
+    m_Motion: {fileID: 7400000, guid: 231a862790b347c478c0c7ef68ac7115, type: 2}
     m_Threshold: -0.4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -473,7 +447,7 @@ BlendTree:
     m_DirectBlendParameter: EyesY
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 39b2c65bc5f295646a0103eb591d623b, type: 2}
+    m_Motion: {fileID: 7400000, guid: 7d21f51cb6a4e3a4397eaab98a918829, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -481,7 +455,7 @@ BlendTree:
     m_DirectBlendParameter: EyesY
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0966887cb9044d344a3cf5b0e2d448d1, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5f48b487b511e924eaf16ac60328690c, type: 2}
     m_Threshold: 0.4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -795,6 +769,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &-6511349480585179604
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mouth Upper Up Right Puff Right
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 20600000, guid: e62bd6bc1b564e84083d18382bda3b94, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!114 &-6506093483244290879
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -923,6 +923,32 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
+--- !u!1102 &-5922195139927022109
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mouth Smile Right Pout Blend
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 20600000, guid: 7696bb3d13097084caf8b4ba3bd5f272, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!206 &-5907401764896466740
 BlendTree:
   m_ObjectHideFlags: 1
@@ -932,7 +958,7 @@ BlendTree:
   m_Name: Mouth Lower
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 369f92cf4e0ae3344aeffc794c4cd21b, type: 2}
+    m_Motion: {fileID: 7400000, guid: b430bfdb7c681024fb4b1a0c1806062d, type: 2}
     m_Threshold: -0.4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -940,7 +966,7 @@ BlendTree:
     m_DirectBlendParameter: EyesY
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 5af8fe27b064b57429e35424618ba8d0, type: 2}
+    m_Motion: {fileID: 7400000, guid: f1e3a363c03d0a44598cb51870ed7d65, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -948,7 +974,7 @@ BlendTree:
     m_DirectBlendParameter: EyesY
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 87f1336f734a0c3439ceed9dc7c970c8, type: 2}
+    m_Motion: {fileID: 7400000, guid: 8394ff599bb5f2b4f8efeb701d20f9ad, type: 2}
     m_Threshold: 0.4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -1211,14 +1237,14 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!1102 &-4619527522506031924
+--- !u!1102 &-4506510693708939717
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jaw Open Blend
+  m_Name: Mouth Lower Down Left Overlay
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1231,7 +1257,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 20600000, guid: 7ac7b55d9c465d9438ab5e8e72a2672a, type: 2}
+  m_Motion: {fileID: 20600000, guid: 801b1c39bd235e6449c4e0ea4f1f10c5, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1307,10 +1333,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: -2282852304587404004}
-  - {fileID: 3273546743768762086}
-  - {fileID: 2347883029194168753}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -1465,32 +1488,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-3765284622991244088
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Cheeks Suck Puff Combined
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 20600000, guid: c38c996796fced74aa0553020d092190, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1107 &-3746446643050126694
 AnimatorStateMachine:
   serializedVersion: 6
@@ -1530,7 +1527,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 4772792684968954695}
+  m_Motion: {fileID: 20600000, guid: c4af3f3008b340448a80bd17e78c77ef, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1756,6 +1753,32 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!1102 &-2749432475494447776
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mouth Upper Up Left Puff Left
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 20600000, guid: 3dbfc2df14098f14b8c39716e8d7913a, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1109 &-2621370525432053249
 AnimatorTransition:
   m_ObjectHideFlags: 1
@@ -1954,19 +1977,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: 5022417994277475858}
-  - {fileID: -5261276393384821730}
-  - {fileID: -919960598343323348}
-  - {fileID: 572186363654862962}
-  - {fileID: 5299540611722482903}
-  - {fileID: -2515722139734833662}
-  - {fileID: 1281103651858791572}
-  - {fileID: -8054395834101509700}
-  - {fileID: 9186169716610576835}
-  - {fileID: 5375759117084841279}
-  - {fileID: 1389043905985123221}
-  - {fileID: 2602909393463684097}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -2041,32 +2052,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 2
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
---- !u!1102 &-1735273259760214481
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Upper Up Combined
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 20600000, guid: 10d22ae6381df244fa05600fd8a3db2f, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1101 &-1562923896675675661
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -2099,11 +2084,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Upper Up Combined
+  m_Name: Mouth Upper Up Left Puff Left
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -1735273259760214481}
-    m_Position: {x: 309, y: 123, z: 0}
+    m_State: {fileID: -2749432475494447776}
+    m_Position: {x: 295, y: 126.5, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -2113,7 +2098,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -1735273259760214481}
+  m_DefaultState: {fileID: -2749432475494447776}
 --- !u!1107 &-1462827867182926048
 AnimatorStateMachine:
   serializedVersion: 6
@@ -2121,11 +2106,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Lower Overlay
+  m_Name: Mouth Lower Down Left Overlay
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 4300512215604748944}
-    m_Position: {x: 350, y: 120, z: 0}
+    m_State: {fileID: -4506510693708939717}
+    m_Position: {x: 300, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -2135,7 +2120,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 4300512215604748944}
+  m_DefaultState: {fileID: -4506510693708939717}
 --- !u!1102 &-1462585249389405055
 AnimatorState:
   serializedVersion: 6
@@ -2257,32 +2242,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-1233999729536601171
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Lower Down Blend
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 20600000, guid: 6076cfa15150a6a448bdc96d8edc3284, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1107 &-1194151661878095760
 AnimatorStateMachine:
   serializedVersion: 6
@@ -2355,37 +2314,6 @@ MonoBehaviour:
   goalWeight: 0
   blendDuration: 0
   debugString: 
---- !u!206 &-1019116433996401634
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Lower Overlay
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 11c603e6265c5d548a2bcb1f4f30106e, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyesY
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 7215b22ee09a99e499a434b45d77c949, type: 2}
-    m_Threshold: 0.5
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyesY
-    m_Mirror: 0
-  m_BlendParameter: MouthLowerOverlay
-  m_BlendParameterY: EyesY
-  m_MinThreshold: 0
-  m_MaxThreshold: 0.5
-  m_UseAutomaticThresholds: 0
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
 --- !u!114 &-919960598343323348
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2509,11 +2437,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cheeks Suck Puff Combined
+  m_Name: Mouth Lower Down Right Ape
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -3765284622991244088}
-    m_Position: {x: 300, y: 120, z: 0}
+    m_State: {fileID: 2441792743193551633}
+    m_Position: {x: 300, y: 110, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -2523,7 +2451,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -3765284622991244088}
+  m_DefaultState: {fileID: 2441792743193551633}
 --- !u!114 &-697447578488865939
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2684,11 +2612,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jaw Open
+  m_Name: Jaw Open Suck
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -4619527522506031924}
-    m_Position: {x: 300, y: 120, z: 0}
+    m_State: {fileID: 3508924330704325372}
+    m_Position: {x: 310, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -2698,7 +2626,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -4619527522506031924}
+  m_DefaultState: {fileID: 3508924330704325372}
 --- !u!1102 &-371856369754059818
 AnimatorState:
   serializedVersion: 6
@@ -2984,6 +2912,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: JawOpenSuck
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: JawX
     m_Type: 1
     m_DefaultFloat: 0
@@ -3020,6 +2954,18 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
+  - m_Name: MouthUpperUpLeftPuffLeft
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: MouthUpperUpRightPuffRight
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   - m_Name: MouthLower
     m_Type: 1
     m_DefaultFloat: 0
@@ -3027,6 +2973,18 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: MouthLowerDownLeft
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: MouthLowerDownLeftOverlay
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: MouthLowerDownRightApe
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -3051,6 +3009,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: SmileSadLeft
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: SmileRightPout
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -3160,7 +3124,7 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Jaw Open
+    m_Name: Jaw Open Suck
     m_StateMachine: {fileID: -374636043947676533}
     m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
     m_Motions: []
@@ -3172,7 +3136,7 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Mouth Upper Up Combined
+    m_Name: Mouth Upper Up Left Puff Left
     m_StateMachine: {fileID: -1501003359346282104}
     m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
     m_Motions: []
@@ -3184,8 +3148,32 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Mouth Lower Down
+    m_Name: Mouth Upper Up Right Puff Right
     m_StateMachine: {fileID: 6272414150172939693}
+    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Mouth Lower Down Left Overlay
+    m_StateMachine: {fileID: -1462827867182926048}
+    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Mouth Lower Down Right Ape
+    m_StateMachine: {fileID: -729701338563500138}
     m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
     m_Motions: []
     m_Behaviours: []
@@ -3198,42 +3186,6 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: JawX
     m_StateMachine: {fileID: -3676796809695093564}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
-  - serializedVersion: 5
-    m_Name: Tongue Long Step 2
-    m_StateMachine: {fileID: 1060192011635660270}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
-  - serializedVersion: 5
-    m_Name: Tongue X
-    m_StateMachine: {fileID: 7006375528622127159}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
-  - serializedVersion: 5
-    m_Name: MouthPout
-    m_StateMachine: {fileID: 2170353105599741619}
     m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
     m_Motions: []
     m_Behaviours: []
@@ -3268,32 +3220,44 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   - serializedVersion: 5
-    m_Name: Mouth Lower Overlay
-    m_StateMachine: {fileID: -1462827867182926048}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
-  - serializedVersion: 5
-    m_Name: Cheeks Suck Puff Combined
-    m_StateMachine: {fileID: -729701338563500138}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
-    m_Motions: []
-    m_Behaviours: []
-    m_BlendingMode: 0
-    m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
-    m_IKPass: 0
-    m_SyncedLayerAffectsTiming: 0
-    m_Controller: {fileID: 9100000}
-  - serializedVersion: 5
-    m_Name: Smile Sad Combined
+    m_Name: Smile Sad Left
     m_StateMachine: {fileID: -8302461411978856387}
+    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Smile Right Pout
+    m_StateMachine: {fileID: 2170353105599741619}
+    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Tongue X
+    m_StateMachine: {fileID: 7006375528622127159}
+    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Motions: []
+    m_Behaviours: []
+    m_BlendingMode: 0
+    m_SyncedLayerIndex: -1
+    m_DefaultWeight: 1
+    m_IKPass: 0
+    m_SyncedLayerAffectsTiming: 0
+    m_Controller: {fileID: 9100000}
+  - serializedVersion: 5
+    m_Name: Tongue Long Step 2
+    m_StateMachine: {fileID: 1060192011635660270}
     m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
     m_Motions: []
     m_Behaviours: []
@@ -3440,6 +3404,53 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!206 &154011956344561210
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jaw Open Suck Blend
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: fb4e3511d0de92d4da91d0da023e4557, type: 2}
+    m_Threshold: -0.6
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyesY
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 81becd41c6f1c94488cbe101a17d387c, type: 2}
+    m_Threshold: -0.1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyesY
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 81becd41c6f1c94488cbe101a17d387c, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyesY
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: c1db56bd98633ee43819272f28ffa75f, type: 2}
+    m_Threshold: 0.5
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyesY
+    m_Mirror: 0
+  m_BlendParameter: JawOpenSuck
+  m_BlendParameterY: EyesY
+  m_MinThreshold: -0.6
+  m_MaxThreshold: 0.5
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!1101 &466804485213969227
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3797,7 +3808,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -1153182529676040992}
-    m_Position: {x: 370, y: 120, z: 0}
+    m_Position: {x: 300, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -3979,11 +3990,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MouthPout
+  m_Name: Smile Right Pout
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 2610398970354753185}
-    m_Position: {x: 360, y: 120, z: 0}
+    m_State: {fileID: -5922195139927022109}
+    m_Position: {x: 300, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -3993,7 +4004,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 2610398970354753185}
+  m_DefaultState: {fileID: -5922195139927022109}
 --- !u!1101 &2309372138607614889
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4061,6 +4072,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &2441792743193551633
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mouth Lower Down Right Ape
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 20600000, guid: 3350da343663bdf41ae13bf2dcbe7bec, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &2466883474609052338
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4231,32 +4268,6 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -7342054681586582684}
---- !u!1102 &2610398970354753185
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Pout Blend
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 20600000, guid: 0e6ea1df5d78c3a40aee09e5e03960e8, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!206 &2746327934127647205
 BlendTree:
   m_ObjectHideFlags: 1
@@ -4490,6 +4501,32 @@ MonoBehaviour:
   goalWeight: 0
   blendDuration: 0
   debugString: 
+--- !u!1102 &3508924330704325372
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Jaw Open Suck
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 154011956344561210}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!206 &3610153483883149583
 BlendTree:
   m_ObjectHideFlags: 1
@@ -4576,32 +4613,6 @@ BlendTree:
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 2
---- !u!1102 &4300512215604748944
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: MouthLowerOverlay
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 0
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: -1019116433996401634}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1101 &4379053119354786106
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4926,19 +4937,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: -5135131124447588272}
-  - {fileID: -8262141870258437629}
-  - {fileID: -2306536871291302588}
-  - {fileID: -6506093483244290879}
-  - {fileID: -1074686748531773520}
-  - {fileID: -6634372123226897840}
-  - {fileID: -1345549899616503186}
-  - {fileID: 7317910084866024395}
-  - {fileID: 5591253693964147112}
-  - {fileID: 7379538686117028443}
-  - {fileID: -697447578488865939}
-  - {fileID: -7952399084653533627}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -5197,11 +5196,11 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Mouth Lower Down
+  m_Name: Mouth Upper Up Right Puff Right
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: -1233999729536601171}
-    m_Position: {x: 320, y: 140, z: 0}
+    m_State: {fileID: -6511349480585179604}
+    m_Position: {x: 281, y: 99.5, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -5211,7 +5210,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -1233999729536601171}
+  m_DefaultState: {fileID: -6511349480585179604}
 --- !u!1102 &6306510204530916128
 AnimatorState:
   serializedVersion: 6
@@ -5260,6 +5259,32 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 90937955801101810}
+--- !u!1102 &6543003092014571439
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mouth Smile Left Sad Combined Blend
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 0
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 20600000, guid: a9b80d482ba3f4443a4d276f70a6d7ac, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &6544344867718212583
 AnimatorState:
   serializedVersion: 6
@@ -5753,10 +5778,7 @@ AnimatorState:
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
-  m_StateMachineBehaviours:
-  - {fileID: -4153838799406955341}
-  - {fileID: -9064620163914295786}
-  - {fileID: 2857210248319466412}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
