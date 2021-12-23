@@ -127,6 +127,19 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8681959459295310592}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &115216351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115216350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
 --- !u!1 &961357380
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,7 +350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2107248438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,7 +369,10 @@ MonoBehaviour:
   DefaultAnimatorToDebug: 0
   RestartEmulator: 0
   CreateNonLocalClone: 0
+  CreateNonLocalCloneCount: 0
   legacySubAnimatorParameterDriverMode: 0
+  legacyMenuGUI: 0
+  DisableMirrorClone: 0
   runtimes: []
 --- !u!95 &2107248439
 Animator:
@@ -403,6 +419,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 31900000, guid: 2bd8e9669f928cb47854a2dd69b5c54f,
         type: 2}
+    - target: {fileID: 27999852, guid: ad11d0ebf28f8c74f9bd72c414a13ef8, type: 3}
+      propertyPath: baseAnimationLayers.Array.data[0].isDefault
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 27999852, guid: ad11d0ebf28f8c74f9bd72c414a13ef8, type: 3}
       propertyPath: baseAnimationLayers.Array.data[1].isDefault
       value: 0
@@ -1107,6 +1127,10 @@ PrefabInstance:
       objectReference: {fileID: 31900000, guid: 2bd8e9669f928cb47854a2dd69b5c54f,
         type: 2}
     - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
+      propertyPath: baseAnimationLayers.Array.data[0].isDefault
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458927382, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
       propertyPath: baseAnimationLayers.Array.data[1].isDefault
       value: 0
       objectReference: {fileID: 0}
@@ -1142,7 +1166,7 @@ PrefabInstance:
     - target: {fileID: 4598113263083966807, guid: ac88202041155564fa69e83bf3c9ed14,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac88202041155564fa69e83bf3c9ed14, type: 3}
@@ -1265,9 +1289,10 @@ MonoBehaviour:
   baseAnimationLayers:
   - isEnabled: 0
     type: 0
-    animatorController: {fileID: 0}
+    animatorController: {fileID: 9100000, guid: 0a8a6303bdd8855419af168645e54ed0,
+      type: 2}
     mask: {fileID: 0}
-    isDefault: 1
+    isDefault: 0
   - isEnabled: 0
     type: 2
     animatorController: {fileID: 9100000, guid: f5b015e8a7e8a4649a916261e8ebe539,
@@ -1309,6 +1334,92 @@ MonoBehaviour:
     isDefault: 1
   AnimationPreset: {fileID: 0}
   animationHashSet:
+  - hash: -542948443
+    name: Preview
+  - hash: -689919782
+    name: reinitialize
+  - hash: 955999956
+    name: FBT.FBT idle
+  - hash: -1922804347
+    name: FBT.FBT animation to Idle
+  - hash: -788457691
+    name: FBT.FBT animation
+  - hash: 169679992
+    name: FBT.FBT move animation disabled
+  - hash: 161687733
+    name: VR.StandingVR
+  - hash: 646466831
+    name: VR.CrouchingVR
+  - hash: 607423317
+    name: VR.Prone vr
+  - hash: 1915132564
+    name: VR.initialise posespace
+  - hash: 381109363
+    name: VR.Stationary Anims.Entryprone
+  - hash: -313280575
+    name: VR.Stationary Anims.Exitcrouch
+  - hash: -1692792313
+    name: VR.Stationary Anims.Entrycrouch
+  - hash: -2092232141
+    name: VR.Stationary Anims.Exitprone
+  - hash: -58155272
+    name: VR.Stationary Anims.laydown-site
+  - hash: -457675766
+    name: VR.Stationary Anims.laydown-site-mirror
+  - hash: -1961174527
+    name: VR.Stationary Anims.crouch-site
+  - hash: -591808721
+    name: VR.Stationary Anims.crouch-site-mirror
+  - hash: -133867989
+    name: VR.Stationary Anims.laydown-back
+  - hash: -2101829950
+    name: VR.Stationary Anims.crouch-alternative
+  - hash: -552279295
+    name: Desktop.Standing
+  - hash: -73602231
+    name: Desktop.Crouching
+  - hash: -299888521
+    name: Desktop.Prone
+  - hash: 355392466
+    name: Desktop.Crouching2
+  - hash: -732267902
+    name: Desktop.Prone2
+  - hash: 1829608056
+    name: Desktop.Standing2
+  - hash: 969428045
+    name: Desktop.initialise posespace
+  - hash: -1401893788
+    name: Jump-Fall.SmallHop
+  - hash: -1322012152
+    name: Jump-Fall.Short Fall
+  - hash: -527192152
+    name: Jump-Fall.Long Fall
+  - hash: 68234020
+    name: Jump-Fall.Landing Quick Desktop
+  - hash: -1291747566
+    name: Jump-Fall.Landing Hard
+  - hash: 1496382575
+    name: Jump-Fall.Landing Quick VR
+  - hash: 1998579925
+    name: TrackingType 0
+  - hash: -267873956
+    name: TrackingType over 5
+  - hash: 1628227
+    name: TrackingType 1
+  - hash: -1726903815
+    name: TrackingType 2
+  - hash: -300500625
+    name: TrackingType 3
+  - hash: 1886530764
+    name: TrackingType 4
+  - hash: -1729405956
+    name: G-F-d-idle
+  - hash: -1078480216
+    name: ground-flap
+  - hash: 1761762291
+    name: ground-solid
+  - hash: -2146697495
+    name: ground-sanity-check
   - hash: 1639453964
     name: Eye Tracking
   - hash: -2051138140
@@ -1479,7 +1590,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 147f2aa517d1bd14093708766e5a6555,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1630794972795428178, guid: 147f2aa517d1bd14093708766e5a6555,
         type: 3}

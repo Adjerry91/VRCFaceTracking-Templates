@@ -333,7 +333,10 @@ MonoBehaviour:
   DefaultAnimatorToDebug: 0
   RestartEmulator: 0
   CreateNonLocalClone: 0
+  CreateNonLocalCloneCount: 0
   legacySubAnimatorParameterDriverMode: 0
+  legacyMenuGUI: 0
+  DisableMirrorClone: 0
   runtimes: []
 --- !u!95 &1327032964
 Animator:
@@ -526,5 +529,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 31900000, guid: 2bd8e9669f928cb47854a2dd69b5c54f,
         type: 2}
+    - target: {fileID: 6603850343435128340, guid: 500b81fac9e3c6b4987f46912e014e40,
+        type: 3}
+      propertyPath: baseAnimationLayers.Array.data[0].isDefault
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 500b81fac9e3c6b4987f46912e014e40, type: 3}
