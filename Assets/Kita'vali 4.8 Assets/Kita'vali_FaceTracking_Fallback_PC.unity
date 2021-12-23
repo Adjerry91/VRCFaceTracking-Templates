@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bc4eddb209a32f34a90834fc96c369e9, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.0034274287, g: 0.0026310855, b: 0.010817882, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -189,7 +189,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -211,7 +211,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -248,7 +248,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.02, g: 0.02, b: 0.02, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -295,7 +295,7 @@ Transform:
   m_Children:
   - {fileID: 1531689575}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1327032962
 GameObject:
@@ -366,7 +366,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1531689575 stripped
 Transform:
@@ -450,6 +450,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3335000604760056884, guid: 500b81fac9e3c6b4987f46912e014e40,
+        type: 3}
+      propertyPath: blueprintId
+      value: avtr_10a3bb48-f6d0-4bdb-9b70-374a6aafa663
+      objectReference: {fileID: 0}
+    - target: {fileID: 3335000604760056884, guid: 500b81fac9e3c6b4987f46912e014e40,
+        type: 3}
+      propertyPath: completedSDKPipeline
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5021653324627323844, guid: 500b81fac9e3c6b4987f46912e014e40,
         type: 3}
       propertyPath: m_Name
@@ -458,7 +468,7 @@ PrefabInstance:
     - target: {fileID: 5691335773369037182, guid: 500b81fac9e3c6b4987f46912e014e40,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5691335773369037182, guid: 500b81fac9e3c6b4987f46912e014e40,
         type: 3}
@@ -510,5 +520,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6603850343435128340, guid: 500b81fac9e3c6b4987f46912e014e40,
+        type: 3}
+      propertyPath: baseAnimationLayers.Array.data[2].mask
+      value: 
+      objectReference: {fileID: 31900000, guid: 2bd8e9669f928cb47854a2dd69b5c54f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 500b81fac9e3c6b4987f46912e014e40, type: 3}

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: bc4eddb209a32f34a90834fc96c369e9, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.003427429, g: 0.0026310827, b: 0.010817891, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -170,7 +170,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -197,13 +197,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110690697}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+  m_LocalPosition: {x: 0, y: 0.43547407, z: 0.3810398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1444736964
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,13 +289,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444736964}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.12708376, y: 0.8643611, z: -0.40305817, w: 0.27253202}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 50, y: 145, z: 0}
 --- !u!1001 &4643955957096978546
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -303,10 +303,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 528615942921249096, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 157
+      objectReference: {fileID: 0}
+    - target: {fileID: 528615942921249096, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[20]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1620455256668658673, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1620455256668658673, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
         type: 3}
@@ -363,6 +373,61 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kitavali_ver.4.8.4_FaceTracking_Quest_10k
       objectReference: {fileID: 0}
+    - target: {fileID: 5253116904407167984, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: blueprintId
+      value: avtr_10a3bb48-f6d0-4bdb-9b70-374a6aafa663
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253116904407167984, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: fallbackStatus
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253116904407167984, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: completedSDKPipeline
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864432496595406084, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864432496595406084, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0013988191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864432496595406084, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000012418496
+      objectReference: {fileID: 0}
+    - target: {fileID: 6864432496595406084, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1.7371243e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438769718230764339, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999905
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438769718230764339, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0013988191
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438769718230764339, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.00000012418496
+      objectReference: {fileID: 0}
+    - target: {fileID: 8438769718230764339, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1.7371243e-10
+      objectReference: {fileID: 0}
     - target: {fileID: 9121685223940507708, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
         type: 3}
       propertyPath: animationHashSet.Array.data[56].hash
@@ -373,5 +438,11 @@ PrefabInstance:
       propertyPath: animationHashSet.Array.data[56].name
       value: Mouth Upper Up Left Puff Left
       objectReference: {fileID: 0}
+    - target: {fileID: 9121685223940507708, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e,
+        type: 3}
+      propertyPath: baseAnimationLayers.Array.data[2].mask
+      value: 
+      objectReference: {fileID: 31900000, guid: 2bd8e9669f928cb47854a2dd69b5c54f,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd0c2314f27dcac4dbe42c4e70e7cd4e, type: 3}
