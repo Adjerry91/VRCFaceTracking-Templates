@@ -75,6 +75,10 @@ float _EmissionScrollingUseCurve1;
     half _AudioLinkAddEmissionBand;
     float2 _EmissionCenterOutAddAudioLink;
     half _AudioLinkEmissionCenterOutAddBand;
+    half _AudioLinkCCCOLORS;    
+    half _AudioLinkCCCOLORS_Blend;   
+    half _AudioLinkCCLIGHTS;    
+    half _AudioLinkCCLIGHTS_Blend;  
     half _EnableEmission1StrengthAudioLink;
     half _AudioLinkEmission1StrengthBand;
     half _EnableEmission1CenterOutAudioLink;
@@ -137,8 +141,8 @@ float3 calculateEmissionNew(in float3 baseColor, inout float4 finalColor)
             {
                 emissionStrength0 *= getBandAtTime(float(0), saturate(1 - poiLight.nDotV), float(1));
             }
-            emissionStrength0 += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, getBandAtTime(float(0), saturate(1 - poiLight.nDotV), float(1)));
-            emissionStrength0 += lerp(float4(0,0,0,0).x, float4(0,0,0,0).y, poiMods.audioLink[float(0)]);
+            emissionStrength0 += lerp(float4(0,2,0,0).x, float4(0,2,0,0).y, getBandAtTime(float(0), saturate(1 - poiLight.nDotV), float(1)));
+            emissionStrength0 += lerp(float4(1,3,0,0).x, float4(1,3,0,0).y, poiMods.audioLink[float(0)]);
             emissionStrength0 = max(emissionStrength0, 0);
         }
     #endif
@@ -182,6 +186,46 @@ float3 calculateEmissionNew(in float3 baseColor, inout float4 finalColor)
     {
         emissionStrength0 *= calculateBlinkingEmission(float(0), float(1), float(4), float(0));
     }
+    #ifdef POI_AUDIOLINK
+                
+        if (poiMods.audioLinkTextureExists)
+        {   
+            if (_AudioLinkCCCOLORS)
+            {
+                if(_AudioLinkCCCOLORS_Blend==0)      //Replace
+                {
+                   emissionColor0 = AudioLinkData( ALPASS_CCCOLORS + int2( _AudioLinkCCCOLORS, 0) ).rgb;
+                }
+                else if(_AudioLinkCCCOLORS_Blend==1) //Multiplicative
+                {
+                   emissionColor0 *= AudioLinkData( ALPASS_CCCOLORS + int2( _AudioLinkCCCOLORS, 0) ).rgb;
+                }
+                else if(_AudioLinkCCCOLORS_Blend==2) //Additive
+                {
+                   emissionColor0 += AudioLinkData( ALPASS_CCCOLORS + int2( _AudioLinkCCCOLORS, 0) ).rgb;
+                }
+            }
+            if (_AudioLinkCCLIGHTS)
+            {   
+                if(_AudioLinkCCLIGHTS_Blend==0)          //Replace
+                {
+                    emissionColor0 = AudioLinkData( ALPASS_CCLIGHTS + int2( _AudioLinkCCLIGHTS - 1, 0) ).rgb;
+                }
+                else if(_AudioLinkCCLIGHTS_Blend==1)     //Multiplicative
+                {
+                    emissionColor0 *= AudioLinkData( ALPASS_CCLIGHTS + int2( _AudioLinkCCLIGHTS - 1, 0) ).rgb;
+                }
+                else if(_AudioLinkCCLIGHTS_Blend==2)     //Additive
+                {
+                    emissionColor0 += AudioLinkData( ALPASS_CCLIGHTS + int2( _AudioLinkCCLIGHTS - 1, 0) ).rgb;
+                }
+                else if(_AudioLinkCCLIGHTS_Blend==3)    //UV Grid
+                {
+                    emissionColor0 *= AudioLinkData( ALPASS_CCLIGHTS + uint2( uint(poiMesh.uv[float(0)].x * 8 * (_AudioLinkCCLIGHTS/128)) + uint(poiMesh.uv[float(0)].y * 16 * (_AudioLinkCCLIGHTS/128)) * 8, 0) ).rgb;
+                }
+            }
+        }
+    #endif
     emissionColor0 = hueShift(emissionColor0, frac(_EmissionHueShift + _EmissionHueShiftSpeed * _Time.x) * _EmissionHueShiftEnabled);
     #if defined(PROP_EMISSIONMASK) || !defined(OPTIMIZER_ENABLED)
         float emissionMask0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMask, _MainTex, TRANSFORM_TEX(poiMesh.uv[float(0)], _EmissionMask) + _Time.x * float4(0,0,0,0)).r;
@@ -206,7 +250,7 @@ float3 calculateEmissionNew(in float3 baseColor, inout float4 finalColor)
     float3 emission1 = 0;
     float emissionStrength1 = 0;
     float3 emissionColor1 = 0;
-    finalColor.rgb = lerp(finalColor.rgb, saturate(emissionColor0 + emissionColor1), saturate(emissionStrength0 + emissionStrength1) * float(0) * poiMax(emission0 + emission1));
+    finalColor.rgb = lerp(finalColor.rgb, saturate(emissionColor0 + emissionColor1), saturate(emissionStrength0 + emissionStrength1) * float(1) * poiMax(emission0 + emission1));
     return emission0 + emission1;
 }
 #endif

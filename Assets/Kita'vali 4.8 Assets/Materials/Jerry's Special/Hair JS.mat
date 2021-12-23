@@ -18,6 +18,10 @@ Material:
     OptimizedShaderFolder: Hair JS
     OriginalShader: ".poiyomi/\u2022 Poiyomi Toon \u2022"
     RenderType: Opaque
+    _AudioLinkCCCOLORSAnimated: 1
+    _AudioLinkCCCOLORS_BlendAnimated: 1
+    _AudioLinkCCLIGHTSAnimated: 1
+    _AudioLinkCCLIGHTS_BlendAnimated: 1
     _EmissionHueShiftAnimated: 1
     _EmissionHueShiftEnabledAnimated: 1
     _EmissionHueShiftSpeedAnimated: 1
@@ -54,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BRDFFallback:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: 1f79f71b84fc2844bb81e9ae4f5bc384, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BRDFMetallicGlossMap:
@@ -523,6 +527,10 @@ Material:
     - _AudioLinkAnimToggle: 1
     - _AudioLinkAverageRange: 0.5
     - _AudioLinkAveraging: 0
+    - _AudioLinkCCCOLORS: 0
+    - _AudioLinkCCCOLORS_Blend: 0
+    - _AudioLinkCCLIGHTS: 1
+    - _AudioLinkCCLIGHTS_Blend: 0
     - _AudioLinkDebugAnimate: 0
     - _AudioLinkDebugBass: 0
     - _AudioLinkDebugHighMid: 0
@@ -580,6 +588,7 @@ Material:
     - _BRDFMetallicGlossMapUV: 0
     - _BRDFMetallicMapToolTip: 0
     - _BRDFMetallicMapUV: 0
+    - _BRDFMetallicSpecIgnoresBaseColor: 0
     - _BRDFReflectance: 0.5
     - _BRDFReflectionsEnabled: 1
     - _BRDFSpecularEnabled: 1
@@ -929,7 +938,7 @@ Material:
     - _EmissionMaskUV: 0
     - _EmissionMaskUV1: 0
     - _EmissionMaskUVAnimated: 0
-    - _EmissionReplace: 0
+    - _EmissionReplace: 1
     - _EmissionReplaceAnimated: 0
     - _EmissionScrollingCurve1Animated: 0
     - _EmissionScrollingCurveAnimated: 0
@@ -975,7 +984,7 @@ Material:
     - _EmissiveScroll_Width1: 10
     - _EmissiveScroll_Width1Animated: 0
     - _EmissiveScroll_WidthAnimated: 0
-    - _EnableAudioLink: 0
+    - _EnableAudioLink: 1
     - _EnableAudioLinkDebug: 0
     - _EnableBRDF: 0
     - _EnableBlurAnimated: 0
@@ -1194,6 +1203,7 @@ Material:
     - _IridescenceRampAnimated: 0
     - _IridescenceReplaceBlendAnimated: 0
     - _IridescenceTimeAnimated: 0
+    - _JerryAudioLink: 0
     - _LightingAOTexAnimated: 0
     - _LightingAOTexPanAnimated: 0
     - _LightingAOTexUV: 0
@@ -2061,7 +2071,7 @@ Material:
     - m_start_DetailOptions: 0
     - m_start_DistortionAudioLink: 0
     - m_start_Emission1AudioLink: 0
-    - m_start_EmissionAudioLink: 0
+    - m_start_EmissionAudioLink: 1
     - m_start_FlipbookAudioLink: 0
     - m_start_FresnelAlpha: 0
     - m_start_Gameboy: 0
@@ -2169,7 +2179,7 @@ Material:
     - _AngleForwardDirection: {r: 0, g: 0, b: 1, a: 0}
     - _AnisoTangentMap1Pan: {r: 0, g: 0, b: 0, a: 0}
     - _AnisoTangentMapPan: {r: 0, g: 0, b: 0, a: 0}
-    - _AudioLinkAddEmission: {r: 0, g: 0, b: 0, a: 0}
+    - _AudioLinkAddEmission: {r: 1, g: 3, b: 0, a: 0}
     - _AudioLinkAddEmission1: {r: 0, g: 0, b: 0, a: 0}
     - _AudioLinkDecal0Alpha: {r: 0, g: 0, b: 0, a: 0}
     - _AudioLinkDecal0Emission: {r: 0, g: 0, b: 0, a: 0}
@@ -2256,7 +2266,7 @@ Material:
     - _DistortionSpeed1: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _DistortionStrength1AudioLink: {r: 0, g: 0, b: 0, a: 0}
     - _DistortionStrengthAudioLink: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionCenterOutAddAudioLink: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionCenterOutAddAudioLink: {r: 0, g: 2, b: 0, a: 0}
     - _EmissionCenterOutAddAudioLink1: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0.033018887, g: 0.37551242, b: 1, a: 1}
     - _EmissionColor1: {r: 1, g: 1, b: 1, a: 1}

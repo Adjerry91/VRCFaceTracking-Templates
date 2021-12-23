@@ -23,6 +23,9 @@
 	#include "CGI_PoiTessellation.cginc"
 #endif
 #include "CGI_PoiDithering.cginc"
+#ifdef COLOR_GRADING_LOG_VIEW
+	#include "CGI_PoiAudioLink.cginc"
+#endif
 #include "CGI_PoiData.cginc"
 #include "CGI_PoiSpawnInFrag.cginc"
 #ifdef WIREFRAME

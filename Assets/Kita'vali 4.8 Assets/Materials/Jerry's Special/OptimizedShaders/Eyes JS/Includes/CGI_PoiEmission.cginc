@@ -75,6 +75,10 @@ float _EmissionScrollingUseCurve1;
     half _AudioLinkAddEmissionBand;
     float2 _EmissionCenterOutAddAudioLink;
     half _AudioLinkEmissionCenterOutAddBand;
+    half _AudioLinkCCCOLORS;    
+    half _AudioLinkCCCOLORS_Blend;   
+    half _AudioLinkCCLIGHTS;    
+    half _AudioLinkCCLIGHTS_Blend;  
     half _EnableEmission1StrengthAudioLink;
     half _AudioLinkEmission1StrengthBand;
     half _EnableEmission1CenterOutAudioLink;
@@ -182,6 +186,46 @@ float3 calculateEmissionNew(in float3 baseColor, inout float4 finalColor)
     {
         emissionStrength0 *= calculateBlinkingEmission(float(1), float(1), float(4), float(0));
     }
+    #ifdef POI_AUDIOLINK
+                
+        if (poiMods.audioLinkTextureExists)
+        {   
+            if (float(0))
+            {
+                if(float(0)==0)      //Replace
+                {
+                   emissionColor0 = AudioLinkData( ALPASS_CCCOLORS + int2( float(0), 0) ).rgb;
+                }
+                else if(float(0)==1) //Multiplicative
+                {
+                   emissionColor0 *= AudioLinkData( ALPASS_CCCOLORS + int2( float(0), 0) ).rgb;
+                }
+                else if(float(0)==2) //Additive
+                {
+                   emissionColor0 += AudioLinkData( ALPASS_CCCOLORS + int2( float(0), 0) ).rgb;
+                }
+            }
+            if (float(0))
+            {   
+                if(float(0)==0)          //Replace
+                {
+                    emissionColor0 = AudioLinkData( ALPASS_CCLIGHTS + int2( float(0) - 1, 0) ).rgb;
+                }
+                else if(float(0)==1)     //Multiplicative
+                {
+                    emissionColor0 *= AudioLinkData( ALPASS_CCLIGHTS + int2( float(0) - 1, 0) ).rgb;
+                }
+                else if(float(0)==2)     //Additive
+                {
+                    emissionColor0 += AudioLinkData( ALPASS_CCLIGHTS + int2( float(0) - 1, 0) ).rgb;
+                }
+                else if(float(0)==3)    //UV Grid
+                {
+                    emissionColor0 *= AudioLinkData( ALPASS_CCLIGHTS + uint2( uint(poiMesh.uv[float(0)].x * 8 * (float(0)/128)) + uint(poiMesh.uv[float(0)].y * 16 * (float(0)/128)) * 8, 0) ).rgb;
+                }
+            }
+        }
+    #endif
     emissionColor0 = hueShift(emissionColor0, frac(float(0) + float(0) * _Time.x) * float(0));
     #if defined(PROP_EMISSIONMASK) || !defined(OPTIMIZER_ENABLED)
         float emissionMask0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMask, _MainTex, TRANSFORM_TEX(poiMesh.uv[float(0)], _EmissionMask) + _Time.x * float4(0,0,0,0)).r;

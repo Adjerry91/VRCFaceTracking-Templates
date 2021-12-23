@@ -115,8 +115,8 @@ void initPoiMods()
 void InitializeMeshData(inout v2f i, uint facing)
 {
 	poiMesh.isFrontFace = facing;
-	poiMesh.normals[0] = normalize(i.normal);
-	poiMesh.binormal.rgb = normalize(i.binormal);
+	poiMesh.normals[0] = i.normal;
+	poiMesh.binormal.rgb = i.binormal;
 	poiMesh.tangent = i.tangent;
 	#ifndef OUTLINE
 		if (!poiMesh.isFrontFace)

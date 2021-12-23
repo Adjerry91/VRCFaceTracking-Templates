@@ -18,6 +18,7 @@ float _BRDFReflectionsEnabled;
 float _BRDFSpecularEnabled;
 float _BRDFInvertGlossiness;
 float _BRDFForceFallback;
+float _BRDFMetallicSpecIgnoresBaseColor;
 bool DoesReflectionProbeExist()
 {
     float4 envSample = UNITY_SAMPLE_TEXCUBE_LOD(unity_SpecCube0, poiCam.reflectionDir, UNITY_SPECCUBE_LOD_STEPS);
@@ -179,7 +180,7 @@ void poiBRDF(inout float4 finalColor, const float4 finalColorBeforeLighting)
     #ifdef FORWARD_ADD_PASS
         float attenuation = saturate(poiLight.nDotL);
     #endif
-    float3 f0 = 0.16 * reflectance * reflectance * (1.0 - metallic) + finalColorBeforeLighting.rgb * metallic;
+    float3 f0 = 0.16 * reflectance * reflectance * (1.0 - metallic) + lerp(finalColorBeforeLighting.rgb * metallic, 1, float(0));
     float3 fresnel = lerp(F_Schlick(poiLight.nDotV, f0), f0, metallic); //Kill fresnel on metallics, it looks bad.
     float3 directSpecular = getDirectSpecular(roughness, saturate(poiLight.nDotH), max(poiLight.nDotV, 0.000001), attenuation, saturate(poiLight.lDotH), f0, poiLight.halfDir, poiMesh.tangent.xyz, poiMesh.binormal, float(0)) * poiLight.attenuation * attenuation * poiLight.color;
     directSpecular = min(directSpecular, poiLight.color);

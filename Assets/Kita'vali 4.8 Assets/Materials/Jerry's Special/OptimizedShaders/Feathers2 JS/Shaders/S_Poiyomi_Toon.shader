@@ -1,9 +1,9 @@
-Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
+Shader "Hidden/Locked/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 {
     Properties
     {
         [HideInInspector] shader_is_using_thry_editor ("", Float) = 0
-        [HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi Toon V7.3.046</color>", Float) = 0
+        [HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi Toon V7.3.046</color><color=#ff8000ff> Adjerry91 Custom</color>", Float) = 0
         [HideInInspector] shader_presets ("poiToonPresets", Float) = 0
         [HideInInspector] shader_properties_label_file ("7PlusLabels", Float) = 0
         [HideInInspector] footer_youtube ("youtube footer button", Float) = 0
@@ -445,6 +445,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
         _BRDFGlossiness ("Glossiness", Range(0,1)) = 0
         _BRDFReflectance ("Reflectance", Range(0,1)) = .5
         _BRDFAnisotropy ("Anisotropy", Range(-1,1)) = 0
+        _BRDFMetallicSpecIgnoresBaseColor("Spec Ignores Base Color", Range(0,1)) = 0
         [ToggleUI]_BRDFReflectionsEnabled ("Enable Reflections", Float) = 1
         [ToggleUI]_BRDFSpecularEnabled ("Enable Specular", Float) = 1
         _BRDFFallback ("Fallback Reflection", Cube) = "" { }
@@ -666,6 +667,11 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
         [Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkEmissionCenterOutAddBand ("Center Out A Band", Int) = 0
         [Vector2]_AudioLinkAddEmission ("Emission Strength Add", Vector) = (0, 0, 0, 0)
         [Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkAddEmissionBand ("Emission Add Band", Int) = 0
+        [Helpbox(1)] _JerryAudioLink ("Jerry Audio Link", Int) = 0
+        [Enum(OFF, 0, STREAM 1, 1, STREAM 2, 2, STREAM 3, 3, STREAM 4, 4, STREAM 5, 5)] _AudioLinkCCCOLORS ("CCCOLORS", Int) = 0         
+        [Enum(Replace, 0, Multiplicative, 1, Additive, 2)] _AudioLinkCCCOLORS_Blend ("CCCOLORS Blend Mode", Int) = 0    
+        _AudioLinkCCLIGHTS("CCLIGHTS", range(0,128)) = 0  
+        [Enum(Replace, 0, Multiplicative, 1, Additive, 2, UV Grid, 3)] _AudioLinkCCLIGHTS_Blend ("CCLIGHTS Blend Mode", Int) = 0  
         [HideInInspector] m_end_EmissionAudioLink ("Audio Link", Float) = 0
         [HideInInspector] m_end_emissionOptions ("Emission / Glow", Float) = 0
         [HideInInspector] m_start_emission1Options ("Emission / Glow 2 (Requires Emission 1 Enabled)", Float) = 0
@@ -1220,6 +1226,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
             Blend [_SrcBlend] [_DstBlend]
             CGPROGRAM
 #define OPTIMIZER_ENABLED
+#define COLOR_GRADING_LOG_VIEW
 #define VIGNETTE_MASKED
 #define _EMISSION
 #define _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
@@ -1236,7 +1243,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_SHADEROPTIMIZERENABLED 0
 #define PROP_LOCKTOOLTIP 0
 #define PROP_MODE 0
-#define PROPM_MAINOPTIONS 1
+#define PROPM_MAINOPTIONS 0
 #define PROP_MAINTEX
 #define PROP_MAINTEXTUREUV 0
 #define PROP_MAINEMISSIONSTRENGTH 0
@@ -1398,7 +1405,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BACKFACEHUESHIFT 0
 #define PROP_BACKFACEEMISSIONSTRENGTH 0
 #define PROPM_END_BACKFACE 0
-#define PROPM_LIGHTINGOPTIONS 1
+#define PROPM_LIGHTINGOPTIONS 0
 #define PROPM_START_LIGHTING 1
 #define PROP_ENABLELIGHTING 1
 #define PROP_LIGHTINGMODE 0
@@ -1535,8 +1542,10 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BRDFGLOSSINESS 0
 #define PROP_BRDFREFLECTANCE 0.5
 #define PROP_BRDFANISOTROPY 0
+#define PROP_BRDFMETALLICSPECIGNORESBASECOLOR 0
 #define PROP_BRDFREFLECTIONSENABLED 1
 #define PROP_BRDFSPECULARENABLED 1
+#define PROP_BRDFFALLBACK
 #define PROP_BRDFFORCEFALLBACK 0
 #define PROPM_END_BRDF 0
 #define PROPM_START_METALLIC 0
@@ -1655,7 +1664,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_SPECIAL_EFFECTS 1
 #define PROPM_START_EMISSIONOPTIONS 1
 #define PROP_ENABLEEMISSION 1
-#define PROP_EMISSIONREPLACE 0
+#define PROP_EMISSIONREPLACE 1
 #define PROP_EMISSIONBASECOLORASMAP 0
 #define PROP_EMISSIONMAPUV 0
 #define PROP_EMISSIONMASK
@@ -1692,7 +1701,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIVESCROLL_INTERVAL 20
 #define PROP_EMISSIONSCROLLINGOFFSET 0
 #define PROPM_END_SCROLLINGEMISSIONOPTIONS 0
-#define PROPM_START_EMISSIONAUDIOLINK 0
+#define PROPM_START_EMISSIONAUDIOLINK 1
 #define PROP_ENABLEEMISSIONSTRENGTHAUDIOLINK 0
 #define PROP_AUDIOLINKEMISSIONSTRENGTHBAND 0
 #define PROP_ENABLEEMISSIONCENTEROUTAUDIOLINK 0
@@ -1701,6 +1710,11 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIONCENTEROUTADDAUDIOLINKWIDTH 1
 #define PROP_AUDIOLINKEMISSIONCENTEROUTADDBAND 0
 #define PROP_AUDIOLINKADDEMISSIONBAND 0
+#define PROP_JERRYAUDIOLINK 0
+#define PROP_AUDIOLINKCCCOLORS 0
+#define PROP_AUDIOLINKCCCOLORS_BLEND 0
+#define PROP_AUDIOLINKCCLIGHTS 1
+#define PROP_AUDIOLINKCCLIGHTS_BLEND 0
 #define PROPM_END_EMISSIONAUDIOLINK 0
 #define PROPM_END_EMISSIONOPTIONS 0
 #define PROPM_START_EMISSION1OPTIONS 0
@@ -1957,7 +1971,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_END_DISTORTIONAUDIOLINK 0
 #define PROPM_END_DISTORTIONFLOW 0
 #define PROPM_START_AUDIOLINK 0
-#define PROP_ENABLEAUDIOLINK 0
+#define PROP_ENABLEAUDIOLINK 1
 #define PROP_AUDIOLINKHELP 0
 #define PROP_AUDIOLINKANIMTOGGLE 1
 #define PROP_AUDIOLINKDELAY 0
@@ -2063,7 +2077,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_PPHELP 0
 #define PROP_PPLIGHTINGMULTIPLIER 1
 #define PROP_PPEMISSIONMULTIPLIER 1
-#define PROPM_RENDERINGOPTIONS 1
+#define PROPM_RENDERINGOPTIONS 0
 #define PROP_CULL 0
 #define PROP_ZTEST 4
 #define PROP_ZWRITE 1
@@ -2138,6 +2152,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
             Offset [_OffsetFactor], [_OffsetUnits]
             CGPROGRAM
 #define OPTIMIZER_ENABLED
+#define COLOR_GRADING_LOG_VIEW
 #define VIGNETTE_MASKED
 #define _EMISSION
 #define _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
@@ -2154,7 +2169,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_SHADEROPTIMIZERENABLED 0
 #define PROP_LOCKTOOLTIP 0
 #define PROP_MODE 0
-#define PROPM_MAINOPTIONS 1
+#define PROPM_MAINOPTIONS 0
 #define PROP_MAINTEX
 #define PROP_MAINTEXTUREUV 0
 #define PROP_MAINEMISSIONSTRENGTH 0
@@ -2316,7 +2331,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BACKFACEHUESHIFT 0
 #define PROP_BACKFACEEMISSIONSTRENGTH 0
 #define PROPM_END_BACKFACE 0
-#define PROPM_LIGHTINGOPTIONS 1
+#define PROPM_LIGHTINGOPTIONS 0
 #define PROPM_START_LIGHTING 1
 #define PROP_ENABLELIGHTING 1
 #define PROP_LIGHTINGMODE 0
@@ -2453,8 +2468,10 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BRDFGLOSSINESS 0
 #define PROP_BRDFREFLECTANCE 0.5
 #define PROP_BRDFANISOTROPY 0
+#define PROP_BRDFMETALLICSPECIGNORESBASECOLOR 0
 #define PROP_BRDFREFLECTIONSENABLED 1
 #define PROP_BRDFSPECULARENABLED 1
+#define PROP_BRDFFALLBACK
 #define PROP_BRDFFORCEFALLBACK 0
 #define PROPM_END_BRDF 0
 #define PROPM_START_METALLIC 0
@@ -2573,7 +2590,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_SPECIAL_EFFECTS 1
 #define PROPM_START_EMISSIONOPTIONS 1
 #define PROP_ENABLEEMISSION 1
-#define PROP_EMISSIONREPLACE 0
+#define PROP_EMISSIONREPLACE 1
 #define PROP_EMISSIONBASECOLORASMAP 0
 #define PROP_EMISSIONMAPUV 0
 #define PROP_EMISSIONMASK
@@ -2610,7 +2627,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIVESCROLL_INTERVAL 20
 #define PROP_EMISSIONSCROLLINGOFFSET 0
 #define PROPM_END_SCROLLINGEMISSIONOPTIONS 0
-#define PROPM_START_EMISSIONAUDIOLINK 0
+#define PROPM_START_EMISSIONAUDIOLINK 1
 #define PROP_ENABLEEMISSIONSTRENGTHAUDIOLINK 0
 #define PROP_AUDIOLINKEMISSIONSTRENGTHBAND 0
 #define PROP_ENABLEEMISSIONCENTEROUTAUDIOLINK 0
@@ -2619,6 +2636,11 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIONCENTEROUTADDAUDIOLINKWIDTH 1
 #define PROP_AUDIOLINKEMISSIONCENTEROUTADDBAND 0
 #define PROP_AUDIOLINKADDEMISSIONBAND 0
+#define PROP_JERRYAUDIOLINK 0
+#define PROP_AUDIOLINKCCCOLORS 0
+#define PROP_AUDIOLINKCCCOLORS_BLEND 0
+#define PROP_AUDIOLINKCCLIGHTS 1
+#define PROP_AUDIOLINKCCLIGHTS_BLEND 0
 #define PROPM_END_EMISSIONAUDIOLINK 0
 #define PROPM_END_EMISSIONOPTIONS 0
 #define PROPM_START_EMISSION1OPTIONS 0
@@ -2875,7 +2897,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_END_DISTORTIONAUDIOLINK 0
 #define PROPM_END_DISTORTIONFLOW 0
 #define PROPM_START_AUDIOLINK 0
-#define PROP_ENABLEAUDIOLINK 0
+#define PROP_ENABLEAUDIOLINK 1
 #define PROP_AUDIOLINKHELP 0
 #define PROP_AUDIOLINKANIMTOGGLE 1
 #define PROP_AUDIOLINKDELAY 0
@@ -2981,7 +3003,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_PPHELP 0
 #define PROP_PPLIGHTINGMULTIPLIER 1
 #define PROP_PPEMISSIONMULTIPLIER 1
-#define PROPM_RENDERINGOPTIONS 1
+#define PROPM_RENDERINGOPTIONS 0
 #define PROP_CULL 0
 #define PROP_ZTEST 4
 #define PROP_ZWRITE 1
@@ -3052,6 +3074,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
             Offset [_OffsetFactor], [_OffsetUnits]
             CGPROGRAM
 #define OPTIMIZER_ENABLED
+#define COLOR_GRADING_LOG_VIEW
 #define VIGNETTE_MASKED
 #define _EMISSION
 #define _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
@@ -3068,7 +3091,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_SHADEROPTIMIZERENABLED 0
 #define PROP_LOCKTOOLTIP 0
 #define PROP_MODE 0
-#define PROPM_MAINOPTIONS 1
+#define PROPM_MAINOPTIONS 0
 #define PROP_MAINTEX
 #define PROP_MAINTEXTUREUV 0
 #define PROP_MAINEMISSIONSTRENGTH 0
@@ -3230,7 +3253,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BACKFACEHUESHIFT 0
 #define PROP_BACKFACEEMISSIONSTRENGTH 0
 #define PROPM_END_BACKFACE 0
-#define PROPM_LIGHTINGOPTIONS 1
+#define PROPM_LIGHTINGOPTIONS 0
 #define PROPM_START_LIGHTING 1
 #define PROP_ENABLELIGHTING 1
 #define PROP_LIGHTINGMODE 0
@@ -3367,8 +3390,10 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BRDFGLOSSINESS 0
 #define PROP_BRDFREFLECTANCE 0.5
 #define PROP_BRDFANISOTROPY 0
+#define PROP_BRDFMETALLICSPECIGNORESBASECOLOR 0
 #define PROP_BRDFREFLECTIONSENABLED 1
 #define PROP_BRDFSPECULARENABLED 1
+#define PROP_BRDFFALLBACK
 #define PROP_BRDFFORCEFALLBACK 0
 #define PROPM_END_BRDF 0
 #define PROPM_START_METALLIC 0
@@ -3487,7 +3512,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_SPECIAL_EFFECTS 1
 #define PROPM_START_EMISSIONOPTIONS 1
 #define PROP_ENABLEEMISSION 1
-#define PROP_EMISSIONREPLACE 0
+#define PROP_EMISSIONREPLACE 1
 #define PROP_EMISSIONBASECOLORASMAP 0
 #define PROP_EMISSIONMAPUV 0
 #define PROP_EMISSIONMASK
@@ -3524,7 +3549,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIVESCROLL_INTERVAL 20
 #define PROP_EMISSIONSCROLLINGOFFSET 0
 #define PROPM_END_SCROLLINGEMISSIONOPTIONS 0
-#define PROPM_START_EMISSIONAUDIOLINK 0
+#define PROPM_START_EMISSIONAUDIOLINK 1
 #define PROP_ENABLEEMISSIONSTRENGTHAUDIOLINK 0
 #define PROP_AUDIOLINKEMISSIONSTRENGTHBAND 0
 #define PROP_ENABLEEMISSIONCENTEROUTAUDIOLINK 0
@@ -3533,6 +3558,11 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIONCENTEROUTADDAUDIOLINKWIDTH 1
 #define PROP_AUDIOLINKEMISSIONCENTEROUTADDBAND 0
 #define PROP_AUDIOLINKADDEMISSIONBAND 0
+#define PROP_JERRYAUDIOLINK 0
+#define PROP_AUDIOLINKCCCOLORS 0
+#define PROP_AUDIOLINKCCCOLORS_BLEND 0
+#define PROP_AUDIOLINKCCLIGHTS 1
+#define PROP_AUDIOLINKCCLIGHTS_BLEND 0
 #define PROPM_END_EMISSIONAUDIOLINK 0
 #define PROPM_END_EMISSIONOPTIONS 0
 #define PROPM_START_EMISSION1OPTIONS 0
@@ -3789,7 +3819,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_END_DISTORTIONAUDIOLINK 0
 #define PROPM_END_DISTORTIONFLOW 0
 #define PROPM_START_AUDIOLINK 0
-#define PROP_ENABLEAUDIOLINK 0
+#define PROP_ENABLEAUDIOLINK 1
 #define PROP_AUDIOLINKHELP 0
 #define PROP_AUDIOLINKANIMTOGGLE 1
 #define PROP_AUDIOLINKDELAY 0
@@ -3895,7 +3925,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_PPHELP 0
 #define PROP_PPLIGHTINGMULTIPLIER 1
 #define PROP_PPEMISSIONMULTIPLIER 1
-#define PROPM_RENDERINGOPTIONS 1
+#define PROPM_RENDERINGOPTIONS 0
 #define PROP_CULL 0
 #define PROP_ZTEST 4
 #define PROP_ZWRITE 1
@@ -3951,6 +3981,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
             Cull Off
             CGPROGRAM
 #define OPTIMIZER_ENABLED
+#define COLOR_GRADING_LOG_VIEW
 #define VIGNETTE_MASKED
 #define _EMISSION
 #define _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
@@ -3967,7 +3998,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_SHADEROPTIMIZERENABLED 0
 #define PROP_LOCKTOOLTIP 0
 #define PROP_MODE 0
-#define PROPM_MAINOPTIONS 1
+#define PROPM_MAINOPTIONS 0
 #define PROP_MAINTEX
 #define PROP_MAINTEXTUREUV 0
 #define PROP_MAINEMISSIONSTRENGTH 0
@@ -4129,7 +4160,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BACKFACEHUESHIFT 0
 #define PROP_BACKFACEEMISSIONSTRENGTH 0
 #define PROPM_END_BACKFACE 0
-#define PROPM_LIGHTINGOPTIONS 1
+#define PROPM_LIGHTINGOPTIONS 0
 #define PROPM_START_LIGHTING 1
 #define PROP_ENABLELIGHTING 1
 #define PROP_LIGHTINGMODE 0
@@ -4266,8 +4297,10 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_BRDFGLOSSINESS 0
 #define PROP_BRDFREFLECTANCE 0.5
 #define PROP_BRDFANISOTROPY 0
+#define PROP_BRDFMETALLICSPECIGNORESBASECOLOR 0
 #define PROP_BRDFREFLECTIONSENABLED 1
 #define PROP_BRDFSPECULARENABLED 1
+#define PROP_BRDFFALLBACK
 #define PROP_BRDFFORCEFALLBACK 0
 #define PROPM_END_BRDF 0
 #define PROPM_START_METALLIC 0
@@ -4386,7 +4419,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_SPECIAL_EFFECTS 1
 #define PROPM_START_EMISSIONOPTIONS 1
 #define PROP_ENABLEEMISSION 1
-#define PROP_EMISSIONREPLACE 0
+#define PROP_EMISSIONREPLACE 1
 #define PROP_EMISSIONBASECOLORASMAP 0
 #define PROP_EMISSIONMAPUV 0
 #define PROP_EMISSIONMASK
@@ -4423,7 +4456,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIVESCROLL_INTERVAL 20
 #define PROP_EMISSIONSCROLLINGOFFSET 0
 #define PROPM_END_SCROLLINGEMISSIONOPTIONS 0
-#define PROPM_START_EMISSIONAUDIOLINK 0
+#define PROPM_START_EMISSIONAUDIOLINK 1
 #define PROP_ENABLEEMISSIONSTRENGTHAUDIOLINK 0
 #define PROP_AUDIOLINKEMISSIONSTRENGTHBAND 0
 #define PROP_ENABLEEMISSIONCENTEROUTAUDIOLINK 0
@@ -4432,6 +4465,11 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_EMISSIONCENTEROUTADDAUDIOLINKWIDTH 1
 #define PROP_AUDIOLINKEMISSIONCENTEROUTADDBAND 0
 #define PROP_AUDIOLINKADDEMISSIONBAND 0
+#define PROP_JERRYAUDIOLINK 0
+#define PROP_AUDIOLINKCCCOLORS 0
+#define PROP_AUDIOLINKCCCOLORS_BLEND 0
+#define PROP_AUDIOLINKCCLIGHTS 1
+#define PROP_AUDIOLINKCCLIGHTS_BLEND 0
 #define PROPM_END_EMISSIONAUDIOLINK 0
 #define PROPM_END_EMISSIONOPTIONS 0
 #define PROPM_START_EMISSION1OPTIONS 0
@@ -4688,7 +4726,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROPM_END_DISTORTIONAUDIOLINK 0
 #define PROPM_END_DISTORTIONFLOW 0
 #define PROPM_START_AUDIOLINK 0
-#define PROP_ENABLEAUDIOLINK 0
+#define PROP_ENABLEAUDIOLINK 1
 #define PROP_AUDIOLINKHELP 0
 #define PROP_AUDIOLINKANIMTOGGLE 1
 #define PROP_AUDIOLINKDELAY 0
@@ -4794,7 +4832,7 @@ Shader "Hidden/.poiyomi/• Poiyomi Toon •/Feathers2 JS-Feathers2 JS"
 #define PROP_PPHELP 0
 #define PROP_PPLIGHTINGMULTIPLIER 1
 #define PROP_PPEMISSIONMULTIPLIER 1
-#define PROPM_RENDERINGOPTIONS 1
+#define PROPM_RENDERINGOPTIONS 0
 #define PROP_CULL 0
 #define PROP_ZTEST 4
 #define PROP_ZWRITE 1
