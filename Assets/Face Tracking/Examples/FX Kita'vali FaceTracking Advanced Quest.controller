@@ -1444,7 +1444,6 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: -278188054595871065}
   - {fileID: -4613198173318399505}
-  - {fileID: -545438987244838779}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -2282,9 +2281,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 7
     m_ConditionEvent: GestureRight
-    m_EventTreshold: 0
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4627461892001752599}
   m_Solo: 0
@@ -2488,7 +2487,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 70, y: 120, z: 0}
   m_ExitPosition: {x: 1100, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5570479311013732743}
+  m_DefaultState: {fileID: -2179911227761972658}
 --- !u!114 &-1163492155206014892
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2798,29 +2797,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &-545438987244838779
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -646210727, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingHead: 0
-  trackingLeftHand: 0
-  trackingRightHand: 0
-  trackingHip: 0
-  trackingLeftFoot: 0
-  trackingRightFoot: 0
-  trackingLeftFingers: 0
-  trackingRightFingers: 0
-  trackingEyes: 1
-  trackingMouth: 0
-  debugString: 
 --- !u!114 &-495415895662484272
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3352,7 +3328,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Face Tracking State
     m_StateMachine: {fileID: -1194151661878095760}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3364,7 +3340,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Eye Tracking State
     m_StateMachine: {fileID: 2065765891441858748}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3376,7 +3352,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Blink Left 4bit Wizard
     m_StateMachine: {fileID: 5978253336268648997}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3388,7 +3364,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Blink Right 4bit Wizard
     m_StateMachine: {fileID: -8180196978918403180}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3400,7 +3376,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Jaw Open Suck
     m_StateMachine: {fileID: -374636043947676533}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3412,7 +3388,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Mouth Upper Up Left Puff Left
     m_StateMachine: {fileID: -1501003359346282104}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3424,7 +3400,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Mouth Upper Up Right Puff Right
     m_StateMachine: {fileID: 6272414150172939693}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3436,7 +3412,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Mouth Lower Down Left Overlay
     m_StateMachine: {fileID: -1462827867182926048}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3448,7 +3424,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Mouth Lower Down Right Ape
     m_StateMachine: {fileID: -729701338563500138}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3460,7 +3436,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: JawX
     m_StateMachine: {fileID: -3676796809695093564}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3472,7 +3448,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Mouth Upper
     m_StateMachine: {fileID: -5558377215923549468}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3484,7 +3460,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Mouth Lower
     m_StateMachine: {fileID: 6323688950045473975}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3496,7 +3472,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Smile Sad Left
     m_StateMachine: {fileID: -8302461411978856387}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3508,7 +3484,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Smile Right Pout
     m_StateMachine: {fileID: 2170353105599741619}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3520,7 +3496,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Tongue X
     m_StateMachine: {fileID: 7006375528622127159}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3532,7 +3508,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Tongue Long Step 2
     m_StateMachine: {fileID: 1060192011635660270}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3544,7 +3520,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Expression Reset
     m_StateMachine: {fileID: 838372283196677590}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3556,7 +3532,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Left Hand Expression
     m_StateMachine: {fileID: -4879675097482502057}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3568,7 +3544,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Right Hand Expression
     m_StateMachine: {fileID: 5549981903324944116}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3580,7 +3556,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Hue
     m_StateMachine: {fileID: -3304965169401488624}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -3592,7 +3568,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: RGB
     m_StateMachine: {fileID: -8699624485841298221}
-    m_Mask: {fileID: 31900000, guid: 0673524d4397897458bdf7364b695de8, type: 2}
+    m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
@@ -4218,7 +4194,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 70, y: 120, z: 0}
   m_ExitPosition: {x: 1100, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -4335422010682833140}
+  m_DefaultState: {fileID: 8546823729171275840}
 --- !u!1107 &2170353105599741619
 AnimatorStateMachine:
   serializedVersion: 6
@@ -4249,9 +4225,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 7
     m_ConditionEvent: GestureLeft
-    m_EventTreshold: 0
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -371856369754059818}
   m_Solo: 0
@@ -6207,7 +6183,6 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: 5072358588655346511}
   - {fileID: 1392937511641943559}
-  - {fileID: 8687444976765712846}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -6247,29 +6222,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!114 &8687444976765712846
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -646210727, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingHead: 0
-  trackingLeftHand: 0
-  trackingRightHand: 0
-  trackingHip: 0
-  trackingLeftFoot: 0
-  trackingRightFoot: 0
-  trackingLeftFingers: 0
-  trackingRightFingers: 0
-  trackingEyes: 2
-  trackingMouth: 0
-  debugString: 
 --- !u!1101 &8747155196463355178
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

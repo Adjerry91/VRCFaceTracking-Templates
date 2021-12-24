@@ -398,7 +398,6 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: -383334869964578237}
   - {fileID: 6202397068745534799}
-  - {fileID: 7194422542747818304}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -953,7 +952,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 70, y: 120, z: 0}
   m_ExitPosition: {x: 1100, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 3121399947432131118}
+  m_DefaultState: {fileID: -6975957933545529728}
 --- !u!114 &-3044096011932408854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1252,9 +1251,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 7
     m_ConditionEvent: GestureRight
-    m_EventTreshold: 0
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4627461892001752599}
   m_Solo: 0
@@ -1332,7 +1331,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 70, y: 120, z: 0}
   m_ExitPosition: {x: 1100, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5570479311013732743}
+  m_DefaultState: {fileID: -2179911227761972658}
 --- !u!114 &-1074686748531773520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2321,9 +2320,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 7
     m_ConditionEvent: GestureLeft
-    m_EventTreshold: 0
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -371856369754059818}
   m_Solo: 0
@@ -2628,7 +2627,6 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: 5260046650563657554}
   - {fileID: 5543705382482653908}
-  - {fileID: 7653895219572166820}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -3312,29 +3310,6 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: -4856193961885213227}
---- !u!114 &7194422542747818304
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -646210727, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingHead: 0
-  trackingLeftHand: 0
-  trackingRightHand: 0
-  trackingHip: 0
-  trackingLeftFoot: 0
-  trackingRightFoot: 0
-  trackingLeftFingers: 0
-  trackingRightFingers: 0
-  trackingEyes: 2
-  trackingMouth: 0
-  debugString: 
 --- !u!114 &7317910084866024395
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3368,29 +3343,6 @@ MonoBehaviour:
   layer: 14
   goalWeight: 0
   blendDuration: 0
-  debugString: 
---- !u!114 &7653895219572166820
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -646210727, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingHead: 0
-  trackingLeftHand: 0
-  trackingRightHand: 0
-  trackingHip: 0
-  trackingLeftFoot: 0
-  trackingRightFoot: 0
-  trackingLeftFingers: 0
-  trackingRightFingers: 0
-  trackingEyes: 1
-  trackingMouth: 0
   debugString: 
 --- !u!1102 &7661539393246605338
 AnimatorState:

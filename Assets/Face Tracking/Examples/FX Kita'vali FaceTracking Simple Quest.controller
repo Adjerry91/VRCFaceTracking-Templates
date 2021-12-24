@@ -279,7 +279,6 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: 184613119987560688}
   - {fileID: 5745463016355342891}
-  - {fileID: -7799821135525912599}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
@@ -344,29 +343,6 @@ MonoBehaviour:
   layer: 16
   goalWeight: 0
   blendDuration: 0
-  debugString: 
---- !u!114 &-7799821135525912599
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -646210727, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingHead: 0
-  trackingLeftHand: 0
-  trackingRightHand: 0
-  trackingHip: 0
-  trackingLeftFoot: 0
-  trackingRightFoot: 0
-  trackingLeftFingers: 0
-  trackingRightFingers: 0
-  trackingEyes: 2
-  trackingMouth: 0
   debugString: 
 --- !u!1101 &-7796802291191520983
 AnimatorStateTransition:
@@ -1230,9 +1206,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 7
     m_ConditionEvent: GestureRight
-    m_EventTreshold: 0
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4627461892001752599}
   m_Solo: 0
@@ -1629,7 +1605,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 6010201632001091160}
-    m_Position: {x: 470, y: 110, z: 0}
+    m_Position: {x: 480, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3379881110882949505}
     m_Position: {x: 480, y: 180, z: 0}
@@ -1642,7 +1618,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 70, y: 120, z: 0}
   m_ExitPosition: {x: 1100, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 6010201632001091160}
+  m_DefaultState: {fileID: -3379881110882949505}
 --- !u!206 &-108223425045306826
 BlendTree:
   m_ObjectHideFlags: 1
@@ -2356,9 +2332,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
+  - m_ConditionMode: 7
     m_ConditionEvent: GestureLeft
-    m_EventTreshold: 0
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -371856369754059818}
   m_Solo: 0
@@ -3058,29 +3034,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!114 &5853178926875982511
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -646210727, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trackingHead: 0
-  trackingLeftHand: 0
-  trackingRightHand: 0
-  trackingHip: 0
-  trackingLeftFoot: 0
-  trackingRightFoot: 0
-  trackingLeftFingers: 0
-  trackingRightFingers: 0
-  trackingEyes: 1
-  trackingMouth: 0
-  debugString: 
 --- !u!1107 &5978253336268648997
 AnimatorStateMachine:
   serializedVersion: 6
@@ -3492,7 +3445,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 70, y: 120, z: 0}
   m_ExitPosition: {x: 1100, y: 170, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 8919495769404927409}
+  m_DefaultState: {fileID: -8029437937123902743}
 --- !u!206 &8885121096111401643
 BlendTree:
   m_ObjectHideFlags: 1
@@ -3563,7 +3516,6 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: -7978371980442091677}
   - {fileID: -7961972794018830896}
-  - {fileID: 5853178926875982511}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 0
