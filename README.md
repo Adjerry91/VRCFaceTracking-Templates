@@ -16,7 +16,8 @@
   <ol>2.DynamicBones</ol>
   <ol>3.Standard Poiyomi Toon Shader https://github.com/poiyomi/PoiyomiToonShader or my custom Poiyomi Audio Link Version https://github.com/Adjerry91/PoiyomiToonShader</ol>
   <ol>4.AV3Emulator (Strongly recommened to debug avatar controls) https://github.com/lyuma/Av3Emulator (Emulator has to be disabled before uploading)</ol>
-  <ol>5.Optional Audio Link https://github.com/llealloo/vrc-udon-audio-link
+  <ol>5.Optional Audio Link https://github.com/llealloo/vrc-udon-audio-link</ol>
+  <ol>6.Import VRCFaceTracking-UnityDemo</ol>
 
 <h1>Face Tracking Animation Tips:</h1>
 <ul>
