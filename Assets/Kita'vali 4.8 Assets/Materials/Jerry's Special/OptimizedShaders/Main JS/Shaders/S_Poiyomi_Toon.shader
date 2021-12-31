@@ -3,7 +3,7 @@ Shader "Hidden/Locked/.poiyomi/• Poiyomi Toon •/Main JS-Main JS"
     Properties
     {
         [HideInInspector] shader_is_using_thry_editor ("", Float) = 0
-        [HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi Toon V7.3.046</color><color=#ff8000ff> Adjerry91 Custom</color>", Float) = 0
+        [HideInInspector] shader_master_label ("<color=#E75898ff>Poiyomi Toon V7.3.050.a</color><color=#ff8000ff> Adjerry91 Custom</color>", Float) = 0
         [HideInInspector] shader_presets ("poiToonPresets", Float) = 0
         [HideInInspector] shader_properties_label_file ("7PlusLabels", Float) = 0
         [HideInInspector] footer_youtube ("youtube footer button", Float) = 0
