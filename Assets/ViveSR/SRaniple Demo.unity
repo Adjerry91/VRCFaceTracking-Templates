@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0034274266, g: 0.002631073, b: 0.010817865, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -121,25 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &16244710 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2600474499096597956, guid: 74938293fe6c4814aa37a2b7d16db5ec,
-    type: 3}
-  m_PrefabInstance: {fileID: 7358957691748399297}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &16244711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16244710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contentType: 0
 --- !u!1 &21507592
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,6 +356,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b91b10107bcd5b74a9a56754737a870a, type: 3}
+--- !u!1 &958731766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4474391462079174575, guid: 68da0a4bd2194044a91b50785e1db187,
+    type: 3}
+  m_PrefabInstance: {fileID: 3664050507277798701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &958731767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958731766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 229740497, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contentType: 0
 --- !u!1001 &3664050507277798701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -384,7 +384,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 170534870, guid: 68da0a4bd2194044a91b50785e1db187, type: 3}
       propertyPath: animationHashSet.Array.size
-      value: 336
+      value: 318
       objectReference: {fileID: 0}
     - target: {fileID: 170534870, guid: 68da0a4bd2194044a91b50785e1db187, type: 3}
       propertyPath: animationHashSet.Array.data[2].hash
@@ -3086,7 +3086,7 @@ PrefabInstance:
     - target: {fileID: 4474391462079174575, guid: 68da0a4bd2194044a91b50785e1db187,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68da0a4bd2194044a91b50785e1db187, type: 3}
@@ -3101,6 +3101,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shieh_Body_Quest
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600474499096597956, guid: 74938293fe6c4814aa37a2b7d16db5ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3413004403050614654, guid: 74938293fe6c4814aa37a2b7d16db5ec,
         type: 3}
