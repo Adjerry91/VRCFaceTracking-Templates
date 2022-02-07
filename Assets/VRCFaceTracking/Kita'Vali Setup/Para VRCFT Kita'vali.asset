@@ -10,22 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: Para Kita'vali VRCFT
+  m_Name: Para VRCFT Kita'vali
   m_EditorClassIdentifier: 
   parameters:
-  - name: RGB
-    valueType: 2
-    saved: 1
-    defaultValue: 0
-  - name: DisLocomotion
-    valueType: 2
-    saved: 1
-    defaultValue: 1
   - name: EyeTracking
-    valueType: 2
-    saved: 1
-    defaultValue: 1
-  - name: FaceTracking
     valueType: 2
     saved: 1
     defaultValue: 1
@@ -33,10 +21,10 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 1
-  - name: Visemes
+  - name: VisemesEnable
     valueType: 2
     saved: 1
-    defaultValue: 0
+    defaultValue: 1
   - name: LeftEyeX
     valueType: 1
     saved: 0
@@ -61,11 +49,51 @@ MonoBehaviour:
     valueType: 1
     saved: 0
     defaultValue: 0
+  - name: LeftEyeLidExpandedSqueeze1
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: LeftEyeLidExpandedSqueeze2
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: LeftEyeLidExpandedSqueeze4
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: LeftEyeLidExpandedSqueeze8
+    valueType: 2
+    saved: 0
+    defaultValue: 1
   - name: LeftEyeSqueezeToggle
     valueType: 2
     saved: 0
     defaultValue: 0
   - name: LeftEyeWidenToggle
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: RightEyeLidExpandedSqueeze1
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: RightEyeLidExpandedSqueeze2
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: RightEyeLidExpandedSqueeze4
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: RightEyeLidExpandedSqueeze8
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: RightEyeSqueezeToggle
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: RightEyeWidenToggle
     valueType: 2
     saved: 0
     defaultValue: 0
@@ -117,15 +145,99 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: TongueLongStep11
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: TongueLongStep21
-    valueType: 2
-    saved: 0
-    defaultValue: 0
   - name: TongueLongStep22
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawX1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawX2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawX4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawXNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation1
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: EyesDilation2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation4
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: MouthLowerInside1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerInside2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerInside4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthUpperOverturn1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthUpperOverturn2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthUpperOverturn4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerOverturn1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerOverturn2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerOverturn4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLower1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLower2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLower4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: CheekPuffRight1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: CheekPuffRight2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: CheekPuffRight4
     valueType: 2
     saved: 0
     defaultValue: 0
@@ -149,18 +261,6 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: CheekPuffRight1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: CheekPuffRight2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: CheekPuffRight4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
   - name: CheekPuffLeft1
     valueType: 2
     saved: 0
@@ -170,22 +270,6 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
   - name: CheekPuffLeft4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLower1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLower2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLower4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLowerNegative
     valueType: 2
     saved: 0
     defaultValue: 0
@@ -201,55 +285,11 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: MouthLowerInside1
+  - name: TongueLongStep11
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: MouthLowerInside2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLowerInside4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: JawX1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: JawX2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: JawX4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: JawXNegative
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLowerOverturn1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLowerOverturn2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthLowerOverturn4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthUpperOverturn1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthUpperOverturn2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthUpperOverturn4
+  - name: TongueLongStep21
     valueType: 2
     saved: 0
     defaultValue: 0
@@ -285,55 +325,11 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: EyesDilation4
+  - name: RGB
     valueType: 2
-    saved: 0
+    saved: 1
     defaultValue: 0
-  - name: EyesDilation2
+  - name: DisLocomotion
     valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: EyesDilation1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: RightEyeWidenToggle
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: RightEyeSqueezeToggle
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: RightEyeLidExpandedSqueeze8
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: RightEyeLidExpandedSqueeze4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: RightEyeLidExpandedSqueeze2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: RightEyeLidExpandedSqueeze1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: LeftEyeLidExpandedSqueeze8
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: LeftEyeLidExpandedSqueeze4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: LeftEyeLidExpandedSqueeze2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: LeftEyeLidExpandedSqueeze1
-    valueType: 2
-    saved: 0
+    saved: 1
     defaultValue: 0
