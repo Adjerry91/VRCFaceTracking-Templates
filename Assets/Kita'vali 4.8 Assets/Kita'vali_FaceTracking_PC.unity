@@ -121,6 +121,120 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &238911418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 238911422}
+  - component: {fileID: 238911421}
+  - component: {fileID: 238911420}
+  - component: {fileID: 238911419}
+  m_Layer: 0
+  m_Name: Avatars 3.0 Emulator Control
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &238911419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238911418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784aa748a7308b94a8f15dcd76531956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openSocket: 0
+  disableOSC: 0
+  resendAllParameters: 0
+  udpPort: 9000
+  outgoingUdpIp: 127.0.0.1
+  outgoingUdpPort: 9001
+  commandLine: 
+  localPort: 0
+  localIp: 
+  numberOfOSCMessages: 0
+  avatarDescriptor: {fileID: 0}
+  forwardToAllAvatarsInScene: 0
+  alwaysShowOSCGizmos: 1
+  clearGizmos: 0
+  GizmoFilledColor: {r: 1, g: 0, b: 1, a: 0.1}
+  GizmoBackgroundColor: {r: 0.75, g: 0, b: 0.6, a: 0.05}
+  GizmoOutlineColor: {r: 0.9, g: 0.7, b: 0.8, a: 0.5}
+  GizmoTextColor: {r: 1, g: 0.8, b: 1, a: 0.9}
+  GizmoShowSenderIP: 0
+  sendLoopbackOSCReplies: 0
+  debugPrintReceivedMessages: 0
+--- !u!114 &238911420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238911418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226ca8e52c3922d4a85b20831b97caf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DefaultToVR: 0
+  DefaultTestInStation: 0
+  DefaultTrackingType: 3
+  DefaultAnimatorToDebug: 0
+  RestartEmulator: 0
+  CreateNonLocalClone: 0
+  CreateNonLocalCloneCount: 0
+  legacySubAnimatorParameterDriverMode: 0
+  legacyMenuGUI: 1
+  DisableAvatarDynamicsIntegration: 0
+  WorkaroundPlayModeScriptCompile: 1
+  DisableMirrorClone: 0
+  DisableShadowClone: 0
+  EnableHeadScaling: 0
+  ViewMirrorReflection: 0
+  ViewBothRealAndMirror: 0
+  runtimes: []
+--- !u!95 &238911421
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238911418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!4 &238911422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238911418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &649389149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3912,7 +4026,7 @@ PrefabInstance:
     - target: {fileID: 3302081297386942623, guid: 29afeb72628bba2438f14670eb927ab3,
         type: 3}
       propertyPath: customEyeLookSettings.eyesLookingDown.left.x
-      value: 0.30070576
+      value: 0.3007058
       objectReference: {fileID: 0}
     - target: {fileID: 3302081297386942623, guid: 29afeb72628bba2438f14670eb927ab3,
         type: 3}
@@ -3927,7 +4041,7 @@ PrefabInstance:
     - target: {fileID: 3302081297386942623, guid: 29afeb72628bba2438f14670eb927ab3,
         type: 3}
       propertyPath: customEyeLookSettings.eyesLookingDown.right.x
-      value: 0.30070576
+      value: 0.3007058
       objectReference: {fileID: 0}
     - target: {fileID: 3302081297386942623, guid: 29afeb72628bba2438f14670eb927ab3,
         type: 3}
@@ -4008,6 +4122,11 @@ PrefabInstance:
       propertyPath: customEyeLookSettings.eyesLookingDown.right.x
       value: 0.3007058
       objectReference: {fileID: 0}
+    - target: {fileID: 3743213654382942638, guid: cfd45a68db1a4084e8db0bd5a829f62e,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6c481c2b1b90c96459c588263e446780, type: 2}
     - target: {fileID: 7283090431668044756, guid: cfd45a68db1a4084e8db0bd5a829f62e,
         type: 3}
       propertyPath: m_RootOrder
