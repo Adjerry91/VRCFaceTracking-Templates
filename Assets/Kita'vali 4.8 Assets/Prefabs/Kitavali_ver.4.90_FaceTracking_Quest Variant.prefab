@@ -1,5 +1,571 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &586834949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61213621438182752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  integrationType: 1
+  rootTransform: {fileID: 4159143531013768360}
+  ignoreTransforms:
+  - {fileID: 5414480124152194094}
+  - {fileID: 3184642077830206840}
+  - {fileID: 6283189230573717808}
+  - {fileID: 9038033913274453767}
+  endpointPosition: {x: 0, y: 0, z: 0}
+  multiChildType: 0
+  pull: 1
+  pullCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spring: 0.3
+  springCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.11155815
+      outSlope: -0.11155815
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.064800024
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stiffness: 0
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravity: -0
+  gravityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravityFalloff: 0
+  gravityFalloffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  immobileType: 1
+  immobile: 0.978
+  immobileCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowCollision: 1
+  radius: 0.008
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliders: []
+  limitType: 1
+  maxAngleX: 129
+  maxAngleXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxAngleZ: 45
+  maxAngleZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotation: {x: 0, y: 0, z: 0}
+  limitRotationXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationYCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowGrabbing: 1
+  allowPosing: 0
+  grabMovement: 0.5
+  maxStretch: 0
+  maxStretchCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isAnimated: 1
+  parameter: 
+  showGizmos: 1
+  boneOpacity: 0.5
+  limitOpacity: 0.5
+--- !u!114 &556776033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3937424233296752764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  integrationType: 1
+  rootTransform: {fileID: 5414480124152194094}
+  ignoreTransforms: []
+  endpointPosition: {x: 0, y: 0, z: 0}
+  multiChildType: 0
+  pull: 0.2
+  pullCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spring: 0.7
+  springCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.1916669
+      outSlope: -0.1916669
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0.8
+      inSlope: -0.19166692
+      outSlope: -0.19166692
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stiffness: 0
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravity: -0
+  gravityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravityFalloff: 0
+  gravityFalloffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  immobileType: 1
+  immobile: 0.5
+  immobileCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowCollision: 1
+  radius: 0.02
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliders: []
+  limitType: 1
+  maxAngleX: 129
+  maxAngleXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxAngleZ: 45
+  maxAngleZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotation: {x: 0, y: 0, z: 0}
+  limitRotationXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationYCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowGrabbing: 1
+  allowPosing: 1
+  grabMovement: 0.5
+  maxStretch: 0
+  maxStretchCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isAnimated: 1
+  parameter: 
+  showGizmos: 1
+  boneOpacity: 0.5
+  limitOpacity: 0.5
+--- !u!114 &649161118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4158255469869383758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  integrationType: 1
+  rootTransform: {fileID: 4142309500015546528}
+  ignoreTransforms: []
+  endpointPosition: {x: 0, y: 0, z: 0}
+  multiChildType: 0
+  pull: 0.032
+  pullCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spring: 0.63699996
+  springCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stiffness: 0
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravity: -0
+  gravityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravityFalloff: 0
+  gravityFalloffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  immobileType: 1
+  immobile: 0.303
+  immobileCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowCollision: 1
+  radius: 0.02
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.05
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliders: []
+  limitType: 1
+  maxAngleX: 180
+  maxAngleXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxAngleZ: 45
+  maxAngleZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotation: {x: 0, y: 0, z: 0}
+  limitRotationXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationYCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowGrabbing: 1
+  allowPosing: 1
+  grabMovement: 0.5
+  maxStretch: 0
+  maxStretchCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isAnimated: 1
+  parameter: 
+  showGizmos: 1
+  boneOpacity: 0.5
+  limitOpacity: 0.5
+--- !u!114 &77268665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4480325273055787608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  integrationType: 1
+  rootTransform: {fileID: 3127195543184127960}
+  ignoreTransforms: []
+  endpointPosition: {x: 0, y: 0, z: 0}
+  multiChildType: 0
+  pull: 0.032
+  pullCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spring: 0.63699996
+  springCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stiffness: 0
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravity: -0
+  gravityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravityFalloff: 0
+  gravityFalloffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  immobileType: 1
+  immobile: 0.303
+  immobileCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowCollision: 1
+  radius: 0.019999994
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliders: []
+  limitType: 1
+  maxAngleX: 180
+  maxAngleXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxAngleZ: 45
+  maxAngleZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotation: {x: 0, y: 0, z: 0}
+  limitRotationXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationYCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowGrabbing: 1
+  allowPosing: 1
+  grabMovement: 0.5
+  maxStretch: 0
+  maxStretchCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isAnimated: 1
+  parameter: 
+  showGizmos: 1
+  boneOpacity: 0.5
+  limitOpacity: 0.5
 --- !u!114 &918536921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,10 +580,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchedFromSDKPipeline: 0
   completedSDKPipeline: 1
-  blueprintId: avtr_4b14832e-32eb-4f76-ac66-d623e29fc54e
+  blueprintId: avtr_6ae65ec6-186d-46b1-b716-877e4e5467ec
   contentType: 0
   assetBundleUnityVersion: 
-  fallbackStatus: 3
+  fallbackStatus: 1
 --- !u!114 &918536922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34,7 +600,7 @@ MonoBehaviour:
   ViewPosition: {x: 0, y: 0.5443426, z: 0.03428053}
   Animations: 0
   ScaleIPD: 1
-  lipSync: 3
+  lipSync: 4
   lipSyncJawBone: {fileID: 0}
   lipSyncJawClosed: {x: 0, y: 0, z: 0, w: 1}
   lipSyncJawOpen: {x: 0, y: 0, z: 0, w: 1}
@@ -63,7 +629,7 @@ MonoBehaviour:
   expressionsMenu: {fileID: 11400000, guid: b1d7260cadf2f16458f9fd66c3769c97, type: 2}
   expressionParameters: {fileID: 11400000, guid: 679c9a7880a37ad429a79857d152c835,
     type: 2}
-  enableEyeLook: 0
+  enableEyeLook: 1
   customEyeLookSettings:
     eyeMovement:
       confidence: 0.5
@@ -76,21 +642,21 @@ MonoBehaviour:
       right: {x: 0, y: 0, z: 0, w: 1}
     eyesLookingUp:
       linked: 1
-      left: {x: -0.21643962, y: 0, z: 0, w: 0.976296}
-      right: {x: -0.21643962, y: 0, z: 0, w: 0.976296}
+      left: {x: -0.3007058, y: 0, z: 0, w: 0.95371693}
+      right: {x: -0.3007058, y: 0, z: 0, w: 0.95371693}
     eyesLookingDown:
       linked: 1
-      left: {x: 0.21643962, y: 0, z: 0, w: 0.976296}
-      right: {x: 0.21643962, y: 0, z: 0, w: 0.976296}
+      left: {x: 0.30070576, y: 0, z: 0, w: 0.95371693}
+      right: {x: 0.30070576, y: 0, z: 0, w: 0.95371693}
     eyesLookingLeft:
       linked: 1
-      left: {x: 0, y: 0.17364827, z: 0, w: 0.9848077}
-      right: {x: 0, y: 0.17364827, z: 0, w: 0.9848077}
+      left: {x: 0, y: -0.21643962, z: 0, w: 0.976296}
+      right: {x: 0, y: -0.21643962, z: 0, w: 0.976296}
     eyesLookingRight:
       linked: 1
-      left: {x: 0, y: -0.17364818, z: 0, w: 0.9848077}
-      right: {x: 0, y: -0.17364818, z: 0, w: 0.9848077}
-    eyelidType: 2
+      left: {x: 0, y: 0.21643962, z: 0, w: 0.976296}
+      right: {x: 0, y: 0.21643962, z: 0, w: 0.976296}
+    eyelidType: 0
     upperLeftEyelid: {fileID: 0}
     upperRightEyelid: {fileID: 0}
     lowerLeftEyelid: {fileID: 0}
@@ -137,10 +703,9 @@ MonoBehaviour:
   baseAnimationLayers:
   - isEnabled: 0
     type: 0
-    animatorController: {fileID: 9100000, guid: d6278efce25df7c47abb7ab129fec106,
-      type: 2}
+    animatorController: {fileID: 0}
     mask: {fileID: 0}
-    isDefault: 0
+    isDefault: 1
   - isEnabled: 0
     type: 2
     animatorController: {fileID: 9100000, guid: f50f0e3d4d6a125458b37ff6ba138722,
@@ -160,7 +725,7 @@ MonoBehaviour:
     isDefault: 1
   - isEnabled: 0
     type: 5
-    animatorController: {fileID: 9100000, guid: a813506e414e98b46b9ae5580e58e3c1,
+    animatorController: {fileID: 9100000, guid: d69f9fba49efbb443923c788bfe8c7b9,
       type: 2}
     mask: {fileID: 0}
     isDefault: 0
@@ -182,102 +747,20 @@ MonoBehaviour:
     isDefault: 1
   AnimationPreset: {fileID: 0}
   animationHashSet:
-  - hash: -542948443
-    name: Preview
-  - hash: -689919782
-    name: reinitialize
-  - hash: 955999956
-    name: FBT.FBT idle
-  - hash: -1922804347
-    name: FBT.FBT animation to Idle
-  - hash: -788457691
-    name: FBT.FBT animation
-  - hash: 169679992
-    name: FBT.FBT move animation disabled
-  - hash: 161687733
-    name: VR.StandingVR
-  - hash: 646466831
-    name: VR.CrouchingVR
-  - hash: 607423317
-    name: VR.Prone vr
-  - hash: 1915132564
-    name: VR.initialise posespace
-  - hash: 381109363
-    name: VR.Stationary Anims.Entryprone
-  - hash: -313280575
-    name: VR.Stationary Anims.Exitcrouch
-  - hash: -1692792313
-    name: VR.Stationary Anims.Entrycrouch
-  - hash: -2092232141
-    name: VR.Stationary Anims.Exitprone
-  - hash: -58155272
-    name: VR.Stationary Anims.laydown-site
-  - hash: -457675766
-    name: VR.Stationary Anims.laydown-site-mirror
-  - hash: -1961174527
-    name: VR.Stationary Anims.crouch-site
-  - hash: -591808721
-    name: VR.Stationary Anims.crouch-site-mirror
-  - hash: -133867989
-    name: VR.Stationary Anims.laydown-back
-  - hash: -2101829950
-    name: VR.Stationary Anims.crouch-alternative
-  - hash: -552279295
-    name: Desktop.Standing
-  - hash: -73602231
-    name: Desktop.Crouching
-  - hash: -299888521
-    name: Desktop.Prone
-  - hash: 355392466
-    name: Desktop.Crouching2
-  - hash: -732267902
-    name: Desktop.Prone2
-  - hash: 1829608056
-    name: Desktop.Standing2
-  - hash: 969428045
-    name: Desktop.initialise posespace
-  - hash: -1401893788
-    name: Jump-Fall.SmallHop
-  - hash: -1322012152
-    name: Jump-Fall.Short Fall
-  - hash: -527192152
-    name: Jump-Fall.Long Fall
-  - hash: 68234020
-    name: Jump-Fall.Landing Quick Desktop
-  - hash: -1291747566
-    name: Jump-Fall.Landing Hard
-  - hash: 1496382575
-    name: Jump-Fall.Landing Quick VR
-  - hash: 1998579925
-    name: TrackingType 0
-  - hash: -267873956
-    name: TrackingType over 5
-  - hash: 1628227
-    name: TrackingType 1
-  - hash: -1726903815
-    name: TrackingType 2
-  - hash: -300500625
-    name: TrackingType 3
-  - hash: 1886530764
-    name: TrackingType 4
-  - hash: -1729405956
-    name: G-F-d-idle
-  - hash: -1078480216
-    name: ground-flap
-  - hash: 1761762291
-    name: ground-solid
-  - hash: -2146697495
-    name: ground-sanity-check
-  - hash: 1639453964
-    name: Eye Tracking
-  - hash: -2051138140
+  - hash: 1476860976
+    name: New State
+  - hash: -1417624017
+    name: Controlled Eye Tracking
+  - hash: 799884227
+    name: VRC Eye Tracking
+  - hash: -1131059617
     name: Eye Tracking OFF
-  - hash: -2030418596
-    name: Delay
-  - hash: -698409518
-    name: Left Eye
-  - hash: 1644104444
-    name: Right Eye
+  - hash: -1355127144
+    name: LeftEye
+  - hash: -1301187610
+    name: RightEye
+  - hash: 940590942
+    name: Eye Tracking OFF
   - hash: -1963515926
     name: Fist
   - hash: -1368897710
@@ -310,220 +793,52 @@ MonoBehaviour:
     name: Thumbs up
   - hash: -1592414362
     name: RockNRoll
-  - hash: 1973040893
-    name: face_tracking_base_reset
-  - hash: 1595857794
-    name: LeftEyeLidExpandedSqueeze0
-  - hash: 672787220
-    name: LeftEyeLidExpandedSqueeze1
-  - hash: -1324303698
-    name: LeftEyeLidExpandedSqueeze2
-  - hash: -971535816
-    name: LeftEyeLidExpandedSqueeze3
-  - hash: 1483939739
-    name: LeftEyeLidExpandedSqueeze4
-  - hash: 796143373
-    name: LeftEyeLidExpandedSqueeze5
-  - hash: -1233289545
-    name: LeftEyeLidExpandedSqueeze6
-  - hash: -1048949215
-    name: LeftEyeLidExpandedSqueeze7
-  - hash: 1371886512
-    name: LeftEyeLidExpandedSqueeze8
-  - hash: 650273574
-    name: LeftEyeLidExpandedSqueeze9
-  - hash: -299298121
-    name: LeftEyeLidExpandedSqueeze10
-  - hash: -1725029855
-    name: LeftEyeLidExpandedSqueeze11
-  - hash: 2585499
-    name: LeftEyeLidExpandedSqueeze12
-  - hash: 1998603021
-    name: LeftEyeLidExpandedSqueeze13
-  - hash: -381364562
-    name: LeftEyeLidExpandedSqueeze14
-  - hash: -1639717320
-    name: LeftEyeLidExpandedSqueeze15
-  - hash: -737650467
-    name: RightEyeLidExpandedSqueeze0
-  - hash: -1559271349
-    name: RightEyeLidExpandedSqueeze1
-  - hash: 973486577
-    name: RightEyeLidExpandedSqueeze2
-  - hash: 1291913575
-    name: RightEyeLidExpandedSqueeze3
-  - hash: -748315452
-    name: RightEyeLidExpandedSqueeze4
-  - hash: -1537037230
-    name: RightEyeLidExpandedSqueeze5
-  - hash: 1030487528
-    name: RightEyeLidExpandedSqueeze6
-  - hash: 1248644478
-    name: RightEyeLidExpandedSqueeze7
-  - hash: -623652625
-    name: RightEyeLidExpandedSqueeze8
-  - hash: -1378557831
-    name: RightEyeLidExpandedSqueeze9
-  - hash: 360073297
-    name: RightEyeLidExpandedSqueeze10
-  - hash: 1651603655
-    name: RightEyeLidExpandedSqueeze11
-  - hash: -76011139
-    name: RightEyeLidExpandedSqueeze12
-  - hash: -1937827349
-    name: RightEyeLidExpandedSqueeze13
-  - hash: 303795272
-    name: RightEyeLidExpandedSqueeze14
-  - hash: 1696382174
-    name: RightEyeLidExpandedSqueeze15
-  - hash: 1137518265
-    name: LeftEyeLidExpandedSqueeze0
-  - hash: 885659183
-    name: LeftEyeLidExpandedSqueeze1
-  - hash: -1379711083
-    name: LeftEyeLidExpandedSqueeze2
-  - hash: -624658685
-    name: LeftEyeLidExpandedSqueeze3
-  - hash: 1151394464
-    name: LeftEyeLidExpandedSqueeze4
-  - hash: 866636342
-    name: LeftEyeLidExpandedSqueeze5
-  - hash: -1431403636
-    name: LeftEyeLidExpandedSqueeze6
-  - hash: -576081126
-    name: LeftEyeLidExpandedSqueeze7
-  - hash: 1293332107
-    name: LeftEyeLidExpandedSqueeze8
-  - hash: 974233117
-    name: LeftEyeLidExpandedSqueeze9
-  - hash: 1597909102
-    name: LeftEyeLidExpandedSqueeze10
-  - hash: 674830584
-    name: LeftEyeLidExpandedSqueeze11
-  - hash: -1322235582
-    name: LeftEyeLidExpandedSqueeze12
-  - hash: -969442860
-    name: LeftEyeLidExpandedSqueeze13
-  - hash: 1481895031
-    name: LeftEyeLidExpandedSqueeze14
-  - hash: 794090721
-    name: LeftEyeLidExpandedSqueeze15
-  - hash: -237802386
-    name: RightEyeLidExpandedSqueeze0
-  - hash: -2032902920
-    name: RightEyeLidExpandedSqueeze1
-  - hash: 534580546
-    name: RightEyeLidExpandedSqueeze2
-  - hash: 1759133140
-    name: RightEyeLidExpandedSqueeze3
-  - hash: -155277193
-    name: RightEyeLidExpandedSqueeze4
-  - hash: -2118543135
-    name: RightEyeLidExpandedSqueeze5
-  - hash: 414239067
-    name: RightEyeLidExpandedSqueeze6
-  - hash: 1874328013
-    name: RightEyeLidExpandedSqueeze7
-  - hash: -16194468
-    name: RightEyeLidExpandedSqueeze8
-  - hash: -2012228406
-    name: RightEyeLidExpandedSqueeze9
-  - hash: 1195077971
-    name: RightEyeLidExpandedSqueeze10
-  - hash: 809255365
-    name: RightEyeLidExpandedSqueeze11
-  - hash: -1456140161
-    name: RightEyeLidExpandedSqueeze12
-  - hash: -567140119
-    name: RightEyeLidExpandedSqueeze13
-  - hash: 1079424330
-    name: RightEyeLidExpandedSqueeze14
-  - hash: 928089564
-    name: RightEyeLidExpandedSqueeze15
-  - hash: 2109442620
-    name: LeftEyeLidExpandedSqueeze0
-  - hash: 180140714
-    name: LeftEyeLidExpandedSqueeze1
-  - hash: -1816794352
-    name: LeftEyeLidExpandedSqueeze2
-  - hash: -458040442
-    name: LeftEyeLidExpandedSqueeze3
-  - hash: 2060865061
-    name: LeftEyeLidExpandedSqueeze4
-  - hash: 231833267
-    name: LeftEyeLidExpandedSqueeze5
-  - hash: -1797771511
-    name: LeftEyeLidExpandedSqueeze6
-  - hash: -471916641
-    name: LeftEyeLidExpandedSqueeze7
-  - hash: 1935671822
-    name: LeftEyeLidExpandedSqueeze8
-  - hash: 73872024
-    name: LeftEyeLidExpandedSqueeze9
-  - hash: -1026414227
-    name: LeftEyeLidExpandedSqueeze10
-  - hash: -1244325381
-    name: LeftEyeLidExpandedSqueeze11
-  - hash: 752633921
-    name: LeftEyeLidExpandedSqueeze12
-  - hash: 1541109975
-    name: LeftEyeLidExpandedSqueeze13
-  - hash: -977277580
-    name: LeftEyeLidExpandedSqueeze14
-  - hash: -1296507422
-    name: LeftEyeLidExpandedSqueeze15
-  - hash: 811744742
-    name: RightEyeLidExpandedSqueeze0
-  - hash: 1197804912
-    name: RightEyeLidExpandedSqueeze1
-  - hash: -563323702
-    name: RightEyeLidExpandedSqueeze2
-  - hash: -1452577700
-    name: RightEyeLidExpandedSqueeze3
-  - hash: 923793919
-    name: RightEyeLidExpandedSqueeze4
-  - hash: 1074317673
-    name: RightEyeLidExpandedSqueeze5
-  - hash: -654206765
-    name: RightEyeLidExpandedSqueeze6
-  - hash: -1375295419
-    name: RightEyeLidExpandedSqueeze7
-  - hash: 1052358100
-    name: RightEyeLidExpandedSqueeze8
-  - hash: 1237222722
-    name: RightEyeLidExpandedSqueeze9
-  - hash: -1533424880
-    name: RightEyeLidExpandedSqueeze10
-  - hash: -744555642
-    name: RightEyeLidExpandedSqueeze11
-  - hash: 1251453500
-    name: RightEyeLidExpandedSqueeze12
-  - hash: 1032886954
-    name: RightEyeLidExpandedSqueeze13
-  - hash: -1544286455
-    name: RightEyeLidExpandedSqueeze14
-  - hash: -722255969
-    name: RightEyeLidExpandedSqueeze15
-  - hash: -143676432
-    name: EyesDilation0
-  - hash: -2140628122
-    name: EyesDilation1
-  - hash: 425839324
-    name: EyesDilation2
-  - hash: 1852242506
-    name: EyesDilation3
-  - hash: -268275735
-    name: EyesDilation4
-  - hash: -2029691009
-    name: EyesDilation5
-  - hash: 504106693
-    name: EyesDilation6
-  - hash: 1762344531
-    name: EyesDilation7
-  - hash: -671205085
-    name: Jaw Open Suck Blend
-  - hash: 316044071
-    name: jaw_closed_suck_neutral
+  - hash: 1613308964
+    name: Face Tracking OFF
+  - hash: -685248735
+    name: Ears
+  - hash: -304275229
+    name: Yawn OFF
+  - hash: 701550077
+    name: Yawn
+  - hash: 1553962812
+    name: Face Tracking OFF
+  - hash: 916744661
+    name: Tail Wag
+  - hash: 2066410285
+    name: Smoother
+  - hash: -960837446
+    name: MouthX0
+  - hash: -1312950228
+    name: MouthX1
+  - hash: 682928534
+    name: MouthX2
+  - hash: 1605605632
+    name: MouthX3
+  - hash: -1042871133
+    name: MouthX4
+  - hash: -1227867083
+    name: MouthX5
+  - hash: 802778511
+    name: MouthX6
+  - hash: 1490967833
+    name: MouthX7
+  - hash: 1472357361
+    name: MouthX-1
+  - hash: -825544117
+    name: MouthX-2
+  - hash: -1177812259
+    name: MouthX-3
+  - hash: 665360254
+    name: MouthX-4
+  - hash: 1353689064
+    name: MouthX-5
+  - hash: -911804846
+    name: MouthX-6
+  - hash: -1096694076
+    name: MouthX-7
+  - hash: 2066410285
+    name: Smoother
   - hash: -333127991
     name: SmileSadLeft0
   - hash: -1692144033
@@ -540,6 +855,22 @@ MonoBehaviour:
     name: SmileSadLeft6
   - hash: 1916816234
     name: SmileSadLeft7
+  - hash: -486582533
+    name: SmileSadLeft8
+  - hash: -1778882963
+    name: SmileSadLeft9
+  - hash: 261402794
+    name: SmileSadLeft10
+  - hash: 2022932540
+    name: SmileSadLeft11
+  - hash: -509947514
+    name: SmileSadLeft12
+  - hash: -1768038128
+    name: SmileSadLeft13
+  - hash: 150566067
+    name: SmileSadLeft14
+  - hash: 2147370021
+    name: SmileSadLeft15
   - hash: -1629168287
     name: SmileSadLeft-1
   - hash: 133008603
@@ -554,356 +885,26 @@ MonoBehaviour:
     name: SmileSadLeft-6
   - hash: 2005366868
     name: SmileSadLeft-7
-  - hash: -1561537166
-    name: SmileSadRight0
-  - hash: -705960476
-    name: SmileSadRight1
-  - hash: 1289925726
-    name: SmileSadRight2
-  - hash: 1004897480
-    name: SmileSadRight3
-  - hash: -1518268053
-    name: SmileSadRight4
-  - hash: -762961411
-    name: SmileSadRight5
-  - hash: 1267691591
-    name: SmileSadRight6
-  - hash: 1015562449
-    name: SmileSadRight7
-  - hash: -1038516370
-    name: SmileSadRight-1
-  - hash: 1527787220
-    name: SmileSadRight-2
-  - hash: 739712578
-    name: SmileSadRight-3
-  - hash: -1301050399
-    name: SmileSadRight-4
-  - hash: -982205577
-    name: SmileSadRight-5
-  - hash: 1551755981
-    name: SmileSadRight-6
-  - hash: 729471579
-    name: SmileSadRight-7
-  - hash: 308480224
-    name: Mouth Upper Up Left Puff Left
-  - hash: -469995672
-    name: Facetracking OFF
-  - hash: -1510857271
-    name: Mouth Upper Up Right Puff Right
-  - hash: 1276544938
-    name: Facetracking OFF
-  - hash: -897839472
-    name: MouthLowerDownLeftOverlay0
-  - hash: -1115996666
-    name: MouthLowerDownLeftOverlay1
-  - hash: 611479484
-    name: MouthLowerDownLeftOverlay2
-  - hash: 1400201002
-    name: MouthLowerDownLeftOverlay3
-  - hash: -854472055
-    name: MouthLowerDownLeftOverlay4
-  - hash: -1172899297
-    name: MouthLowerDownLeftOverlay5
-  - hash: 589278117
-    name: MouthLowerDownLeftOverlay6
-  - hash: 1410898739
-    name: MouthLowerDownLeftOverlay7
-  - hash: -995653982
-    name: MouthLowerDownLeftOverlay8
-  - hash: -1281313228
-    name: MouthLowerDownLeftOverlay9
-  - hash: 486867242
-    name: MouthLowerDownLeftOverlay10
-  - hash: 1778528700
-    name: MouthLowerDownLeftOverlay11
-  - hash: -217358330
-    name: MouthLowerDownLeftOverlay12
-  - hash: -2079567728
-    name: MouthLowerDownLeftOverlay13
-  - hash: 443073843
-    name: MouthLowerDownLeftOverlay14
-  - hash: 1836053925
-    name: MouthLowerDownLeftOverlay15
-  - hash: -1938461471
-    name: MouthLowerDownLeftOverlay-1
-  - hash: 360463707
-    name: MouthLowerDownLeftOverlay-2
-  - hash: 1652231629
-    name: MouthLowerDownLeftOverlay-3
-  - hash: -65038226
-    name: MouthLowerDownLeftOverlay-4
-  - hash: -1961318152
-    name: MouthLowerDownLeftOverlay-5
-  - hash: 303167810
-    name: MouthLowerDownLeftOverlay-6
-  - hash: 1695992276
-    name: MouthLowerDownLeftOverlay-7
-  - hash: -173419451
-    name: MouthLowerDownLeftOverlay-8
-  - hash: -2102467373
-    name: MouthLowerDownLeftOverlay-9
-  - hash: 593131683
-    name: MouthLowerDownLeftOverlay-10
-  - hash: 1415399477
-    name: MouthLowerDownLeftOverlay-11
-  - hash: -850126449
-    name: MouthLowerDownLeftOverlay-12
-  - hash: -1168955111
-    name: MouthLowerDownLeftOverlay-13
-  - hash: 607632570
-    name: MouthLowerDownLeftOverlay-14
-  - hash: 1395690540
-    name: MouthLowerDownLeftOverlay-15
-  - hash: -621352578
-    name: MouthLowerDownRightApe0
-  - hash: -1376658968
-    name: MouthLowerDownRightApe1
-  - hash: 888703058
-    name: MouthLowerDownRightApe2
-  - hash: 1140832452
-    name: MouthLowerDownRightApe3
-  - hash: -577032857
-    name: MouthLowerDownRightApe4
-  - hash: -1432609295
-    name: MouthLowerDownRightApe5
-  - hash: 865422411
-    name: MouthLowerDownRightApe6
-  - hash: 1150450909
-    name: MouthLowerDownRightApe7
-  - hash: -735223476
-    name: MouthLowerDownRightApe8
-  - hash: -1557507622
-    name: MouthLowerDownRightApe9
-  - hash: 1520911538
-    name: MouthLowerDownRightApe10
-  - hash: 765490212
-    name: MouthLowerDownRightApe11
-  - hash: -1263983202
-    name: MouthLowerDownRightApe12
-  - hash: -1012001528
-    name: MouthLowerDownRightApe13
-  - hash: 1573552299
-    name: MouthLowerDownRightApe14
-  - hash: 718123069
-    name: MouthLowerDownRightApe15
-  - hash: -875091591
-    name: MouthLowerDownRightApe-1
-  - hash: 1390311619
-    name: MouthLowerDownRightApe-2
-  - hash: 634996821
-    name: MouthLowerDownRightApe-3
-  - hash: -1145184778
-    name: MouthLowerDownRightApe-4
-  - hash: -860164768
-    name: MouthLowerDownRightApe-5
-  - hash: 1437842650
-    name: MouthLowerDownRightApe-6
-  - hash: 582257740
-    name: MouthLowerDownRightApe-7
-  - hash: -1307864611
-    name: MouthLowerDownRightApe-8
-  - hash: -989028021
-    name: MouthLowerDownRightApe-9
-  - hash: -573980272
-    name: MouthLowerDownRightApe-10
-  - hash: -1429278458
-    name: MouthLowerDownRightApe-11
-  - hash: 868720828
-    name: MouthLowerDownRightApe-12
-  - hash: 1153470506
-    name: MouthLowerDownRightApe-13
-  - hash: -626784887
-    name: MouthLowerDownRightApe-14
-  - hash: -1381812961
-    name: MouthLowerDownRightApe-15
-  - hash: -1727315467
-    name: JawX0
-  - hash: -301174429
-    name: JawX1
-  - hash: 1996824793
-    name: JawX2
-  - hash: 135247
-    name: JawX3
-  - hash: -1637448212
-    name: JawX4
-  - hash: -379472518
-    name: JawX5
-  - hash: 1885922496
-    name: JawX6
-  - hash: 124769366
-    name: JawX7
-  - hash: -1308717447
-    name: JawX-1
-  - hash: 687333315
-    name: JawX-2
-  - hash: 1609625429
-    name: JawX-3
-  - hash: -1047233802
-    name: JawX-4
-  - hash: -1231861152
-    name: JawX-5
-  - hash: 798628826
-    name: JawX-6
-  - hash: 1486695244
-    name: JawX-7
-  - hash: -560342037
-    name: TongueX0
-  - hash: -1449202819
-    name: TongueX1
-  - hash: 815250119
-    name: TongueX2
-  - hash: 1200654929
-    name: TongueX3
-  - hash: -638312462
-    name: TongueX4
-  - hash: -1359794332
-    name: TongueX5
-  - hash: 939163358
-    name: TongueX6
-  - hash: 1090342472
-    name: TongueX7
-  - hash: 1270227328
-    name: TongueX-1
-  - hash: -759205830
-    name: TongueX-2
-  - hash: -1514651476
-    name: TongueX-3
-  - hash: 1004328207
-    name: TongueX-4
-  - hash: 1289479577
-    name: TongueX-5
-  - hash: -707611613
-    name: TongueX-6
-  - hash: -1563065163
-    name: TongueX-7
-  - hash: -725847586
-    name: TongueLongStep20
-  - hash: -1548009144
-    name: TongueLongStep21
-  - hash: 984748274
-    name: TongueLongStep22
-  - hash: 1303715940
-    name: TongueLongStep23
-  - hash: -741231161
-    name: TongueLongStep24
-  - hash: -1529445039
-    name: TongueLongStep25
-  - hash: 1038079211
-    name: TongueLongStep26
-  - hash: 1255728253
-    name: TongueLongStep27
-  - hash: 1313676647
-    name: MouthUpper0
-  - hash: 961162737
-    name: MouthUpper1
-  - hash: -1606190005
-    name: MouthUpper2
-  - hash: -683389731
-    name: MouthUpper3
-  - hash: 1226889598
-    name: MouthUpper4
-  - hash: 1042803176
-    name: MouthUpper5
-  - hash: -1490110382
-    name: MouthUpper6
-  - hash: -802584380
-    name: MouthUpper7
-  - hash: -1356318131
-    name: MouthUpper-1
-  - hash: 908159991
-    name: MouthUpper-2
-  - hash: 1093032801
-    name: MouthUpper-3
-  - hash: -549269822
-    name: MouthUpper-4
-  - hash: -1471807916
-    name: MouthUpper-5
-  - hash: 827109358
-    name: MouthUpper-6
-  - hash: 1179361144
-    name: MouthUpper-7
-  - hash: -708605945
-    name: MouthUpperOverturn0
-  - hash: -1564165999
-    name: MouthUpperOverturn1
-  - hash: 1003350315
-    name: MouthUpperOverturn2
-  - hash: 1288362429
-    name: MouthUpperOverturn3
-  - hash: -760329186
-    name: MouthUpperOverturn4
-  - hash: -1515619192
-    name: MouthUpperOverturn5
-  - hash: 1017130290
-    name: MouthUpperOverturn6
-  - hash: 1269243300
-    name: MouthUpperOverturn7
-  - hash: 1226823767
-    name: MouthLowerOverturn0
-  - hash: 1041819841
-    name: MouthLowerOverturn1
-  - hash: -1492010629
-    name: MouthLowerOverturn2
-  - hash: -803829267
-    name: MouthLowerOverturn3
-  - hash: 1316101198
-    name: MouthLowerOverturn4
-  - hash: 963980504
-    name: MouthLowerOverturn5
-  - hash: -1602454174
-    name: MouthLowerOverturn6
-  - hash: -679784972
-    name: MouthLowerOverturn7
-  - hash: -156901703
-    name: MouthPout0
-  - hash: -2120028625
-    name: MouthPout1
-  - hash: 413908885
-    name: MouthPout2
-  - hash: 1873579779
-    name: MouthPout3
-  - hash: -360391021
-    name: MouthLowerInside0
-  - hash: -1652298235
-    name: MouthLowerInside1
-  - hash: 76201919
-    name: MouthLowerInside2
-  - hash: 1938657065
-    name: MouthLowerInside3
-  - hash: -303490422
-    name: MouthLowerInside4
-  - hash: -1695667684
-    name: MouthLowerInside5
-  - hash: 65502118
-    name: MouthLowerInside6
-  - hash: 1960856368
-    name: MouthLowerInside7
-  - hash: -1907767420
-    name: TongueRoll0
-  - hash: -112265454
-    name: TongueRoll1
-  - hash: 1615308456
-    name: TongueRoll2
-  - hash: 390108734
-    name: TongueRoll3
-  - hash: -1994128483
-    name: TongueRoll4
-  - hash: -31247605
-    name: TongueRoll5
-  - hash: 1730831025
-    name: TongueRoll6
-  - hash: 271405607
-    name: TongueRoll7
-  - hash: -27245489
-    name: _RESET_FX
-  - hash: -833302138
-    name: Visemes ON
-  - hash: -2123238428
-    name: Visemes OFF
-  - hash: 1397092606
-    name: No Blinks
-  - hash: 146203521
-    name: Blink
+  - hash: -415734331
+    name: SmileSadLeft-8
+  - hash: -1874897581
+    name: SmileSadLeft-9
+  - hash: -823104974
+    name: SmileSadLeft-10
+  - hash: -1174971740
+    name: SmileSadLeft-11
+  - hash: 553519902
+    name: SmileSadLeft-12
+  - hash: 1475951496
+    name: SmileSadLeft-13
+  - hash: -912413141
+    name: SmileSadLeft-14
+  - hash: -1097163075
+    name: SmileSadLeft-15
+  - hash: 2126217849
+    name: RGB_OFF
+  - hash: 189742175
+    name: RGB_ON
   - hash: -1029335495
     name: Idle
   - hash: -2057101596
@@ -936,16 +937,1103 @@ MonoBehaviour:
     name: ThumbsUp
   - hash: 4988508
     name: Fist
-  - hash: 2126217849
-    name: RGB_OFF
-  - hash: 189742175
-    name: RGB_ON
-  - hash: 1058374106
-    name: Hue_PC
-  - hash: -1759870712
-    name: RGB ON
+  - hash: 1397092606
+    name: No Blinks
+  - hash: 146203521
+    name: Blink
+  - hash: 1028141936
+    name: New State
+  - hash: -577166443
+    name: Visemes Enabled
+  - hash: -289198455
+    name: Visemes Disabled
+  - hash: -1816251625
+    name: LeftEyeLidExpandedSqueeze
+  - hash: -1245230173
+    name: Eye Tracking OFF
+  - hash: -1779518638
+    name: RightEyeLidExpandedSqueeze
+  - hash: 43857175
+    name: Eye Tracking OFF
+  - hash: 310054083
+    name: LeftEye
+  - hash: 1234271201
+    name: Eye Tracking OFF
+  - hash: 468531366
+    name: RightEye
+  - hash: 1074958319
+    name: Eye Tracking OFF
+  - hash: -1078493152
+    name: EyesDilation
+  - hash: -14593908
+    name: Eye Tracking OFF
+  - hash: -287974577
+    name: JawOpenSuck
+  - hash: 1770129291
+    name: Face Tracking OFF
+  - hash: -1992309262
+    name: CheekSuck
+  - hash: -732064735
+    name: Face Tracking OFF
+  - hash: 1694536783
+    name: MouthUpperUp
+  - hash: 1571079619
+    name: Face Tracking OFF
+  - hash: 54987526
+    name: UpperInside
+  - hash: 1101595287
+    name: Face Tracking OFF
+  - hash: -1553954465
+    name: MouthLowerDown
+  - hash: -1180794381
+    name: Face Tracking OFF
+  - hash: -502612733
+    name: LowerInside
+  - hash: -896131079
+    name: Face Tracking OFF
+  - hash: 2007145386
+    name: SmileRight
+  - hash: 1974429964
+    name: Face Tracking OFF
+  - hash: 1076133336
+    name: Pout
+  - hash: -85804851
+    name: Face Tracking OFF
+  - hash: -1517855623
+    name: SmileLeft
+  - hash: 1804829570
+    name: Face Tracking OFF
+  - hash: 946181733
+    name: Sad
+  - hash: 641262767
+    name: Face Tracking OFF
+  - hash: -1100617743
+    name: JawX
+  - hash: 457834819
+    name: Face Tracking OFF
+  - hash: 1310148374
+    name: MouthX
+  - hash: -636287009
+    name: Face Tracking OFF
+  - hash: 1758724068
+    name: MouthLowerOverlay
+  - hash: -589560281
+    name: Face Tracking OFF
+  - hash: 1888669951
+    name: PuffLeft
+  - hash: -569146606
+    name: Face Tracking OFF
+  - hash: 1638467303
+    name: UpperOverturn
+  - hash: -86620470
+    name: Face Tracking OFF
+  - hash: 1123350712
+    name: PuffRight
+  - hash: -2062190008
+    name: Face Tracking OFF
+  - hash: 505305615
+    name: LowerOverturn
+  - hash: 1655629573
+    name: Face Tracking OFF
+  - hash: 1809762301
+    name: MouthApeShape
+  - hash: 482976861
+    name: Face Tracking OFF
+  - hash: -549274352
+    name: TongueSteps
+  - hash: 1683561409
+    name: Face Tracking OFF
+  - hash: 1697238819
+    name: Tongue
+  - hash: -1155792676
+    name: Face Tracking OFF
+  - hash: 769428976
+    name: JawForward
+  - hash: 888520602
+    name: Face Tracking OFF
+  - hash: -753271261
+    name: Face Tracking OFF
+  - hash: -1488163331
+    name: EyesSad
+  - hash: 1650249155
+    name: Face Tracking OFF
+  - hash: 12804252
+    name: EyesHappy
+  - hash: -842949047
+    name: Face Tracking OFF
+  - hash: 2068207688
+    name: EyesAngry
+  - hash: 2066410285
+    name: Smoother
+  - hash: -143676432
+    name: EyesDilation0
+  - hash: -2140628122
+    name: EyesDilation1
+  - hash: 425839324
+    name: EyesDilation2
+  - hash: 1852242506
+    name: EyesDilation3
+  - hash: -268275735
+    name: EyesDilation4
+  - hash: -2029691009
+    name: EyesDilation5
+  - hash: 504106693
+    name: EyesDilation6
+  - hash: 1762344531
+    name: EyesDilation7
+  - hash: -105634878
+    name: EyesDilation8
+  - hash: -1900866732
+    name: EyesDilation9
+  - hash: 1351250903
+    name: EyesDilation10
+  - hash: 663569217
+    name: EyesDilation11
+  - hash: -1098640645
+    name: EyesDilation12
+  - hash: -914152851
+    name: EyesDilation13
+  - hash: 1474803662
+    name: EyesDilation14
+  - hash: 551585624
+    name: EyesDilation15
+  - hash: 2066410285
+    name: Smoother
+  - hash: 174362061
+    name: SmileRightPout0
+  - hash: 2103688539
+    name: SmileRightPout1
+  - hash: -462754591
+    name: SmileRightPout2
+  - hash: -1821516681
+    name: SmileRightPout3
+  - hash: 218712532
+    name: SmileRightPout4
+  - hash: 2047768898
+    name: SmileRightPout5
+  - hash: -486070024
+    name: SmileRightPout6
+  - hash: -1811933074
+    name: SmileRightPout7
+  - hash: 79627775
+    name: SmileRightPout8
+  - hash: 1941452137
+    name: SmileRightPout9
+  - hash: 136262880
+    name: SmileRightPout10
+  - hash: 2132280438
+    name: SmileRightPout11
+  - hash: -435071540
+    name: SmileRightPout12
+  - hash: -1860803238
+    name: SmileRightPout13
+  - hash: 259191033
+    name: SmileRightPout14
+  - hash: 2020982895
+    name: SmileRightPout15
+  - hash: -1720755925
+    name: SmileRightPout-1
+  - hash: 6686865
+    name: SmileRightPout-2
+  - hash: 2002860039
+    name: SmileRightPout-3
+  - hash: -385503836
+    name: SmileRightPout-4
+  - hash: -1643995854
+    name: SmileRightPout-5
+  - hash: 118213768
+    name: SmileRightPout-6
+  - hash: 1879899166
+    name: SmileRightPout-7
+  - hash: -525082225
+    name: SmileRightPout-8
+  - hash: -1749757671
+    name: SmileRightPout-9
+  - hash: 1493059896
+    name: SmileRightPout-10
+  - hash: 804878766
+    name: SmileRightPout-11
+  - hash: -1225775084
+    name: SmileRightPout-12
+  - hash: -1040770942
+    name: SmileRightPout-13
+  - hash: 1603505441
+    name: SmileRightPout-14
+  - hash: 680836535
+    name: SmileRightPout-15
+  - hash: 2066410285
+    name: Smoother
+  - hash: -333127991
+    name: SmileSadLeft0
+  - hash: -1692144033
+    name: SmileSadLeft1
+  - hash: 36356069
+    name: SmileSadLeft2
+  - hash: 1965920115
+    name: SmileSadLeft3
+  - hash: -347530544
+    name: SmileSadLeft4
+  - hash: -1672598970
+    name: SmileSadLeft5
+  - hash: 88570876
+    name: SmileSadLeft6
+  - hash: 1916816234
+    name: SmileSadLeft7
+  - hash: -486582533
+    name: SmileSadLeft8
+  - hash: -1778882963
+    name: SmileSadLeft9
+  - hash: 261402794
+    name: SmileSadLeft10
+  - hash: 2022932540
+    name: SmileSadLeft11
+  - hash: -509947514
+    name: SmileSadLeft12
+  - hash: -1768038128
+    name: SmileSadLeft13
+  - hash: 150566067
+    name: SmileSadLeft14
+  - hash: 2147370021
+    name: SmileSadLeft15
+  - hash: -1629168287
+    name: SmileSadLeft-1
+  - hash: 133008603
+    name: SmileSadLeft-2
+  - hash: 1894431821
+    name: SmileSadLeft-3
+  - hash: -292673042
+    name: SmileSadLeft-4
+  - hash: -1719068296
+    name: SmileSadLeft-5
+  - hash: 8407234
+    name: SmileSadLeft-6
+  - hash: 2005366868
+    name: SmileSadLeft-7
+  - hash: -415734331
+    name: SmileSadLeft-8
+  - hash: -1874897581
+    name: SmileSadLeft-9
+  - hash: -823104974
+    name: SmileSadLeft-10
+  - hash: -1174971740
+    name: SmileSadLeft-11
+  - hash: 553519902
+    name: SmileSadLeft-12
+  - hash: 1475951496
+    name: SmileSadLeft-13
+  - hash: -912413141
+    name: SmileSadLeft-14
+  - hash: -1097163075
+    name: SmileSadLeft-15
+  - hash: 2066410285
+    name: Smoother
+  - hash: -1727315467
+    name: JawX0
+  - hash: -301174429
+    name: JawX1
+  - hash: 1996824793
+    name: JawX2
+  - hash: 135247
+    name: JawX3
+  - hash: -1637448212
+    name: JawX4
+  - hash: -379472518
+    name: JawX5
+  - hash: 1885922496
+    name: JawX6
+  - hash: 124769366
+    name: JawX7
+  - hash: -1308717447
+    name: JawX-1
+  - hash: 687333315
+    name: JawX-2
+  - hash: 1609625429
+    name: JawX-3
+  - hash: -1047233802
+    name: JawX-4
+  - hash: -1231861152
+    name: JawX-5
+  - hash: 798628826
+    name: JawX-6
+  - hash: 1486695244
+    name: JawX-7
+  - hash: 2066410285
+    name: Smoother
+  - hash: -960837446
+    name: MouthX0
+  - hash: -1312950228
+    name: MouthX1
+  - hash: 682928534
+    name: MouthX2
+  - hash: 1605605632
+    name: MouthX3
+  - hash: -1042871133
+    name: MouthX4
+  - hash: -1227867083
+    name: MouthX5
+  - hash: 802778511
+    name: MouthX6
+  - hash: 1490967833
+    name: MouthX7
+  - hash: 1472357361
+    name: MouthX-1
+  - hash: -825544117
+    name: MouthX-2
+  - hash: -1177812259
+    name: MouthX-3
+  - hash: 665360254
+    name: MouthX-4
+  - hash: 1353689064
+    name: MouthX-5
+  - hash: -911804846
+    name: MouthX-6
+  - hash: -1096694076
+    name: MouthX-7
+  - hash: 2066410285
+    name: Smoother
+  - hash: 1616719195
+    name: MouthLowerOverlay0
+  - hash: 391781837
+    name: MouthLowerOverlay1
+  - hash: -1907143561
+    name: MouthLowerOverlay2
+  - hash: -111903519
+    name: MouthLowerOverlay3
+  - hash: 1731258690
+    name: MouthLowerOverlay4
+  - hash: 272095700
+    name: MouthLowerOverlay5
+  - hash: -1992390546
+    name: MouthLowerOverlay6
+  - hash: -29771528
+    name: MouthLowerOverlay7
+  - hash: 2066410285
+    name: Smoother
+  - hash: -82171926
+    name: PuffLeftUpperOverturn0
+  - hash: -1944250500
+    name: PuffLeftUpperOverturn1
+  - hash: 353650374
+    name: PuffLeftUpperOverturn2
+  - hash: 1645442640
+    name: PuffLeftUpperOverturn3
+  - hash: -59251725
+    name: PuffLeftUpperOverturn4
+  - hash: -1955540123
+    name: PuffLeftUpperOverturn5
+  - hash: 309953247
+    name: PuffLeftUpperOverturn6
+  - hash: 1702801993
+    name: PuffLeftUpperOverturn7
+  - hash: 1016369898
+    name: PuffLeftUpperOverturn-1
+  - hash: -1516387504
+    name: PuffLeftUpperOverturn-2
+  - hash: -761596986
+    name: PuffLeftUpperOverturn-3
+  - hash: 1291740773
+    name: PuffLeftUpperOverturn-4
+  - hash: 1006196467
+    name: PuffLeftUpperOverturn-5
+  - hash: -1561327799
+    name: PuffLeftUpperOverturn-6
+  - hash: -705218593
+    name: PuffLeftUpperOverturn-7
+  - hash: 2066410285
+    name: Smoother
+  - hash: -452494848
+    name: PuffRightLowerOverturn0
+  - hash: -1845474666
+    name: PuffRightLowerOverturn1
+  - hash: 185146156
+    name: PuffRightLowerOverturn2
+  - hash: 2081303482
+    name: PuffRightLowerOverturn3
+  - hash: -496320999
+    name: PuffRightLowerOverturn4
+  - hash: -1787982193
+    name: PuffRightLowerOverturn5
+  - hash: 207937333
+    name: PuffRightLowerOverturn6
+  - hash: 2070146979
+    name: PuffRightLowerOverturn7
+  - hash: 2085979345
+    name: PuffRightLowerOverturn-1
+  - hash: -446900885
+    name: PuffRightLowerOverturn-2
+  - hash: -1839471107
+    name: PuffRightLowerOverturn-3
+  - hash: 205484126
+    name: PuffRightLowerOverturn-4
+  - hash: 2067284168
+    name: PuffRightLowerOverturn-5
+  - hash: -500100750
+    name: PuffRightLowerOverturn-6
+  - hash: -1791614492
+    name: PuffRightLowerOverturn-7
+  - hash: 2066410285
+    name: Smoother
+  - hash: 2097699090
+    name: MouthApeShape0
+  - hash: 168782212
+    name: MouthApeShape1
+  - hash: -1828308930
+    name: MouthApeShape2
+  - hash: -469694296
+    name: MouthApeShape3
+  - hash: 2053479691
+    name: MouthApeShape4
+  - hash: 224570781
+    name: MouthApeShape5
+  - hash: -1804862425
+    name: MouthApeShape6
+  - hash: -479408975
+    name: MouthApeShape7
+  - hash: 2066410285
+    name: Smoother
+  - hash: 2126790814
+    name: TongueSteps0
+  - hash: 163803144
+    name: TongueSteps1
+  - hash: -1865801294
+    name: TongueSteps2
+  - hash: -405991132
+    name: TongueSteps3
+  - hash: 2041152647
+    name: TongueSteps4
+  - hash: 246330385
+    name: TongueSteps5
+  - hash: -1750604373
+    name: TongueSteps6
+  - hash: -526330563
+    name: TongueSteps7
+  - hash: 1803155880
+    name: TongueSteps-1
+  - hash: -227497966
+    name: TongueSteps-2
+  - hash: -2055759740
+    name: TongueSteps-3
+  - hash: 454233383
+    name: TongueSteps-4
+  - hash: 1813265841
+    name: TongueSteps-5
+  - hash: -182621173
+    name: TongueSteps-6
+  - hash: -2112201571
+    name: TongueSteps-7
+  - hash: 2066410285
+    name: Smoother
+  - hash: -560342037
+    name: TongueX0
+  - hash: -1449202819
+    name: TongueX1
+  - hash: 815250119
+    name: TongueX2
+  - hash: 1200654929
+    name: TongueX3
+  - hash: -638312462
+    name: TongueX4
+  - hash: -1359794332
+    name: TongueX5
+  - hash: 939163358
+    name: TongueX6
+  - hash: 1090342472
+    name: TongueX7
+  - hash: 1270227328
+    name: TongueX-1
+  - hash: -759205830
+    name: TongueX-2
+  - hash: -1514651476
+    name: TongueX-3
+  - hash: 1004328207
+    name: TongueX-4
+  - hash: 1289479577
+    name: TongueX-5
+  - hash: -707611613
+    name: TongueX-6
+  - hash: -1563065163
+    name: TongueX-7
+  - hash: 2066410285
+    name: Smoother
+  - hash: -916127109
+    name: TongueY0
+  - hash: -1100860691
+    name: TongueY1
+  - hash: 661349207
+    name: TongueY2
+  - hash: 1349276609
+    name: TongueY3
+  - hash: -838285726
+    name: TongueY4
+  - hash: -1190136076
+    name: TongueY5
+  - hash: 537306958
+    name: TongueY6
+  - hash: 1459722200
+    name: TongueY7
+  - hash: -1146204643
+    name: TongueY-1
+  - hash: 581377959
+    name: TongueY-2
+  - hash: 1436561201
+    name: TongueY-3
+  - hash: -876299630
+    name: TongueY-4
+  - hash: -1128035836
+    name: TongueY-5
+  - hash: 634051518
+    name: TongueY-6
+  - hash: 1389226792
+    name: TongueY-7
+  - hash: 2066410285
+    name: Smoother
+  - hash: 1229611071
+    name: JawForward0
+  - hash: 1045254313
+    name: JawForward1
+  - hash: -1488715501
+    name: JawForward2
+  - hash: -800902779
+    name: JawForward3
+  - hash: 1311220774
+    name: JawForward4
+  - hash: 958436528
+    name: JawForward5
+  - hash: -1607875318
+    name: JawForward6
+  - hash: -684788324
+    name: JawForward7
   autoFootsteps: 1
-  autoLocomotion: 1
+  autoLocomotion: 0
+  collider_head:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_torso:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_footR:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_footL:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_handR:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_handL:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerIndexL:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerMiddleL:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerRingL:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerLittleL:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerIndexR:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerMiddleR:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerRingR:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  collider_fingerLittleR:
+    isMirrored: 1
+    state: 0
+    transform: {fileID: 0}
+    radius: 0
+    height: 0
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &1860092140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5009385015451488331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  integrationType: 1
+  rootTransform: {fileID: 3195023798303704806}
+  ignoreTransforms: []
+  endpointPosition: {x: 0, y: 0, z: 0}
+  multiChildType: 0
+  pull: 0.078
+  pullCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spring: 0.7
+  springCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.044294458
+      outSlope: -0.044294458
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.040799975
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stiffness: 0
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravity: -0
+  gravityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravityFalloff: 0
+  gravityFalloffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  immobileType: 1
+  immobile: 0.232
+  immobileCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowCollision: 1
+  radius: 0.01
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliders: []
+  limitType: 1
+  maxAngleX: 153.84268
+  maxAngleXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxAngleZ: 45
+  maxAngleZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotation: {x: 0, y: 0, z: 0}
+  limitRotationXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationYCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowGrabbing: 1
+  allowPosing: 1
+  grabMovement: 0.5
+  maxStretch: 0
+  maxStretchCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isAnimated: 1
+  parameter: 
+  showGizmos: 1
+  boneOpacity: 0.5
+  limitOpacity: 0.5
+--- !u!114 &219598141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5521545927734639272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  integrationType: 1
+  rootTransform: {fileID: 1321391757077232894}
+  ignoreTransforms: []
+  endpointPosition: {x: 0, y: 0, z: 0}
+  multiChildType: 0
+  pull: 0.032
+  pullCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spring: 0.63699996
+  springCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stiffness: 0
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravity: -0
+  gravityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravityFalloff: 0
+  gravityFalloffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  immobileType: 1
+  immobile: 0.303
+  immobileCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowCollision: 1
+  radius: 0.020000005
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.05
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliders: []
+  limitType: 1
+  maxAngleX: 180
+  maxAngleXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxAngleZ: 45
+  maxAngleZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotation: {x: 0, y: 0, z: 0}
+  limitRotationXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationYCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowGrabbing: 1
+  allowPosing: 1
+  grabMovement: 0.5
+  maxStretch: 0
+  maxStretchCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isAnimated: 1
+  parameter: 
+  showGizmos: 1
+  boneOpacity: 0.5
+  limitOpacity: 0.5
+--- !u!114 &675610293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7962836814324759549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1661641543, guid: 2a2c05204084d904aa4945ccff20d8e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  integrationType: 1
+  rootTransform: {fileID: 6442918705511835094}
+  ignoreTransforms: []
+  endpointPosition: {x: 0, y: 0, z: 0}
+  multiChildType: 0
+  pull: 0.032
+  pullCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spring: 0.63699996
+  springCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stiffness: 0
+  stiffnessCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravity: -0
+  gravityCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  gravityFalloff: 0
+  gravityFalloffCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  immobileType: 1
+  immobile: 0.303
+  immobileCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowCollision: 1
+  radius: 0.019999994
+  radiusCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -0.050073482
+      outSlope: -0.050073482
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.04807849
+    - serializedVersion: 3
+      time: 0.4467831
+      value: 0.4738978
+      inSlope: 1.3367634
+      outSlope: 1.3367634
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  colliders: []
+  limitType: 1
+  maxAngleX: 180
+  maxAngleXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxAngleZ: 45
+  maxAngleZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotation: {x: 0, y: 0, z: 0}
+  limitRotationXCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationYCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  limitRotationZCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  allowGrabbing: 1
+  allowPosing: 1
+  grabMovement: 0.5
+  maxStretch: 0
+  maxStretchCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isAnimated: 1
+  parameter: 
+  showGizmos: 1
+  boneOpacity: 0.5
+  limitOpacity: 0.5
 --- !u!1001 &3736137268315094553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1058,6 +2146,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 6e12e58968723864a8031d4abb6d7de4, type: 2}
+    - target: {fileID: 1630794972795428178, guid: 147f2aa517d1bd14093708766e5a6555,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 168
+      objectReference: {fileID: 0}
     - target: {fileID: 4109815365635470557, guid: 147f2aa517d1bd14093708766e5a6555,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1071,6 +2164,60 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3736137268315094553}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7962836814324759549 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2497033889701296668, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6442918705511835094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7687843995371985871, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5521545927734639272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -37975170305735503, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1321391757077232894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6804961294958771481, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &61213621438182752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5548412226312336519, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4159143531013768360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 747969231759637169, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3937424233296752764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8827645198878241179, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5414480124152194094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -505117906631796169, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3184642077830206840 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -6923314570856486047, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6283189230573717808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1951410641895098583, guid: 147f2aa517d1bd14093708766e5a6555,
@@ -1080,6 +2227,42 @@ Transform:
 --- !u!4 &9038033913274453767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3551960246506442466, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4480325273055787608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8217876255669418943, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3127195543184127960 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1783261401073600961, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4158255469869383758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8472262257245995433, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4142309500015546528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8456320255698669895, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5009385015451488331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -694253436536721838, guid: 147f2aa517d1bd14093708766e5a6555,
+    type: 3}
+  m_PrefabInstance: {fileID: 3736137268315094553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3195023798303704806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2273873864755460351, guid: 147f2aa517d1bd14093708766e5a6555,
     type: 3}
   m_PrefabInstance: {fileID: 3736137268315094553}
   m_PrefabAsset: {fileID: 0}

@@ -13,15 +13,23 @@ MonoBehaviour:
   m_Name: Para VRCFT Kita'vali
   m_EditorClassIdentifier: 
   parameters:
+  - name: RGB
+    valueType: 2
+    saved: 1
+    defaultValue: 0
   - name: FaceTracking
     valueType: 2
     saved: 1
-    defaultValue: 1
+    defaultValue: 0
   - name: EyeTracking
     valueType: 2
     saved: 1
-    defaultValue: 1
-  - name: RGB
+    defaultValue: 0
+  - name: EyeDilationEnable
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: VisemesEnable
     valueType: 2
     saved: 1
     defaultValue: 0
@@ -29,22 +37,14 @@ MonoBehaviour:
     valueType: 1
     saved: 0
     defaultValue: 0
-  - name: EyesY
-    valueType: 1
-    saved: 0
-    defaultValue: 0
   - name: LeftEyeX
     valueType: 1
     saved: 0
     defaultValue: 0
-  - name: VisemesEnable
-    valueType: 2
-    saved: 1
-    defaultValue: 1
-  - name: EyeDilationEnable
-    valueType: 2
-    saved: 1
-    defaultValue: 1
+  - name: EyesY
+    valueType: 1
+    saved: 0
+    defaultValue: 0
   - name: LeftEyeLidExpandedSqueeze
     valueType: 1
     saved: 0
@@ -85,6 +85,38 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 0
+  - name: MouthX1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthX2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthX4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthXNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation8
+    valueType: 2
+    saved: 0
+    defaultValue: 0
   - name: SmileRightPout1
     valueType: 2
     saved: 0
@@ -118,22 +150,6 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
   - name: JawXNegative
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthX1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthX2
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthX4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: MouthXNegative
     valueType: 2
     saved: 0
     defaultValue: 0
@@ -209,11 +225,11 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 1
-  - name: TongueX2
+  - name: TongueX1
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: TongueX1
+  - name: TongueX2
     valueType: 2
     saved: 0
     defaultValue: 0
@@ -241,7 +257,7 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: JawForward1
+  - name: JawForward4
     valueType: 2
     saved: 0
     defaultValue: 0
@@ -249,23 +265,19 @@ MonoBehaviour:
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: JawForward4
+  - name: JawForward1
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: EyesDilation4
+  - name: JawX8
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: EyesDilation2
+  - name: MouthX8
     valueType: 2
     saved: 0
     defaultValue: 0
-  - name: EyesDilation1
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-  - name: EyesDilation8
+  - name: MouthApeShapeNegative
     valueType: 2
     saved: 0
     defaultValue: 0
