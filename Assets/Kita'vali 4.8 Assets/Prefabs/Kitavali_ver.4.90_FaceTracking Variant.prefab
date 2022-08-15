@@ -5335,8 +5335,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7283090431668044756}
   - component: {fileID: 3743213654382942638}
-  - component: {fileID: 1826645502}
   - component: {fileID: 1826645501}
+  - component: {fileID: 8901763300019798628}
   m_Layer: 0
   m_Name: Kitavali_ver.4.90_FaceTracking Variant
   m_TagString: Untagged
@@ -5382,7 +5382,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1826645502
+--- !u!114 &1826645501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7951505932971579758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1427037861, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchedFromSDKPipeline: 0
+  completedSDKPipeline: 0
+  blueprintId: 
+  contentType: 0
+  assetBundleUnityVersion: 
+  fallbackStatus: 1
+--- !u!114 &8901763300019798628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5398,13 +5416,28 @@ MonoBehaviour:
   ViewPosition: {x: 0, y: 0.5443426, z: 0.03428053}
   Animations: 0
   ScaleIPD: 1
-  lipSync: 4
+  lipSync: 3
   lipSyncJawBone: {fileID: 0}
   lipSyncJawClosed: {x: 0, y: 0, z: 0, w: 1}
   lipSyncJawOpen: {x: 0, y: 0, z: 0, w: 1}
-  VisemeSkinnedMesh: {fileID: 0}
+  VisemeSkinnedMesh: {fileID: 8374929726096374125}
   MouthOpenBlendShapeName: Facial_Blends.Jaw_Down
-  VisemeBlendShapes: []
+  VisemeBlendShapes:
+  - vrc.v_sil
+  - vrc.v_pp
+  - vrc.v_ff
+  - vrc.v_th
+  - vrc.v_dd
+  - vrc.v_kk
+  - vrc.v_ch
+  - vrc.v_ss
+  - vrc.v_nn
+  - vrc.v_rr
+  - vrc.v_aa
+  - vrc.v_e
+  - vrc.v_ih
+  - vrc.v_oh
+  - vrc.v_ou
   unityVersion: 2019.4.31f1
   portraitCameraPositionOffset: {x: 0, y: 0, z: 0}
   portraitCameraRotationOffset: {x: 0, y: 1, z: 0, w: -0.00000004371139}
@@ -5439,7 +5472,7 @@ MonoBehaviour:
       linked: 1
       left: {x: 0, y: 0.21643962, z: 0, w: 0.976296}
       right: {x: 0, y: 0.21643962, z: 0, w: 0.976296}
-    eyelidType: 0
+    eyelidType: 2
     upperLeftEyelid: {fileID: 0}
     upperRightEyelid: {fileID: 0}
     lowerLeftEyelid: {fileID: 0}
@@ -5480,8 +5513,8 @@ MonoBehaviour:
         linked: 1
         left: {x: 0, y: 0, z: 0, w: 0}
         right: {x: 0, y: 0, z: 0, w: 0}
-    eyelidsSkinnedMesh: {fileID: 0}
-    eyelidsBlendshapes: 
+    eyelidsSkinnedMesh: {fileID: 8374929726096374125}
+    eyelidsBlendshapes: 140000001500000016000000
   customizeAnimationLayers: 1
   baseAnimationLayers:
   - isEnabled: 0
@@ -5544,6 +5577,10 @@ MonoBehaviour:
     name: RightEye
   - hash: 940590942
     name: Eye Tracking OFF
+  - hash: 1204468265
+    name: OSCmooth_Local
+  - hash: 1841625957
+    name: OSCmooth_Net
   - hash: -1963515926
     name: Fist
   - hash: -1368897710
@@ -5588,36 +5625,6 @@ MonoBehaviour:
     name: Face Tracking OFF
   - hash: 916744661
     name: Tail Wag
-  - hash: -960837446
-    name: MouthX0
-  - hash: -1312950228
-    name: MouthX1
-  - hash: 682928534
-    name: MouthX2
-  - hash: 1605605632
-    name: MouthX3
-  - hash: -1042871133
-    name: MouthX4
-  - hash: -1227867083
-    name: MouthX5
-  - hash: 802778511
-    name: MouthX6
-  - hash: 1490967833
-    name: MouthX7
-  - hash: 1472357361
-    name: MouthX-1
-  - hash: -825544117
-    name: MouthX-2
-  - hash: -1177812259
-    name: MouthX-3
-  - hash: 665360254
-    name: MouthX-4
-  - hash: 1353689064
-    name: MouthX-5
-  - hash: -911804846
-    name: MouthX-6
-  - hash: -1096694076
-    name: MouthX-7
   - hash: -333127991
     name: SmileSadLeft0
   - hash: -1692144033
@@ -5680,6 +5687,40 @@ MonoBehaviour:
     name: SmileSadLeft-14
   - hash: -1097163075
     name: SmileSadLeft-15
+  - hash: -960837446
+    name: MouthX0
+  - hash: -1312950228
+    name: MouthX1
+  - hash: 682928534
+    name: MouthX2
+  - hash: 1605605632
+    name: MouthX3
+  - hash: -1042871133
+    name: MouthX4
+  - hash: -1227867083
+    name: MouthX5
+  - hash: 802778511
+    name: MouthX6
+  - hash: 1490967833
+    name: MouthX7
+  - hash: 1472357361
+    name: MouthX-1
+  - hash: -825544117
+    name: MouthX-2
+  - hash: -1177812259
+    name: MouthX-3
+  - hash: 665360254
+    name: MouthX-4
+  - hash: 1353689064
+    name: MouthX-5
+  - hash: -911804846
+    name: MouthX-6
+  - hash: -1096694076
+    name: MouthX-7
+  - hash: 1204468265
+    name: OSCmooth_Local
+  - hash: 1841625957
+    name: OSCmooth_Net
   - hash: 2126217849
     name: RGB_OFF
   - hash: 189742175
@@ -5716,30 +5757,36 @@ MonoBehaviour:
     name: ThumbsUp
   - hash: 4988508
     name: Fist
-  - hash: 1397092606
-    name: No Blinks
-  - hash: 146203521
-    name: Blink
-  - hash: -1816251625
-    name: LeftEyeLidExpandedSqueeze
-  - hash: -1245230173
+  - hash: -687113065
+    name: Face Tracking OFF
+  - hash: 1689785369
+    name: Face Tracing ON - Visemes
+  - hash: 119505331
+    name: Face Tracking ON
+  - hash: -2051138140
     name: Eye Tracking OFF
-  - hash: -1779518638
-    name: RightEyeLidExpandedSqueeze
-  - hash: 43857175
-    name: Eye Tracking OFF
-  - hash: -970923650
-    name: LeftEye
-  - hash: 1074958319
-    name: Eye Tracking OFF
-  - hash: -1360417670
-    name: RightEye
-  - hash: 1234271201
-    name: Eye Tracking OFF
-  - hash: -1078493152
-    name: EyesDilation
-  - hash: -14593908
-    name: Eye Tracking OFF
+  - hash: -627276800
+    name: Eye Tracking ON
+  - hash: -1256332372
+    name: Eyes Dilation OFF
+  - hash: -862099985
+    name: Eyes Dilation ON
+  - hash: 705260183
+    name: FaceTracking
+  - hash: 1857846540
+    name: Eye Tracking
+  - hash: -753271261
+    name: Face Tracking OFF
+  - hash: -1488163331
+    name: EyesSad
+  - hash: 1650249155
+    name: Face Tracking OFF
+  - hash: 12804252
+    name: EyesHappy
+  - hash: -842949047
+    name: Face Tracking OFF
+  - hash: 2068207688
+    name: EyesAngry
   - hash: -143676432
     name: EyesDilation0
   - hash: -2140628122
@@ -5772,22 +5819,6 @@ MonoBehaviour:
     name: EyesDilation14
   - hash: 551585624
     name: EyesDilation15
-  - hash: 1656634418
-    name: JawOpenSuck
-  - hash: 1086492861
-    name: Face Tracking OFF
-  - hash: -674394621
-    name: MouthUpperUpUpperInside
-  - hash: -604516084
-    name: Face Tracking OFF
-  - hash: 1647691003
-    name: MouthLowerDownLowerInside
-  - hash: 1400258931
-    name: Face Tracking OFF
-  - hash: -478692940
-    name: SmileRightPout
-  - hash: 1239349790
-    name: Face Tracking OFF
   - hash: 174362061
     name: SmileRightPout0
   - hash: 2103688539
@@ -5850,10 +5881,6 @@ MonoBehaviour:
     name: SmileRightPout-14
   - hash: 680836535
     name: SmileRightPout-15
-  - hash: -358699551
-    name: SmileSadLeft
-  - hash: 1656036364
-    name: Face Tracking OFF
   - hash: -333127991
     name: SmileSadLeft0
   - hash: -1692144033
@@ -5916,10 +5943,6 @@ MonoBehaviour:
     name: SmileSadLeft-14
   - hash: -1097163075
     name: SmileSadLeft-15
-  - hash: -1100617743
-    name: JawX
-  - hash: 457834819
-    name: Face Tracking OFF
   - hash: -1727315467
     name: JawX0
   - hash: -301174429
@@ -5950,10 +5973,6 @@ MonoBehaviour:
     name: JawX-6
   - hash: 1486695244
     name: JawX-7
-  - hash: 1310148374
-    name: MouthX
-  - hash: -636287009
-    name: Face Tracking OFF
   - hash: -960837446
     name: MouthX0
   - hash: -1312950228
@@ -5984,10 +6003,6 @@ MonoBehaviour:
     name: MouthX-6
   - hash: -1096694076
     name: MouthX-7
-  - hash: 1758724068
-    name: MouthLowerOverlay
-  - hash: -589560281
-    name: Face Tracking OFF
   - hash: 1616719195
     name: MouthLowerOverlay0
   - hash: 391781837
@@ -6004,10 +6019,6 @@ MonoBehaviour:
     name: MouthLowerOverlay6
   - hash: -29771528
     name: MouthLowerOverlay7
-  - hash: -348012474
-    name: PuffLeftUpperOverturn
-  - hash: -1491923750
-    name: Face Tracking OFF
   - hash: -82171926
     name: PuffLeftUpperOverturn0
   - hash: -1944250500
@@ -6038,10 +6049,6 @@ MonoBehaviour:
     name: PuffLeftUpperOverturn-6
   - hash: -705218593
     name: PuffLeftUpperOverturn-7
-  - hash: -199907690
-    name: PuffRightLowerOverturn
-  - hash: 2094767931
-    name: Face Tracking OFF
   - hash: -452494848
     name: PuffRightLowerOverturn0
   - hash: -1845474666
@@ -6072,10 +6079,6 @@ MonoBehaviour:
     name: PuffRightLowerOverturn-6
   - hash: -1791614492
     name: PuffRightLowerOverturn-7
-  - hash: 1809762301
-    name: MouthApeShape
-  - hash: 482976861
-    name: Face Tracking OFF
   - hash: 2097699090
     name: MouthApeShape0
   - hash: 168782212
@@ -6092,10 +6095,6 @@ MonoBehaviour:
     name: MouthApeShape6
   - hash: -479408975
     name: MouthApeShape7
-  - hash: -549274352
-    name: TongueSteps
-  - hash: 1683561409
-    name: Face Tracking OFF
   - hash: 2126790814
     name: TongueSteps0
   - hash: 163803144
@@ -6126,10 +6125,6 @@ MonoBehaviour:
     name: TongueSteps-6
   - hash: -2112201571
     name: TongueSteps-7
-  - hash: 1697238819
-    name: Tongue
-  - hash: -1155792676
-    name: Face Tracking OFF
   - hash: -560342037
     name: TongueX0
   - hash: -1449202819
@@ -6190,10 +6185,6 @@ MonoBehaviour:
     name: TongueY-6
   - hash: 1389226792
     name: TongueY-7
-  - hash: 769428976
-    name: JawForward
-  - hash: 888520602
-    name: Face Tracking OFF
   - hash: 1229611071
     name: JawForward0
   - hash: 1045254313
@@ -6210,36 +6201,26 @@ MonoBehaviour:
     name: JawForward6
   - hash: -684788324
     name: JawForward7
-  - hash: -1391400824
-    name: vrc_v_sil
-  - hash: 237323969
-    name: vrc_v_aa
-  - hash: 1171234023
-    name: vrc_v_ch
-  - hash: 54019595
-    name: vrc_v_dd
-  - hash: -154581162
-    name: vrc_v_e
-  - hash: -553630299
-    name: vrc_v_ff
-  - hash: -1088392083
-    name: vrc_v_ih
-  - hash: 337594197
-    name: vrc_v_kk
-  - hash: 419579807
-    name: vrc_v_nn
-  - hash: -377826325
-    name: vrc_v_oh
-  - hash: -1971536078
-    name: vrc_v_ou
-  - hash: 927745315
-    name: vrc_v_pp
-  - hash: -344701299
-    name: vrc_v_rr
-  - hash: -2056763558
-    name: vrc_v_ss
-  - hash: 1078728817
-    name: vrc_v_th
+  - hash: -1996605929
+    name: TongueRoll0
+  - hash: -457087
+    name: TongueRoll1
+  - hash: 1727027003
+    name: TongueRoll2
+  - hash: 301426605
+    name: TongueRoll3
+  - hash: -1886129650
+    name: TongueRoll4
+  - hash: -124468584
+    name: TongueRoll5
+  - hash: 1637716770
+    name: TongueRoll6
+  - hash: 379233204
+    name: TongueRoll7
+  - hash: 1204468265
+    name: OSCmooth_Local
+  - hash: 1841625957
+    name: OSCmooth_Net
   autoFootsteps: 1
   autoLocomotion: 1
   collider_head:
@@ -6354,24 +6335,6 @@ MonoBehaviour:
     height: 0
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
---- !u!114 &1826645501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7951505932971579758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1427037861, guid: 4ecd63eff847044b68db9453ce219299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  launchedFromSDKPipeline: 0
-  completedSDKPipeline: 0
-  blueprintId: 
-  contentType: 0
-  assetBundleUnityVersion: 
-  fallbackStatus: 1
 --- !u!1 &7972067371643076504
 GameObject:
   m_ObjectHideFlags: 0
