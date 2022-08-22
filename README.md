@@ -12,16 +12,15 @@ VRC Face Tracking Unity Demo setup for [VRCFaceTracking](https://github.com/bena
 
 ## Setup Order:
 1. VRCSDK
-2. DynamicBones
-3. Standard [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) or my [Custom Poiyomi Audio Link](https://github.com/Adjerry91/PoiyomiToonShader/releases) Version 
-4. Optional [AV3Emulator](https://github.com/lyuma/Av3Emulator/releases) (Emulator has to be disabled before uploading)
-5. Optional [Audio Link](https://github.com/llealloo/vrc-udon-audio-link/releases)
-6. Optional [VRCFacetracking Binary Parameter Tool](https://github.com/regzo2/BinaryParameterTool/releases) (Used to create the booleon state machines)
-7. Import [VRCFaceTracking-UnityDemo](https://github.com/Adjerry91/VRCFaceTracking-UnityDemo/releases)
+2. Standard [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) or my [Custom Poiyomi Audio Link](https://github.com/Adjerry91/PoiyomiToonShader/releases) Version 
+3. Recommended [AV3Emulator](https://github.com/lyuma/Av3Emulator/releases) (Testing in unity)
+5. Recommended [VRLABS Gesture Manager](https://github.com/VRLabs/Avatars-3.0-Manager/releases) (Merging Templates)
+4. Optional [Audio Link](https://github.com/llealloo/vrc-udon-audio-link/releases) (Testing Audio Link in Unity)
+5. Optional [VRCFacetracking Binary Parameter Tool](https://github.com/regzo2/BinaryParameterTool/releases) (Used to create the booleon float drive and smoothing state machines)
+6. Import [VRCFaceTracking-UnityDemo](https://github.com/Adjerry91/VRCFaceTracking-UnityDemo/releases)
 
 ## Face Tracking Animation Tips:
 
-* Modification to the thresholds may be needed for some animation sensitivity
-* Do not mix write defaults on with write default off as it will cause undesirable animations. These animation are require to run with write defaults on.
-* When using write defaults off the animator works from top to bottom. Reset layer need to happen before other layers (at the top). The reset layer is to drive the animations to default state after animations.
+* Modification to the thresholds may be needed for some animation sensitivity for different faces
+*	:warning: There is bug on older version of the template that causes animator crashes, severe lag with the avatar to you and others. This is caused when there is many blend trees referencing the _Do_Nothing animation, the newest template v3.1.4 and higher . 
 
