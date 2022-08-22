@@ -20,6 +20,7 @@ namespace OSCTools.OSCmooth
         private OSCmoothParameter _basisConfigurationParameter;
         private bool _showParameters = true;
         private bool _showGlobalConfiguration = false;
+        private bool _writeDefaults = false;
         private Vector2 paramMenuScroll;
 
         readonly private string[] _animatorSelection = new string[]
@@ -29,12 +30,13 @@ namespace OSCTools.OSCmooth
 
         readonly private string[] oscmBlacklist = new string[]
         {
-            "OSCm_", "1Set", "IsLocal"
+            "OSCm_", "IsLocal", "Smooth", "Proxy", "_Float", "_Normalizer", "_FTI"
         };
 
         [MenuItem("Tools/OSCmooth")]
         public static void ShowWindow()
         {
+            AssetDatabase.Refresh();
             var window = EditorWindow.GetWindow<OSCmoothWindow>("OSCmooth");
             window.maxSize = new Vector2(512, 1024);
             window.minSize = new Vector2(368, 480);
@@ -108,11 +110,21 @@ namespace OSCTools.OSCmooth
                     if (AssetDatabase.GetAssetPath(_parameterAsset) == string.Empty)
                         AssetDatabase.CreateAsset(_parameterAsset, EditorUtility.SaveFilePanelInProject("Save OSCmooth Configuration", "OSCmoothConfig", "asset", ""));
 
+                    EditorUtility.SetDirty(_parameterAsset);
                     AssetDatabase.SaveAssets();
-                    AssetDatabase.Refresh();
                 }
 
                 EditorGUILayout.EndHorizontal();
+
+                _writeDefaults = EditorGUILayout.Toggle
+                (
+                    new GUIContent
+                    (
+                        "Write Defaults",
+                        "Sets whether the generated OSCmooth layer will have write defaults on or off. Set true for WD on, false for WD off"
+                    ),
+                    _writeDefaults
+                );
 
                 _animatorController = AssetDatabase.LoadAssetAtPath<AnimatorController>(AssetDatabase.GetAssetPath(_avDescriptor.baseAnimationLayers[_layerSelect].animatorController));
 
@@ -148,6 +160,10 @@ namespace OSCTools.OSCmooth
                             });
                         }
                     }
+
+                    EditorUtility.SetDirty(_parameterAsset);
+                    AssetDatabase.SaveAssets();
+
                 }
                 EditorGUILayout.Space();
 
@@ -181,8 +197,6 @@ namespace OSCTools.OSCmooth
                     }
                 }
 
-                EditorUtility.SetDirty(_parameterAsset);
-
                 EditorGUILayout.Space();
 
                 if (GUILayout.Button
@@ -203,6 +217,9 @@ namespace OSCTools.OSCmooth
                         convertToProxy = _basisConfigurationParameter.convertToProxy
                     };
                     _parameterAsset.parameters.Add(param);
+
+                    EditorUtility.SetDirty(_parameterAsset);
+                    AssetDatabase.SaveAssets();
                 }
 
                 EditorGUILayout.EndScrollView();
@@ -221,8 +238,15 @@ namespace OSCTools.OSCmooth
                 {
                     OSCmoothAnimationHandler animHandler = new OSCmoothAnimationHandler();
 
-                    animHandler.animatorController = _animatorController;
-                    animHandler.parameters = _parameterAsset.parameters;
+                    string animatorGUID;
+                    long id;
+
+                    AssetDatabase.TryGetGUIDAndLocalFileIdentifier(_animatorController, out animatorGUID, out id);
+
+                    animHandler._animatorController = _animatorController;
+                    animHandler._parameters = _parameterAsset.parameters;
+                    animHandler._writeDefaults = _writeDefaults;
+                    animHandler._animExportDirectory = "Assets/OSCmooth/Generated/Anims/" + "Animator_" + animatorGUID + "/";
 
                     animHandler.CreateSmoothAnimationLayer();
                 }
