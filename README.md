@@ -2,22 +2,17 @@
 
 VRC Face Tracking Unity Demo setup for [VRCFaceTracking](https://github.com/benaclejames/VRCFaceTracking)
 
-## Demo Avatars:
+## Prerequisites
 
-* Modified version of Kita'vali v4.8 that is available at https://discord.com/invite/uwN8dKU</li>
-  * PC FaceTracking Version
-  * PC FaceTracking, Da-vali extra feathers, and sweater
-  * Quest FaceTracking Version
-* SRanipal Shieh
+* [Vive SRanipal Runtime](https://developer.vive.com/us/support/sdk/category_howto/how-to-update-vive-eye-tracking-runtime.html)
+* [Latest VRCFaceTracking Release](https://github.com/benaclejames/VRCFaceTracking/releases/latest)
+* [Avatar with SRanipal Blend Shapes](https://github.com/benaclejames/VRCFaceTracking/wiki/Blend-Shapes-Setup) - Case Sensitive
 
-## Setup Order:
-1. VRCSDK
-2. Standard [Poiyomi Toon Shader](https://github.com/poiyomi/PoiyomiToonShader) or my [Custom Poiyomi Audio Link](https://github.com/Adjerry91/PoiyomiToonShader/releases) Version 
-3. Recommended [AV3Emulator](https://github.com/lyuma/Av3Emulator/releases) (Testing in unity)
-5. Recommended [VRLABS Gesture Manager](https://github.com/VRLabs/Avatars-3.0-Manager/releases) (Merging Templates)
-4. Optional [Audio Link](https://github.com/llealloo/vrc-udon-audio-link/releases) (Testing Audio Link in Unity)
-5. Optional [VRCFacetracking Binary Parameter Tool](https://github.com/regzo2/BinaryParameterTool/releases) (Used to create the booleon float drive and smoothing state machines)
-6. Import [VRCFaceTracking-UnityDemo](https://github.com/Adjerry91/VRCFaceTracking-UnityDemo/releases)
+## Setup 
+
+Import the latest template from [Releases](https://github.com/Adjerry91/VRCFaceTracking-Templates/releases/latest)
+
+Setup PDF guide included in the *VRCFaceTracking* folder
 
 ## Face Tracking Animation Tips:
 
