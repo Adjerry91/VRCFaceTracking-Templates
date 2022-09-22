@@ -1,6 +1,6 @@
 # VRCFaceTracking-Templates
 
-VRC Face Tracking Unity Demo setup for [VRCFaceTracking](https://github.com/benaclejames/VRCFaceTracking)
+VRC Face Tracking Unity templates to be used with [VRCFaceTracking](https://github.com/benaclejames/VRCFaceTracking)
 
 ## Prerequisites
 
