@@ -13,19 +13,23 @@ MonoBehaviour:
   m_Name: Para Shieh VRCFT
   m_EditorClassIdentifier: 
   parameters:
-  - name: LipTracking
+  - name: LipTrackingActive
     valueType: 2
     saved: 1
     defaultValue: 0
-  - name: EyeTracking
+  - name: EyeTrackingActive
     valueType: 2
     saved: 1
     defaultValue: 0
   - name: EyeDilationEnable
     valueType: 2
     saved: 1
-    defaultValue: 0
+    defaultValue: 1
   - name: VisemesEnable
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: FacialExpressionsDisabled
     valueType: 2
     saved: 1
     defaultValue: 0
@@ -44,11 +48,11 @@ MonoBehaviour:
   - name: LeftEyeLidExpandedSqueeze
     valueType: 1
     saved: 0
-    defaultValue: 0
+    defaultValue: 0.8
   - name: RightEyeLidExpandedSqueeze
     valueType: 1
     saved: 0
-    defaultValue: 0
+    defaultValue: 0.8
   - name: JawOpenSuck
     valueType: 1
     saved: 0
@@ -100,11 +104,11 @@ MonoBehaviour:
   - name: EyesDilation1
     valueType: 2
     saved: 0
-    defaultValue: 0
+    defaultValue: 1
   - name: EyesDilation2
     valueType: 2
     saved: 0
-    defaultValue: 0
+    defaultValue: 1
   - name: EyesDilation4
     valueType: 2
     saved: 0
@@ -112,7 +116,7 @@ MonoBehaviour:
   - name: EyesDilation8
     valueType: 2
     saved: 0
-    defaultValue: 0
+    defaultValue: 1
   - name: SmileRightPout1
     valueType: 2
     saved: 0
