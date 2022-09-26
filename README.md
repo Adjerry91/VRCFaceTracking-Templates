@@ -6,7 +6,7 @@ VRC Face Tracking Unity templates to be used with [VRCFaceTracking](https://gith
 
 * [Vive SRanipal Runtime](https://developer.vive.com/us/support/sdk/category_howto/how-to-update-vive-eye-tracking-runtime.html)
 * [Latest VRCFaceTracking Release](https://github.com/benaclejames/VRCFaceTracking/releases/latest)
-* [Avatar with SRanipal Blend Shapes](https://github.com/benaclejames/VRCFaceTracking/wiki/Blend-Shapes-Setup) - Case Sensitive
+* [Avatar with SRanipal Blend Shapes](https://github.com/benaclejames/VRCFaceTracking/wiki/Blend-Shapes-Setup) - Case Sensitive and on skinned mesh named "Body"
 
 ## Setup 
 
