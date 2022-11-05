@@ -9,8 +9,8 @@ namespace OSCTools.OSCmooth.Types
     {
 
         // for Animation creation purposes:
-        public float localSmoothness = 0.15f;
-        public float remoteSmoothness = 0.9f;
+        public float localSmoothness = 0.1f;
+        public float remoteSmoothness = 0.7f;
         public string paramName = "NewParam";
 
         // This setting sets the output to controll the

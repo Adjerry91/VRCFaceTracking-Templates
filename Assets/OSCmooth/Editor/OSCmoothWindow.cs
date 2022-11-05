@@ -30,7 +30,7 @@ namespace OSCTools.OSCmooth
 
         readonly private string[] oscmBlacklist = new string[]
         {
-            "OSCm_", "IsLocal", "Smooth", "Proxy", "_Float", "_Normalizer", "_FTI"
+            "OSCm/", "IsLocal", "Smooth", "Proxy", "_Float", "_Normalizer", "_FTI"
         };
 
         [MenuItem("Tools/OSCmooth")]
@@ -43,8 +43,10 @@ namespace OSCTools.OSCmooth
             window.Show();
         }
 
-        private void OnGUI()
-        {
+        private void OnGUI() {
+            DrawGUI();
+        }
+        void DrawGUI() { 
             _avDescriptor = (VRCAvatarDescriptor)EditorGUILayout.ObjectField
             (
                 new GUIContent
@@ -178,6 +180,13 @@ namespace OSCTools.OSCmooth
                 EditorGUI.indentLevel = 0;
 
                 _showParameters = EditorGUILayout.Foldout(_showParameters, "Parameter Configuration");
+                if (_parameterAsset.parameters != null && _parameterAsset.parameters.Count() > 0) {
+                    if (GUILayout.Button("Remove All")) {
+                        Undo.RecordObject(_parameterAsset, "Remove All Parameters");
+                        _parameterAsset.parameters = new List<OSCmoothParameter>();
+                        return;
+                    }
+                }
 
                 EditorGUI.indentLevel = 0;
 
@@ -186,12 +195,36 @@ namespace OSCTools.OSCmooth
                 {                    
                     foreach (OSCmoothParameter parameter in _parameterAsset.parameters)
                     {
-                        EditorGUI.indentLevel = 1;
-                        parameter.isVisible = EditorGUILayout.Foldout(parameter.isVisible, parameter.paramName);
+                        if (parameter == null)
+                            continue;
 
-                        EditorGUI.indentLevel = 2;
-                        if (parameter.isVisible)
+                        EditorGUI.indentLevel = 0;
+                        using (new EditorGUILayout.HorizontalScope())
                         {
+                            if (GUILayout.Button(parameter.isVisible ? "v" : ">", GUILayout.Width(20))) {
+                                Undo.RecordObject(_parameterAsset, "Set Parameter Visible");
+                                parameter.isVisible = !parameter.isVisible;
+                            }
+
+                            EditorGUI.BeginChangeCheck();
+                            string paramName = parameter.paramName;
+                            paramName = EditorGUILayout.TextField(paramName);
+                            if (EditorGUI.EndChangeCheck() && parameter != null) {
+                                Undo.RecordObject(_parameterAsset, "Change Parameter Name");
+                                parameter.paramName = paramName;
+                                return;
+                            }
+
+                            GUI.color = Color.red;
+                            if (GUILayout.Button("X", GUILayout.Width(40))) {
+                                Undo.RecordObject(_parameterAsset, "Remove Parameter");
+                                _parameterAsset.parameters.Remove(parameter);
+                            }
+
+                            GUI.color = Color.white;
+                        }
+                        EditorGUI.indentLevel = 2;
+                        if (parameter.isVisible) {
                             DrawParameterConfiguration(parameter);
                         }
                     }
@@ -248,6 +281,7 @@ namespace OSCTools.OSCmooth
                     animHandler._writeDefaults = _writeDefaults;
                     animHandler._animExportDirectory = "Assets/OSCmooth/Generated/Anims/" + "Animator_" + animatorGUID + "/";
 
+                    Undo.RecordObject(animHandler._animatorController, "Apply OSC Smooth to Animator");
                     animHandler.CreateSmoothAnimationLayer();
                 }
 
@@ -259,16 +293,6 @@ namespace OSCTools.OSCmooth
         {
             EditorGUIUtility.labelWidth = 210;
 
-            parameter.paramName = EditorGUILayout.TextField
-            (
-                new GUIContent
-                (
-                    "",
-                    "The specific float parameter that will have the smoothness layer have applied to."
-                ),
-                parameter.paramName
-            );
-
             EditorGUILayout.LabelField
             (
                 new GUIContent
@@ -279,54 +303,70 @@ namespace OSCTools.OSCmooth
             );
 
             EditorGUI.indentLevel = 3;
-            EditorGUIUtility.labelWidth = 240;
+            EditorGUIUtility.labelWidth = 200;
 
-            parameter.localSmoothness = EditorGUILayout.FloatField
-            (
-                new GUIContent
-                (
-                    "Local Smoothness",
-                    "How much % smoothness you (locally) will see when a parameter " +
-                    "changes value. Higher values represent more smoothness, and vice versa."
-                ),
-                parameter.localSmoothness
-            );
+            float localSmoothness = parameter.localSmoothness;
+            float remoteSmoothness = parameter.remoteSmoothness;
+            bool convertToProxy = parameter.convertToProxy;
+            bool flipIO = parameter.flipInputOutput;
 
-            parameter.remoteSmoothness = EditorGUILayout.FloatField
-            (
-                new GUIContent
+            EditorGUI.BeginChangeCheck();
+            {
+                localSmoothness = EditorGUILayout.FloatField
                 (
-                    "Remote Smoothness",
-                    "How much % smoothness remote users will see when a parameter " +
-                    "changes value. Higher values represent more smoothness, and vice versa."
-                ),
-                parameter.remoteSmoothness
-            );
+                    new GUIContent
+                    (
+                        "Local Smoothness",
+                        "How much % smoothness you (locally) will see when a parameter " +
+                        "changes value. Higher values represent more smoothness, and vice versa."
+                    ),
+                    localSmoothness
+                );
 
-            parameter.convertToProxy = EditorGUILayout.Toggle
-            (
-                new GUIContent
+                remoteSmoothness = EditorGUILayout.FloatField
                 (
-                    "Proxy Conversion",
-                    "Automatically convert existing animations to use the Proxy (output) float."
-                ),
-                parameter.convertToProxy
-            );
+                    new GUIContent
+                    (
+                        "Remote Smoothness",
+                        "How much % smoothness remote users will see when a parameter " +
+                        "changes value. Higher values represent more smoothness, and vice versa."
+                    ),
+                    remoteSmoothness
+                );
 
-            parameter.flipInputOutput = EditorGUILayout.Toggle
-            (
-                new GUIContent
+                convertToProxy = EditorGUILayout.Toggle
                 (
-                    "Flip Input/Output",
-                    "Sets the Base parameter to be the output parameter from the smoother layer, and " +
-                    "sets the Proxy parameter as the input driver parameter. Useful for apps that can " +
-                    "drive the Proxy parameter like VRCFaceTracking binary parameters."
-                ),
-                parameter.flipInputOutput
-            );
+                    new GUIContent
+                    (
+                        "Proxy Conversion",
+                        "Automatically convert existing animations to use the Proxy (output) float."
+                    ),
+                    convertToProxy
+                );
+
+                flipIO = EditorGUILayout.Toggle
+                (
+                    new GUIContent
+                    (
+                        "Flip Input/Output",
+                        "Sets the Base parameter to be the output parameter from the smoother layer, and " +
+                        "sets the Proxy parameter as the input driver parameter. Useful for apps that can " +
+                        "drive the Proxy parameter like VRCFaceTracking binary parameters."
+                    ),
+                    flipIO
+                );
+            }
+            if (EditorGUI.EndChangeCheck()) {
+                Undo.RecordObject(_parameterAsset, "Change Parameter Values");
+                parameter.localSmoothness = localSmoothness;
+                parameter.remoteSmoothness = remoteSmoothness;
+                parameter.convertToProxy = convertToProxy;
+                parameter.flipInputOutput = flipIO;
+            }
 
             EditorGUILayout.BeginHorizontal();
             GUILayout.FlexibleSpace();
+            /*
             if (removable)
             {
                 if (GUILayout.Button
@@ -339,9 +379,11 @@ namespace OSCTools.OSCmooth
                     GUILayout.MaxWidth((float)Screen.width - 248f)
                 ))
                 {
+                    Undo.RecordObject(_parameterAsset, "Remove Parameter");
                     _parameterAsset.parameters.Remove(parameter);
                 }
             }
+            */
 
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.Space();

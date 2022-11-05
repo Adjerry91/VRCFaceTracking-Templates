@@ -96,7 +96,7 @@ namespace OSCTools.OSCmooth.Util
             return layer;
         }
 
-        public static AnimationClip[] CreateFloatSmootherAnimation(AnimatorController animatorController, string paramName, string smoothSuffix, string proxySuffix, string directory, float initThreshold = -1, float finalThreshold = 1, bool driveBase = false)
+        public static AnimationClip[] CreateFloatSmootherAnimation(AnimatorController animatorController, string paramName, string smoothSuffix, string proxyPrefix, string proxySuffix, string directory, float initThreshold = -1, float finalThreshold = 1, bool driveBase = false)
         {
             string animatorGUID;
             long id;
@@ -109,34 +109,34 @@ namespace OSCTools.OSCmooth.Util
             AnimationCurve _curvesInit = new AnimationCurve(new Keyframe(0.0f, initThreshold));
             AnimationCurve _curvesFinal = new AnimationCurve(new Keyframe(0.0f, finalThreshold));
 
-            _animationClipInit.SetCurve("", typeof(Animator), driveBase ? paramName : paramName + proxySuffix, _curvesInit);
-            _animationClipFinal.SetCurve("", typeof(Animator), driveBase ? paramName : paramName + proxySuffix, _curvesFinal);
+            _animationClipInit.SetCurve("", typeof(Animator), driveBase ? paramName : proxyPrefix + paramName, _curvesInit);
+            _animationClipFinal.SetCurve("", typeof(Animator), driveBase ? paramName : proxyPrefix + paramName, _curvesFinal);
 
             if (!Directory.Exists(directory))
             {
                 Directory.CreateDirectory(directory);
             }
 
-            string[] guid = (AssetDatabase.FindAssets(paramName + initThreshold + "Smoother.anim"));
+            string[] guid = (AssetDatabase.FindAssets(paramName + "-1" + "Smoother.anim"));
 
             if (guid.Length == 0)
             {
-                AssetDatabase.CreateAsset(_animationClipInit, directory + paramName + initThreshold + smoothSuffix + "_" + animatorGUID + ".anim");
+                AssetDatabase.CreateAsset(_animationClipInit, directory + paramName + "-1" + smoothSuffix + "_" + animatorGUID + ".anim");
                 AssetDatabase.SaveAssets();
             }
 
             else
             {
                 AssetDatabase.DeleteAsset(AssetDatabase.GUIDToAssetPath(guid[0]));
-                AssetDatabase.CreateAsset(_animationClipInit, directory + paramName + initThreshold + smoothSuffix + "_" + animatorGUID + ".anim");
+                AssetDatabase.CreateAsset(_animationClipInit, directory + paramName + "-1" + smoothSuffix + "_" + animatorGUID + ".anim");
                 AssetDatabase.SaveAssets();
             }
 
-            guid = (AssetDatabase.FindAssets(paramName + finalThreshold + smoothSuffix + ".anim"));
+            guid = (AssetDatabase.FindAssets(paramName + "1" + smoothSuffix + ".anim"));
 
             if (guid.Length == 0)
             {
-                AssetDatabase.CreateAsset(_animationClipFinal, directory + paramName + finalThreshold + smoothSuffix + "_" + animatorGUID + ".anim");
+                AssetDatabase.CreateAsset(_animationClipFinal, directory + paramName + "1" + smoothSuffix + "_" + animatorGUID + ".anim");
                 AssetDatabase.SaveAssets();
             }
 
@@ -144,7 +144,7 @@ namespace OSCTools.OSCmooth.Util
             {
 
                 AssetDatabase.DeleteAsset(AssetDatabase.GUIDToAssetPath(guid[0]));
-                AssetDatabase.CreateAsset(_animationClipFinal, "Assets/OSCmooth/Generated/Anims/" + paramName + finalThreshold + smoothSuffix + "_" + animatorGUID + ".anim");
+                AssetDatabase.CreateAsset(_animationClipFinal, "Assets/OSCmooth/Generated/Anims/" + paramName + "1" + smoothSuffix + "_" + animatorGUID + ".anim");
                 AssetDatabase.SaveAssets();
             }
 
@@ -162,10 +162,10 @@ namespace OSCTools.OSCmooth.Util
             AssetDatabase.SaveAssets();
         }
 
-        public static BlendTree CreateSmoothingBlendTree(AnimatorController animatorController, AnimatorStateMachine stateMachine, float smoothness, string paramName, bool driveBase, float range, string directory, string smoothnessSuffix = "Smoother", string proxySuffix = "Proxy")
+        public static BlendTree CreateSmoothingBlendTree(AnimatorController animatorController, AnimatorStateMachine stateMachine, float smoothness, string paramName, bool driveBase, float range, string directory, string smoothnessPrefix = "OSCm/", string smoothnessSuffix = "Smoother", string proxyPrefix = "OSCm/", string proxySuffix = "Proxy")
         {
-            AnimatorControllerParameter smootherParam = ParameterUtil.CheckAndCreateParameter(paramName + smoothnessSuffix, animatorController, AnimatorControllerParameterType.Float, smoothness);
-            ParameterUtil.CheckAndCreateParameter(paramName + proxySuffix, animatorController, AnimatorControllerParameterType.Float);
+            AnimatorControllerParameter smootherParam = ParameterUtil.CheckAndCreateParameter(smoothnessPrefix + paramName + "Smoother", animatorController, AnimatorControllerParameterType.Float, smoothness);
+            ParameterUtil.CheckAndCreateParameter(proxyPrefix + paramName, animatorController, AnimatorControllerParameterType.Float);
             ParameterUtil.CheckAndCreateParameter(paramName, animatorController, AnimatorControllerParameterType.Float);
 
             // Creating 3 blend trees to create the feedback loop
@@ -173,7 +173,7 @@ namespace OSCTools.OSCmooth.Util
             {
                 blendType = BlendTreeType.Simple1D,
                 hideFlags = HideFlags.HideInHierarchy,
-                blendParameter = paramName + smoothnessSuffix,
+                blendParameter = smoothnessPrefix + paramName + "Smoother",
                 name = "OSCm_" + paramName + " Root",
                 useAutomaticThresholds = false
             };
@@ -181,21 +181,21 @@ namespace OSCTools.OSCmooth.Util
             {
                 blendType = BlendTreeType.Simple1D,
                 hideFlags = HideFlags.HideInHierarchy,
-                blendParameter = driveBase ? paramName + proxySuffix : paramName,
-                name = "OSCm_ProxyBlend",
+                blendParameter = driveBase ? proxyPrefix + paramName : paramName,
+                name = "OSCm_Input",
                 useAutomaticThresholds = false
             };
             BlendTree trueTree = new BlendTree
             {
                 blendType = BlendTreeType.Simple1D,
                 hideFlags = HideFlags.HideInHierarchy,
-                blendParameter = driveBase ? paramName: paramName + proxySuffix,
-                name = "OSCm_TrueBlend",
+                blendParameter = driveBase ? paramName: proxyPrefix + paramName,
+                name = "OSCm_Driver",
                 useAutomaticThresholds = false
             };
 
             // Create smoothing anims
-            AnimationClip[] driverAnims = AnimUtil.CreateFloatSmootherAnimation(animatorController, paramName, smoothnessSuffix, proxySuffix, directory, -range, range, driveBase);
+            AnimationClip[] driverAnims = AnimUtil.CreateFloatSmootherAnimation(animatorController, paramName, smoothnessSuffix, proxyPrefix, proxySuffix, directory, -range, range, driveBase);
 
             rootTree.AddChild(falseTree, driveBase ? 1f : 0f);
             rootTree.AddChild(trueTree, driveBase ? 0f : 1f);

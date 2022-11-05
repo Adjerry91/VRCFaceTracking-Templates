@@ -76,7 +76,7 @@ namespace OSCTools.OSCmooth.Animation
             AssetDatabase.AddObjectToAsset(basisRemoteBlendTree, AssetDatabase.GetAssetPath(animLayer.stateMachine));
 
             // Creating a '1Set' parameter that holds a value of one at all times for the Direct BlendTree
-            ParameterUtil.CheckAndCreateParameter("OSCm_BlendSet", _animatorController, AnimatorControllerParameterType.Float, 1f / (float)_parameters.Count);
+            ParameterUtil.CheckAndCreateParameter("OSCm/BlendSet", _animatorController, AnimatorControllerParameterType.Float, 1f / (float)_parameters.Count);
 
             List<ChildMotion> localChildMotion = new List<ChildMotion>();
             List<ChildMotion> remoteChildMotion = new List<ChildMotion>();
@@ -86,20 +86,20 @@ namespace OSCTools.OSCmooth.Animation
             {
                 if (p.convertToProxy)
                 {
-                    AnimUtil.RenameAllStateMachineInstancesOfBlendParameter(_animatorController, p.paramName, p.paramName + "OSCm_Proxy");
+                    AnimUtil.RenameAllStateMachineInstancesOfBlendParameter(_animatorController, p.paramName, "OSCm/Proxy/" + p.paramName);
                 }
 
                 localChildMotion.Add(new ChildMotion 
                 {
-                    directBlendParameter = "OSCm_BlendSet",
-                    motion = AnimUtil.CreateSmoothingBlendTree(_animatorController, animLayer.stateMachine, p.localSmoothness, p.paramName, p.flipInputOutput, (float)_parameters.Count, _animExportDirectory, "OSCm_Smoother", "OSCm_Proxy"),
+                    directBlendParameter = "OSCm/BlendSet",
+                    motion = AnimUtil.CreateSmoothingBlendTree(_animatorController, animLayer.stateMachine, p.localSmoothness, p.paramName, p.flipInputOutput, (float)_parameters.Count, _animExportDirectory, "OSCm/Local/", "Smoother", "OSCm/Proxy/", "Proxy"),
                     timeScale = 1
                 });
 
                 remoteChildMotion.Add(new ChildMotion
                 {
-                    directBlendParameter = "OSCm_BlendSet",
-                    motion = AnimUtil.CreateSmoothingBlendTree(_animatorController, animLayer.stateMachine, p.remoteSmoothness, p.paramName, p.flipInputOutput, (float)_parameters.Count, _animExportDirectory, "OSCm_SmootherRemote", "OSCm_Proxy"),
+                    directBlendParameter = "OSCm/BlendSet",
+                    motion = AnimUtil.CreateSmoothingBlendTree(_animatorController, animLayer.stateMachine, p.remoteSmoothness, p.paramName, p.flipInputOutput, (float)_parameters.Count, _animExportDirectory, "OSCm/Remote/", "SmootherRemote", "OSCm/Proxy/", "Proxy"),
                     timeScale = 1,
                 });
             }
