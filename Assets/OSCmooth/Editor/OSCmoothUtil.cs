@@ -62,6 +62,18 @@ namespace OSCTools.OSCmooth.Util
             }
         }
 
+        public static void RemoveAnimLayerInController(string layerName, AnimatorController animatorController)
+        {
+            for (int i = 0; i < animatorController.layers.Length; i++)
+            {
+                if (animatorController.layers[i].name == layerName)
+                {
+                    animatorController.RemoveLayer(i);
+                }
+            }
+
+        }
+
         public static AnimatorControllerLayer CreateAnimLayerInController(string layerName, AnimatorController animatorController)
         {
             for (int i = 0; i < animatorController.layers.Length; i++)
