@@ -1,0 +1,423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Parameters Face Tracking QP 158bits
+  m_EditorClassIdentifier: 
+  parameters:
+  - name: EyeTrackingActive
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: LipTrackingActive
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: EyeDilationEnable
+    valueType: 2
+    saved: 1
+    defaultValue: 1
+  - name: VisemesEnable
+    valueType: 2
+    saved: 1
+    defaultValue: 1
+  - name: QuestProEnable
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: FacialExpressionsDisabled
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+  - name: LeftEyeX
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+  - name: RightEyeX
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+  - name: EyesY
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+  - name: LeftEyeLidExpandedSqueeze
+    valueType: 1
+    saved: 0
+    defaultValue: 0.8
+  - name: RightEyeLidExpandedSqueeze
+    valueType: 1
+    saved: 0
+    defaultValue: 0.8
+  - name: JawOpenSuck
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+  - name: MouthUpperUpUpperInside
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerDownLowerInside
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+  - name: SmileRightPout1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileRightPout2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileRightPout4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileRightPout8
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileRightPoutNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileSadLeft1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileSadLeft2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileSadLeft4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileSadLeft8
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: SmileSadLeftNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawX1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawX2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawX4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawXNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthX1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthX2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthX4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthXNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerOverlay1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerOverlay2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthLowerOverlay4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffLeftUpperOverturn1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffLeftUpperOverturn2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffLeftUpperOverturn4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffLeftUpperOverturnNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffRightLowerOverturn1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffRightLowerOverturn2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffRightLowerOverturn4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: PuffRightLowerOverturnNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthApeShape1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthApeShape2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthApeShape4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawForward1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawForward2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: JawForward4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownLeft1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownLeft2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownLeft4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownLeft8
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownRight1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownRight2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownRight4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowDownRight8
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowsInnerUp1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowsInnerUp2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowsInnerUp4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowOuterUpLeft1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowOuterUpLeft2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowOuterUpLeft4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowOuterUpRight1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowOuterUpRight2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: BrowOuterUpRight4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: NoseSneerLeft1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: NoseSneerLeft2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: NoseSneerLeft4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: NoseSneerRight1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: NoseSneerRight2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: NoseSneerRight4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthStretchLeft1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthStretchLeft2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthStretchLeft4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthStretchRight1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthStretchRight2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthStretchRight4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthTightener1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthTightener2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: MouthTightener4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyeSquintLeft1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyeSquintLeft2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyeSquintLeft4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyeSquintRight1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyeSquintRight2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyeSquintRight4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueSteps1
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: TongueSteps2
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: TongueSteps4
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: TongueStepsNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: TongueX1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueX2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueX4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueXNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueY1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueY2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueY4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: TongueYNegative
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation1
+    valueType: 2
+    saved: 0
+    defaultValue: 1
+  - name: EyesDilation2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+  - name: EyesDilation4
+    valueType: 2
+    saved: 0
+    defaultValue: 1
