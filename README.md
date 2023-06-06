@@ -11,9 +11,7 @@ VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://g
 ## Setup 
 
 1. Import the latest template from [Releases](https://github.com/Adjerry91/VRCFaceTracking-Templates/releases/latest)
-2. Merge animator controller per the face tracking type on the avatar (SRanipal, ARKit, or UnifiedExpressions) via [AV3 Avatar Manager](https://github.com/VRLabs/Avatars-3.0-Manager)
-3. Copy parameters with [AV3 Avatar Manager](https://github.com/VRLabs/Avatars-3.0-Manager)
-4. Add sub menu to menu of the avatar for face tracking control settings
+2 Add Face Tracking Prefab (SRanipal, ARKit, or UnifiedExpressions) to your avatar [VRCFury](https://vrcfury.com/)
 
 Detailed setup PDF guide included in the *VRCFaceTracking* folder
 
