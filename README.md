@@ -17,9 +17,9 @@ Detailed setup PDF guide included in the *VRCFaceTracking* folder
 
 ## Support
 
-See the avatar-help-form for advance support on VRCFaceTracking Discord 
+See the avatar-help-form for advance support on Jerry's Face Tracking Discord 
 
-[![Discord](https://discord.com/api/guilds/849300336128032789/widget.png)](https://discord.gg/Fh4FNehzKn)
+[![Discord](https://discord.com/api/guilds/849300336128032789/widget.png)]([https://discord.gg/Fh4FNehzKn](https://discord.gg/yQtTsVSqx8))
 
 ## Face Tracking Animation Tips:
 
