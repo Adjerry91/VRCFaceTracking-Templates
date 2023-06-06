@@ -250,10 +250,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: JawOpenApe
+    m_ConditionEvent: FT/v2/JawOpen
     m_EventTreshold: 0.60001
   - m_ConditionMode: 1
-    m_ConditionEvent: FaceTrackingEnabled
+    m_ConditionEvent: LipTrackingActive
     m_EventTreshold: 0.3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6551766056402923938}
@@ -278,7 +278,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: FaceTrackingEnabled
+    m_ConditionEvent: LipTrackingActive
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3734900183844148364}
@@ -328,10 +328,10 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 4
-    m_ConditionEvent: JawOpenApe
+    m_ConditionEvent: FT/v2/JawOpen
     m_EventTreshold: 0.3
   - m_ConditionMode: 1
-    m_ConditionEvent: FaceTrackingEnabled
+    m_ConditionEvent: LipTrackingActive
     m_EventTreshold: 0.3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1846820909656263189}
@@ -590,25 +590,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Voice
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: JawOpenApe
+    m_Controller: {fileID: 0}
+  - m_Name: FT/v2/JawOpen
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: FaceTrackingEnabled
+    m_Controller: {fileID: 0}
+  - m_Name: LipTrackingActive
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1234,13 +1234,13 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 3
-    m_ConditionEvent: JawOpenApe
+    m_ConditionEvent: FT/v2/JawOpen
     m_EventTreshold: 0.30001
   - m_ConditionMode: 4
-    m_ConditionEvent: JawOpenApe
+    m_ConditionEvent: FT/v2/JawOpen
     m_EventTreshold: 0.6
   - m_ConditionMode: 1
-    m_ConditionEvent: FaceTrackingEnabled
+    m_ConditionEvent: LipTrackingActive
     m_EventTreshold: 0.3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2064422069065960476}
