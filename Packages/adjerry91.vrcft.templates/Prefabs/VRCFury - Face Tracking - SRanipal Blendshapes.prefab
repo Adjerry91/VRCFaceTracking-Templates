@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1292630351701583892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 92207856961180327}
+  - component: {fileID: 4362594811835997267}
+  m_Layer: 0
+  m_Name: VRCFury - Face Tracking - SRanipal Blendshapes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &92207856961180327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292630351701583892}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4362594811835997267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292630351701583892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 2
+  config:
+    features:
+    - id: 0
+    - id: 1
+  somethingIsBroken: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 3
+        controllers:
+        - controller:
+            fileID: 9100000
+            guid: 687ed68baa8511c4eba53b2bcd6d0b1d
+            obj: {fileID: 9100000, guid: 687ed68baa8511c4eba53b2bcd6d0b1d, type: 2}
+          type: 5
+          ResetMePlease: 0
+        - controller:
+            fileID: 9100000
+            guid: f2fc3717cf3f8394f933f21469a6ebbc
+            obj: {fileID: 9100000, guid: f2fc3717cf3f8394f933f21469a6ebbc, type: 2}
+          type: 2
+          ResetMePlease: 0
+        menus:
+        - menu:
+            fileID: 11400000
+            guid: 27b4da0be8cf54d48a945ad27507436f
+            obj: {fileID: 11400000, guid: 27b4da0be8cf54d48a945ad27507436f, type: 2}
+          prefix: Face Tracking
+          ResetMePlease: 0
+        prms:
+        - parameters:
+            fileID: 11400000
+            guid: 60f6f9ac43538974ca35465e0a023ed0
+            obj: {fileID: 11400000, guid: 60f6f9ac43538974ca35465e0a023ed0, type: 2}
+          ResetMePlease: 0
+        globalParams:
+        - '*'
+        allNonsyncedAreGlobal: 0
+        ignoreSaved: 0
+        toggleParam: 
+        useSecurityForToggle: 0
+        rootObjOverride: {fileID: 0}
+        rootBindingsApplyToAvatar: 0
+        rewriteBindings: []
+        controller: {fileID: 0}
+        menu: {fileID: 0}
+        parameters: {fileID: 0}
+        submenu: 
+        removePrefixes: []
+        addPrefix: 
+    00000001:
+      type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
+      data:
+        version: 0
+        path: Face Tracking
+        icon:
+          fileID: 2800000
+          guid: fa94a95b9fc80164d8c0ac2d7576f839
+          obj: {fileID: 2800000, guid: fa94a95b9fc80164d8c0ac2d7576f839, type: 3}
