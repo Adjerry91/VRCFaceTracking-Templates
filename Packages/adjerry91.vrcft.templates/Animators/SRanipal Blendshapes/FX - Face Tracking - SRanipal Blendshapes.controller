@@ -25840,7 +25840,7 @@ BlendTree:
   m_Name: Mouth Closed
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 3796826295039629344}
+    m_Motion: {fileID: 7400000, guid: 9fa349fdc61050c47aa01e9392269927, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -73501,37 +73501,6 @@ BlendTree:
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
---- !u!206 &3796826295039629344
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Limit Jaw Open (MouthOpen)
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9fa349fdc61050c47aa01e9392269927, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 4625c88a7a18539479aca485de99d034, type: 2}
-    m_Threshold: 0.5
-    m_Position: {x: 1.5, y: 1.5}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
-    m_Mirror: 0
-  m_BlendParameter: OSCm/Proxy/FT/v2/MouthUpperUp
-  m_BlendParameterY: OSCm/Proxy/FT/v2/MouthLowerDown
-  m_MinThreshold: 0
-  m_MaxThreshold: 0.5
-  m_UseAutomaticThresholds: 1
-  m_NormalizedBlendValues: 0
-  m_BlendType: 3
 --- !u!206 &3800940696600186122
 BlendTree:
   m_ObjectHideFlags: 1
@@ -100666,7 +100635,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4afbc22a2b8011047a9478e692d0dc61, type: 2}
     m_Threshold: 1
-    m_Position: {x: 1.5, y: 1.5}
+    m_Position: {x: 1.3, y: 1.3}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
