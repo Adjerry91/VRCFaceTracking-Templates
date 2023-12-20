@@ -189,10 +189,7 @@ namespace VRC.PackageManagement.Resolver
         
         public static void ForceRefresh ()
         {
-            MethodInfo method = typeof( UnityEditor.PackageManager.Client ).GetMethod( "Resolve", BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.DeclaredOnly );
-            if( method != null )
-                method.Invoke( null, null );
-
+            UnityEditor.PackageManager.Client.Resolve();
             AssetDatabase.Refresh();
         }
 
