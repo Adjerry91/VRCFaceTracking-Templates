@@ -1,5 +1,8 @@
 # Changelog
 
+## [5.1.1] - 2023-12-20
+- Fix viseme toggle
+
 ## [5.1.0] - 2023-12-20
 - Add MouthRaiserUpper shape to tracking
 - Disabled MouthPress from tracking (Disabled Sync); Quest Pro does not track well
