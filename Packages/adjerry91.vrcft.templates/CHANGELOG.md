@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.1.2] - 2024-01-03
+- Cleanup sub-assets
+- Facial expressions state logic change
+
 ## [5.1.1] - 2023-12-20
 - Fix viseme toggle
 
