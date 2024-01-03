@@ -1,6 +1,6 @@
 # Changelog
 
-## [5.1.3] - 2024-01-03
+## [5.1.4] - 2024-01-03
 - Cleanup sub-assets
 - Facial expressions state logic change
 
