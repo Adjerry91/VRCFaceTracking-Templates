@@ -1,5 +1,8 @@
 # Changelog
 
+## [5.1.5] - 2024-01-04
+- Fix facial expressions state logic change looping
+
 ## [5.1.4] - 2024-01-03
 - Cleanup sub-assets
 - Facial expressions state logic change
