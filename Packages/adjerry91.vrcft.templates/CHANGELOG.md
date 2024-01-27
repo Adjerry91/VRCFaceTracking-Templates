@@ -1,5 +1,13 @@
 # Changelog
 
+## [5.2.0] - 2024-01-27
+- Modify logic for MouthOpen and Closed
+- Add MouthUpperUpLeft and MouthUpperUpRight limits
+- Remove LipSuckLower and LipSuckUpper limits
+- Add advance face tracking prefabs for advance options
+- Add tongue helper to open the mouth slightly when tongue is sticking out to limit clipping
+- Add info section on menu for references and common issues
+
 ## [5.1.5] - 2024-01-04
 - Fix facial expressions state logic change looping
 
