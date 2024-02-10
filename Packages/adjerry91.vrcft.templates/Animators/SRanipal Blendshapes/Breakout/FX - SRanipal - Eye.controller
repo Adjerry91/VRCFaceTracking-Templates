@@ -3397,14 +3397,6 @@ BlendTree:
     m_DirectBlendParameter: OSCm/BlendSet
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 6726016060863422063}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/BlendSet
-    m_Mirror: 0
-  - serializedVersion: 2
     m_Motion: {fileID: -3451736117726570434}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -41970,7 +41962,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: f46f0c6622f6b2d458bb82a5f21f0d26, type: 2}
     m_Threshold: 0
-    m_Position: {x: 0.8, y: 0}
+    m_Position: {x: 0.75, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: FT/EyeTrackingActive
@@ -43552,7 +43544,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: c9770c7aa9edaff49a540c5b7ac6b8da, type: 2}
     m_Threshold: 0.8
-    m_Position: {x: 0.8, y: 0}
+    m_Position: {x: 0.75, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: FT/EyeTrackingActive
@@ -47939,14 +47931,6 @@ BlendTree:
     m_DirectBlendParameter: OSCm/BlendSet
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 8835423594461427938}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/BlendSet
-    m_Mirror: 0
-  - serializedVersion: 2
     m_Motion: {fileID: -5376897582289326234}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
@@ -50291,12 +50275,6 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: EyeDilationEnable
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: FT/DirectBlend
     m_Type: 1
     m_DefaultFloat: 1
@@ -50305,13 +50283,13 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: FT/v2/EyeLidLeft
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 0.75
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: FT/v2/EyeLidRight
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 0.75
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -50328,12 +50306,6 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: FT/v2/EyeY
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: FT/v2/PupilDilation
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -50356,24 +50328,6 @@ AnimatorController:
     m_DefaultFloat: 1
     m_DefaultInt: 1
     m_DefaultBool: 1
-    m_Controller: {fileID: 0}
-  - m_Name: FT/v2/PupilDilation1
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: FT/v2/PupilDilation2
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: FT/v2/PupilDilation4
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: FT/v2/EyeSquintLeft1
     m_Type: 1
@@ -50504,24 +50458,6 @@ AnimatorController:
   - m_Name: OSCm/Remote/FT/v2/EyeYSmoother
     m_Type: 1
     m_DefaultFloat: 0.7
-    m_DefaultInt: 0
-    m_DefaultBool: 1
-    m_Controller: {fileID: 0}
-  - m_Name: OSCm/Local/FT/v2/PupilDilationSmoother
-    m_Type: 1
-    m_DefaultFloat: 0.95
-    m_DefaultInt: 0
-    m_DefaultBool: 1
-    m_Controller: {fileID: 0}
-  - m_Name: OSCm/Proxy/FT/v2/PupilDilation
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: OSCm/Remote/FT/v2/PupilDilationSmoother
-    m_Type: 1
-    m_DefaultFloat: 0.95
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 0}
@@ -94441,23 +94377,15 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -1588842468923731130}
-    m_Threshold: 0.14285715
+    m_Threshold: 0.19047621
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 5365204480858610298}
-    m_Threshold: 0.2857143
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyeDilationEnable
-    m_Mirror: 0
-  - serializedVersion: 2
     m_Motion: {fileID: -9004291375513686564}
-    m_Threshold: 0.42857146
+    m_Threshold: 0.38095242
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -95192,14 +95120,6 @@ BlendTree:
   m_PrefabAsset: {fileID: 0}
   m_Name: Binary_Root
   m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 4972417297434368024}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/BlendSet
-    m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -4126647970653207756}
     m_Threshold: 0

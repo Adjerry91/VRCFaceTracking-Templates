@@ -289,7 +289,7 @@ BlendTree:
     m_DirectBlendParameter: FT/EyeTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 9c913026095f65a4ab0cdcf723ceb9ae, type: 2}
+    m_Motion: {fileID: -7377969586051169035}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -863,7 +863,7 @@ BlendTree:
   m_Name: Cheek Suck Right Blend
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 8194090954663707127}
+    m_Motion: {fileID: 7400000, guid: 2c8d281da19ea0e4685258fce4aa9eb3, type: 2}
     m_Threshold: -1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -1103,7 +1103,7 @@ BlendTree:
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 87c03b8c763de0148868cb9fdcc41707, type: 2}
-    m_Threshold: 0.8
+    m_Threshold: 0.75
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -1119,7 +1119,7 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: OSCm/Proxy/FT/v2/EyeLidLeft
   m_BlendParameterY: Blend
-  m_MinThreshold: 0.8
+  m_MinThreshold: 0.75
   m_MaxThreshold: 1.5
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
@@ -1318,7 +1318,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 64b36ee8325492c46bf2238ffb06b898, type: 2}
     m_Threshold: 0
-    m_Position: {x: 0.8, y: 0.8}
+    m_Position: {x: 0.75, y: 0.75}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
@@ -1394,6 +1394,37 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   m_BlendParameter: FT/v2/BrowExpressionRight4
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
+--- !u!206 &-7377969586051169035
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Limit Mouth Closed (JawOpen)
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 5b7f51e9de901b64ab4b5c32a090d6b6, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyeTrackingActive
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 9c913026095f65a4ab0cdcf723ceb9ae, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyeTrackingActive
+    m_Mirror: 0
+  m_BlendParameter: OSCm/Proxy/FT/v2/JawOpen
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -2811,7 +2842,7 @@ AnimatorStateMachine:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
+  m_Name: FX - Face Tracking - UE Blendshapes
   m_ChildStates: []
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
@@ -3645,7 +3676,7 @@ BlendTree:
   m_MaxThreshold: 1.4
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
-  m_BlendType: 2
+  m_BlendType: 3
 --- !u!1102 &-5125833159584432368
 AnimatorState:
   serializedVersion: 6
@@ -3777,7 +3808,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -602694434411122999}
     m_Threshold: 0.33333334
-    m_Position: {x: 0.8, y: 0}
+    m_Position: {x: 0.75, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
@@ -5094,7 +5125,7 @@ BlendTree:
   m_Name: Cheek Suck Left Blend
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 821742613359881005}
+    m_Motion: {fileID: 7400000, guid: 1d36a8f2fea9b3a4a9b047d8a5f14e95, type: 2}
     m_Threshold: -1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -7652,7 +7683,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: d2fe827e64dc210448295892014c4fbb, type: 2}
     m_Threshold: 0.33333334
-    m_Position: {x: 0.8, y: 0}
+    m_Position: {x: 0.75, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
@@ -8594,13 +8625,13 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   - m_Name: FT/v2/EyeLidLeft
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 0.75
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: FT/v2/EyeLidRight
     m_Type: 1
-    m_DefaultFloat: 0
+    m_DefaultFloat: 0.75
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
@@ -10082,7 +10113,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
-    m_Name: Base Layer
+    m_Name: FX - Face Tracking - UE Blendshapes
     m_StateMachine: {fileID: -6083153068493338151}
     m_Mask: {fileID: 0}
     m_Motions: []
@@ -10371,7 +10402,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 64b36ee8325492c46bf2238ffb06b898, type: 2}
-    m_Threshold: 0.733
+    m_Threshold: 0.43
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10453,7 +10484,7 @@ BlendTree:
   m_MaxThreshold: 0
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
-  m_BlendType: 2
+  m_BlendType: 3
 --- !u!206 &282402128914282280
 BlendTree:
   m_ObjectHideFlags: 1
@@ -11140,37 +11171,6 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   m_BlendParameter: FT/v2/TongueX
-  m_BlendParameterY: Blend
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 0
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
---- !u!206 &821742613359881005
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Limit Cheek Suck Right (MouthClosed)
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1d36a8f2fea9b3a4a9b047d8a5f14e95, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0cad26076eaece047b200946be141807, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
-    m_Mirror: 0
-  m_BlendParameter: OSCm/Proxy/FT/v2/MouthClosed
   m_BlendParameterY: Blend
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -15675,7 +15675,7 @@ BlendTree:
   m_MaxThreshold: 1.4
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
-  m_BlendType: 2
+  m_BlendType: 3
 --- !u!206 &5729921202829293131
 BlendTree:
   m_ObjectHideFlags: 1
@@ -15686,7 +15686,7 @@ BlendTree:
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 9414fbc948a76d24586c9063bf863e06, type: 2}
-    m_Threshold: 0.8
+    m_Threshold: 0.75
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -15702,7 +15702,7 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: OSCm/Proxy/FT/v2/EyeLidRight
   m_BlendParameterY: Blend
-  m_MinThreshold: 0.8
+  m_MinThreshold: 0.75
   m_MaxThreshold: 1.5
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
@@ -16309,7 +16309,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: d3232856734035743acc71e97b47bffe, type: 2}
     m_Threshold: 0.33333334
-    m_Position: {x: 0.8, y: 0}
+    m_Position: {x: 0.75, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
@@ -17878,7 +17878,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -7181094392082148858}
     m_Threshold: 0.33333334
-    m_Position: {x: 0.8, y: 0}
+    m_Position: {x: 0.75, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
@@ -18020,37 +18020,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!206 &8194090954663707127
-BlendTree:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Limit Cheek Suck Right (MouthClosed)
-  m_Childs:
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2c8d281da19ea0e4685258fce4aa9eb3, type: 2}
-    m_Threshold: 0
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: b27eb83ec33aee747b5127fb9d36dbcb, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
-    m_Mirror: 0
-  m_BlendParameter: OSCm/Proxy/FT/v2/MouthClosed
-  m_BlendParameterY: Blend
-  m_MinThreshold: 0
-  m_MaxThreshold: 1
-  m_UseAutomaticThresholds: 0
-  m_NormalizedBlendValues: 0
-  m_BlendType: 0
 --- !u!206 &8210108943706446820
 BlendTree:
   m_ObjectHideFlags: 1

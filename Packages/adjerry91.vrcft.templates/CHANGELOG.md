@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.2.1] - 2024-02-10
+- Add limits to MouthClosed. MouthClosed should never be larger value than JawOpen.
+- Remove limits to CheekSuckLeft and CheekSuckRight
+- Fix eye open state from 0.8 to 0.75. This has been issue as did not realize that neutral position changed with Unified Expressions for EyeLid parameter.
+- Add EyeDilation breakout
+
 ## [5.2.0] - 2024-01-27
 - Modify logic for MouthOpen and Closed
 - Add MouthUpperUpLeft and MouthUpperUpRight limits

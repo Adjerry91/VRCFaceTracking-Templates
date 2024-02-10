@@ -24,12 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292630351701583892}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4362594811835997267
 MonoBehaviour:
@@ -44,14 +45,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 2
+  unityVersion: 2022.3.6f1
+  vrcfuryVersion: 1.704.0
   config:
     features:
-    - id: 0
-    - id: 1
+    - rid: 0
+    - rid: 1
   somethingIsBroken: 0
   references:
-    version: 1
-    00000000:
+    version: 2
+    RefIds:
+    - rid: 0
       type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 4
@@ -90,9 +94,10 @@ MonoBehaviour:
             fileID: 11400000
             guid: 60f6f9ac43538974ca35465e0a023ed0
             id: 60f6f9ac43538974ca35465e0a023ed0|Packages/adjerry91.vrcft.templates/Animators/SRanipal
-              Blendshapes/Parameters - Face Tracking - SRanipal Blendshapes 138bit.asset
+              Blendshapes/Parameters - Face Tracking - SRanipal Blendshapes.asset
             objRef: {fileID: 11400000, guid: 60f6f9ac43538974ca35465e0a023ed0, type: 2}
           ResetMePlease2: 0
+        smoothedPrms: []
         globalParams:
         - '*'
         allNonsyncedAreGlobal: 0
@@ -124,10 +129,10 @@ MonoBehaviour:
         submenu: 
         removePrefixes: []
         addPrefix: 
-    00000001:
+    - rid: 1
       type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
       data:
-        version: 0
+        version: 1
         path: Face Tracking
         icon:
           version: 1
