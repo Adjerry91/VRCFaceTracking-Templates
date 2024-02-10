@@ -17,6 +17,8 @@ VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://g
 
 Detailed setup PDF guide included in the ```Packages/VRCFT - Jerry's Tempates``` folder
 
+Video guide on my YouTube [https://youtu.be/Ub1c6PiVc9U](https://youtu.be/Ub1c6PiVc9U)
+
 ## Support
 
 Post in ```#template-help``` for advance support on [Jerry's Face Tracking Discord](https://discord.gg/yQtTsVSqx8)
