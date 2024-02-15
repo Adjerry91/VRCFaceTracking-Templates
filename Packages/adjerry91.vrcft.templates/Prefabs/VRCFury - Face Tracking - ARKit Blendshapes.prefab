@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6492838171411412058}
-  - component: {fileID: 7760865376768152650}
+  - component: {fileID: 7418910644520331119}
+  - component: {fileID: 8550375348933281429}
   m_Layer: 0
   m_Name: VRCFury - Face Tracking - ARKit Blendshapes
   m_TagString: Untagged
@@ -24,14 +25,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6770095331675183348}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 879646980273183928}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7760865376768152650
+--- !u!114 &7418910644520331119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,44 +46,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 2
-  config:
-    features:
-    - id: 0
-    - id: 1
+  version: 3
+  unityVersion: 2022.3.6f1
+  vrcfuryVersion: 1.751.0
   somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 9194202309473075202
   references:
-    version: 1
-    00000000:
+    version: 2
+    RefIds:
+    - rid: 9194202309473075202
       type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
       data:
-        version: 3
+        version: 4
         controllers:
         - controller:
+            version: 1
             fileID: 9100000
             guid: 8c1610a0cbc756f4bbe97f185774c159
-            obj: {fileID: 9100000, guid: 8c1610a0cbc756f4bbe97f185774c159, type: 2}
+            id: 8c1610a0cbc756f4bbe97f185774c159|Packages/adjerry91.vrcft.templates/Animators/ARkit
+              Blendshapes/FX - Face Tracking - ARKit Blendshapes.controller
+            objRef: {fileID: 9100000, guid: 8c1610a0cbc756f4bbe97f185774c159, type: 2}
           type: 5
-          ResetMePlease: 0
+          ResetMePlease2: 0
         - controller:
+            version: 1
             fileID: 9100000
             guid: f2fc3717cf3f8394f933f21469a6ebbc
-            obj: {fileID: 9100000, guid: f2fc3717cf3f8394f933f21469a6ebbc, type: 2}
+            id: f2fc3717cf3f8394f933f21469a6ebbc|Packages/adjerry91.vrcft.templates/Animators/Eye
+              Rotation/Additive - Eye Tracking - Eye Rotation.controller
+            objRef: {fileID: 9100000, guid: f2fc3717cf3f8394f933f21469a6ebbc, type: 2}
           type: 2
-          ResetMePlease: 0
+          ResetMePlease2: 0
         menus:
         - menu:
+            version: 1
             fileID: 11400000
             guid: e164e7c81fe6fd64884fb392f4e2218a
-            obj: {fileID: 11400000, guid: e164e7c81fe6fd64884fb392f4e2218a, type: 2}
+            id: e164e7c81fe6fd64884fb392f4e2218a|Packages/adjerry91.vrcft.templates/Animators/ARkit
+              Blendshapes/Face Tracking Control  - ARKit Blendshapes.asset
+            objRef: {fileID: 11400000, guid: e164e7c81fe6fd64884fb392f4e2218a, type: 2}
           prefix: Face Tracking
-          ResetMePlease: 0
+          ResetMePlease2: 0
         prms:
         - parameters:
+            version: 1
             fileID: 11400000
             guid: d8eb8a9f6935db2478591bd2cd3f55e6
-            obj: {fileID: 11400000, guid: d8eb8a9f6935db2478591bd2cd3f55e6, type: 2}
-          ResetMePlease: 0
+            id: d8eb8a9f6935db2478591bd2cd3f55e6|Packages/adjerry91.vrcft.templates/Animators/ARkit
+              Blendshapes/Parameters - Face Tracking - ARkit Blendshapes.asset
+            objRef: {fileID: 11400000, guid: d8eb8a9f6935db2478591bd2cd3f55e6, type: 2}
+          ResetMePlease2: 0
+        smoothedPrms: []
         globalParams:
         - '*'
         allNonsyncedAreGlobal: 0
@@ -90,18 +109,133 @@ MonoBehaviour:
         rootObjOverride: {fileID: 0}
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
-        controller: {fileID: 0}
-        menu: {fileID: 0}
-        parameters: {fileID: 0}
+        allowMissingAssets: 1
+        controller:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        menu:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
+        parameters:
+          version: 1
+          fileID: 0
+          guid: 
+          id: 
+          objRef: {fileID: 0}
         submenu: 
         removePrefixes: []
         addPrefix: 
-    00000001:
+--- !u!114 &8550375348933281429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6770095331675183348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.6f1
+  vrcfuryVersion: 1.751.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 9194202309473075203
+  references:
+    version: 2
+    RefIds:
+    - rid: 9194202309473075203
       type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
       data:
-        version: 0
+        version: 1
         path: Face Tracking
         icon:
+          version: 1
           fileID: 2800000
           guid: fa94a95b9fc80164d8c0ac2d7576f839
-          obj: {fileID: 2800000, guid: fa94a95b9fc80164d8c0ac2d7576f839, type: 3}
+          id: fa94a95b9fc80164d8c0ac2d7576f839|Packages/adjerry91.vrcft.templates/Icons/FaceTrackingIcon2.png
+          objRef: {fileID: 2800000, guid: fa94a95b9fc80164d8c0ac2d7576f839, type: 3}
+--- !u!1001 &1894048655227108816
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6492838171411412058}
+    m_Modifications:
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4543720110938074328, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: m_Name
+      value: Face Tracking ARkit Debug
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 23e2704402837f245a243b9eac4e2e62, type: 3}
+--- !u!4 &879646980273183928 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1620206744170111336, guid: 23e2704402837f245a243b9eac4e2e62,
+    type: 3}
+  m_PrefabInstance: {fileID: 1894048655227108816}
+  m_PrefabAsset: {fileID: 0}

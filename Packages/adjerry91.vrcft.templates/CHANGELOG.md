@@ -1,5 +1,8 @@
 # Changelog
 
+## [5.2.2] - 2024-02-11
+- Face tracking debug prefabs. Window to spawn to see face tracking blendshapes and raw face tracking values.
+
 ## [5.2.1] - 2024-02-10
 - Add limits to MouthClosed. MouthClosed should never be larger value than JawOpen.
 - Remove limits to CheekSuckLeft and CheekSuckRight
