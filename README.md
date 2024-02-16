@@ -20,6 +20,9 @@ Detailed setup PDF guide included in the ```Packages/VRCFT - Jerry's Tempates```
 
 Video guide on my YouTube [https://youtu.be/Ub1c6PiVc9U](https://youtu.be/Ub1c6PiVc9U)
 
+## Change Log
+[VRCFT - Jerry's Template Change Log](https://github.com/Adjerry91/VRCFaceTracking-Templates/blob/main/Packages/adjerry91.vrcft.templates/CHANGELOG.md)
+
 ## Support
 
 Post in ```#template-help``` for advance support on [Jerry's Face Tracking Discord](https://discord.gg/yQtTsVSqx8)
