@@ -1,6 +1,9 @@
 # Changelog
 
-## [5.2.2] - 2024-02-11
+## [5.3.1] - 2024-02-16
+- Add Unity 2022 dependency
+
+## [5.3.0] - 2024-02-11
 - Face tracking debug prefabs. Window to spawn to see face tracking blendshapes and raw face tracking values.
 
 ## [5.2.1] - 2024-02-10
