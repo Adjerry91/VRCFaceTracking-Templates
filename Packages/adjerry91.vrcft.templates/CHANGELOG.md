@@ -1,5 +1,18 @@
 # Changelog
 
+## [5.3.2] - 2024-02-22
+Changes made to ARKit and UE templates
+- Modify JawForward JawOpen limits, decrease to 30%
+- Add JawForward LipFunnel limits, increase to 30%
+- Modify JawX MouthX limits, reduce to 50%
+- Modify MouthFrown Left&Right MouthX limits, reduce to 30%
+- Add LipSuckLower MouthClosed limit, increase to 30%
+- Add LipSuckUpper MouthClosed limit, increase to 30%
+- Limit MouthRaiserUpper from MouthClosed as MouthRaiserUpper is undesirable as breaks MouthApeShape
+- Limit Brow Sad emulation from MouthClosed
+- Remove MouthUpperUp Left&Right Limit with MouthClosed
+- Change logic on JawOpen and MouthClosed; converted to 2D blend
+
 ## [5.3.1] - 2024-02-16
 - Add Unity 2022 dependency
 
