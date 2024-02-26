@@ -79762,6 +79762,37 @@ BlendTree:
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
+--- !u!206 &4899121033257910309
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Eye Sad
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 0094f1f8640900847a2a233c6c615e83, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyeTrackingActive
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e214f3d1bf2c3794b87e220d20788295, type: 2}
+    m_Threshold: 1
+    m_Position: {x: -1.5, y: -1.5}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: EyeTrackingActive
+    m_Mirror: 0
+  m_BlendParameter: OSCm/Proxy/FT/v2/SmileSadLeft
+  m_BlendParameterY: OSCm/Proxy/FT/v2/SmileSadRight
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 3
 --- !u!206 &4903135379016572269
 BlendTree:
   m_ObjectHideFlags: 1
@@ -82199,7 +82230,7 @@ BlendTree:
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 8357932201427246096}
-    m_Threshold: 1
+    m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -82207,7 +82238,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 1132228333097963231}
-    m_Threshold: 2
+    m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -82215,11 +82246,11 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: EyeDilationEnable
   m_BlendParameterY: Blend
-  m_MinThreshold: 1
-  m_MaxThreshold: 2
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
-  m_BlendType: 4
+  m_BlendType: 0
 --- !u!206 &5370585221859355243
 BlendTree:
   m_ObjectHideFlags: 1
@@ -96288,7 +96319,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: EyeDilationEnable
+    m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -9004291375513686564}
@@ -100602,8 +100633,8 @@ BlendTree:
   m_Name: Eye Wide
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0094f1f8640900847a2a233c6c615e83, type: 2}
-    m_Threshold: 0
+    m_Motion: {fileID: 4899121033257910309}
+    m_Threshold: 0.5
     m_Position: {x: 0.75, y: 0.75}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -100619,7 +100650,7 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: OSCm/Proxy/FT/v2/EyeLidLeft
   m_BlendParameterY: OSCm/Proxy/FT/v2/EyeLidRight
-  m_MinThreshold: 0
+  m_MinThreshold: 0.5
   m_MaxThreshold: 1
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
