@@ -1430,7 +1430,7 @@ BlendTree:
   m_Name: Jaw Open Helper (Tongue Out)
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 49e46bbabbaedc6418ce4a434c7d241d, type: 2}
+    m_Motion: {fileID: 7400000, guid: 51e34eb3922895b4dab16b6d4ce33790, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -1438,7 +1438,7 @@ BlendTree:
     m_DirectBlendParameter: LipTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8bba9ccc32a27d548975921731a4f09f, type: 2}
+    m_Motion: {fileID: 7400000, guid: 5d8a2d25b34143445a7f45e6a380b371, type: 2}
     m_Threshold: 4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -8809,6 +8809,37 @@ BlendTree:
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
+--- !u!206 &2000011085818662303
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mouth Closed
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: dd4e8df4016be6244bb6f3cf99e3afea, type: 2}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: LipTrackingActive
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: ed25882832d93ff4a87464606589ced2, type: 2}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: LipTrackingActive
+    m_Mirror: 0
+  m_BlendParameter: OSCm/Proxy/FT/v2/MouthClosed
+  m_BlendParameterY: Blend
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 0
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!206 &2119201879205513933
 BlendTree:
   m_ObjectHideFlags: 1
@@ -9918,8 +9949,16 @@ BlendTree:
     m_DirectBlendParameter: LipTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
+    m_Motion: {fileID: 2000011085818662303}
+    m_Threshold: 0.16862169
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: LipTrackingActive
+    m_Mirror: 0
+  - serializedVersion: 2
     m_Motion: {fileID: 6485161820320519066}
-    m_Threshold: 0.17050691
+    m_Threshold: 0.20821114
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9927,7 +9966,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -465651187567531924}
-    m_Threshold: 0.21198156
+    m_Threshold: 0.24780059
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9935,7 +9974,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 8688587931337613783}
-    m_Threshold: 0.25345623
+    m_Threshold: 0.28739002
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9943,7 +9982,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7172647809901287866}
-    m_Threshold: 0.29493088
+    m_Threshold: 0.32697946
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9951,7 +9990,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 4134194082049523909}
-    m_Threshold: 0.33640552
+    m_Threshold: 0.36656892
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9959,7 +9998,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 8147245306518664668}
-    m_Threshold: 0.3778802
+    m_Threshold: 0.40615836
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9967,7 +10006,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 1608840922571711468}
-    m_Threshold: 0.41935486
+    m_Threshold: 0.4457478
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9975,7 +10014,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7874505325712705635}
-    m_Threshold: 0.4608295
+    m_Threshold: 0.48533723
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9983,7 +10022,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2303501304828860869}
-    m_Threshold: 0.50230414
+    m_Threshold: 0.52492666
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9991,7 +10030,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 8590461029944530268}
-    m_Threshold: 0.5437788
+    m_Threshold: 0.5645161
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -9999,7 +10038,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 6901432119776481883}
-    m_Threshold: 0.5852535
+    m_Threshold: 0.6041056
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10007,7 +10046,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 5289460610194881}
-    m_Threshold: 0.6267281
+    m_Threshold: 0.643695
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10015,7 +10054,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 6449750694500424286}
-    m_Threshold: 0.66820276
+    m_Threshold: 0.68328446
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10023,7 +10062,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -5603451600185373223}
-    m_Threshold: 0.70967746
+    m_Threshold: 0.7228739
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10031,7 +10070,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 2337062186203664186}
-    m_Threshold: 0.7511521
+    m_Threshold: 0.76246333
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10039,7 +10078,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -7549156860649135256}
-    m_Threshold: 0.79262674
+    m_Threshold: 0.8020528
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10047,7 +10086,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7085077424741714787}
-    m_Threshold: 0.8341014
+    m_Threshold: 0.8416422
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10055,7 +10094,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -8421505339817103245}
-    m_Threshold: 0.875576
+    m_Threshold: 0.88123167
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10063,7 +10102,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -2951631588331339465}
-    m_Threshold: 0.9170507
+    m_Threshold: 0.92082113
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -10071,7 +10110,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -1030613238074419445}
-    m_Threshold: 0.95852536
+    m_Threshold: 0.96041054
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -12764,7 +12803,7 @@ BlendTree:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Jaw Open / Mouth Closed Blend
+  m_Name: Jaw Open Blend
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: -6837406101811662239}
@@ -12775,17 +12814,9 @@ BlendTree:
     m_DirectBlendParameter: LipTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 5b59f0bc557e882458166e6266e55e37, type: 2}
-    m_Threshold: 1.6
+    m_Motion: {fileID: 7400000, guid: 5d8a2d25b34143445a7f45e6a380b371, type: 2}
+    m_Threshold: 1
     m_Position: {x: 1, y: 0.5}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: LipTrackingActive
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 8bba9ccc32a27d548975921731a4f09f, type: 2}
-    m_Threshold: 3.2
-    m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: LipTrackingActive
@@ -12793,10 +12824,10 @@ BlendTree:
   m_BlendParameter: OSCm/Proxy/FT/v2/JawOpen
   m_BlendParameterY: OSCm/Proxy/FT/v2/MouthClosed
   m_MinThreshold: 0
-  m_MaxThreshold: 3.2
+  m_MaxThreshold: 1
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
-  m_BlendType: 3
+  m_BlendType: 0
 --- !u!206 &8217528844503785845
 BlendTree:
   m_ObjectHideFlags: 1
