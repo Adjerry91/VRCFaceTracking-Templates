@@ -1,5 +1,13 @@
 # Changelog
 
+## [5.3.3] - 2024-02-26
+- Eye Dilation emulation is only on when toggle is off.
+- Add eye dilation emulation to frown
+- Add template version number to debug window
+- Fix FBX import warnings on blendshape normals
+- Change texture import size
+- Revert Jaw Open and Mouth Closed logic as it breaks SRanipal tracking headsets. 
+
 ## [5.3.2] - 2024-02-22
 Changes made to ARKit and UE templates
 - Modify JawForward JawOpen limits, decrease to 30%
