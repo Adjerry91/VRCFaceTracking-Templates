@@ -1,5 +1,8 @@
 # Changelog
 
+## [5.3.4] - 2024-02-28
+- Bug with importing getting hung up by Blender files
+
 ## [5.3.3] - 2024-02-26
 - Eye Dilation emulation is only on when toggle is off.
 - Add eye dilation emulation to frown
