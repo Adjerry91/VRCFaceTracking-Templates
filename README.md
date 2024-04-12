@@ -12,7 +12,7 @@ VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://g
 ## Setup 
 
 1. Add/Import [VRCFury](https://vrcfury.com/download)
-2. Add/Import VRCFT Jerry's Templates from [Jerry's VRCFT Templates Listing](https://adjerry91.github.io/VRCFaceTracking-Templates/)
+2. Add/Import VRCFT Jerry's Templates from [Jerry's VRCFT Templates Listing](https://adjerry91.github.io/VRCFaceTracking-Templates/) Repository Listing URL https://Adjerry91.github.io/VRCFaceTracking-Templates/index.json
 3. Add face tracking prefab to your avatar located in ```Packages/VRCFT - Jerry's Templates/Prefabs```
    * Uses the corresponding face tracking shapes prefab, if not sure look this [Face Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit?usp=sharing)
 
