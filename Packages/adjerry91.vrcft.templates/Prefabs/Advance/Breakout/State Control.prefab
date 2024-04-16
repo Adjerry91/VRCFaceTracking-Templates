@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000071198415836959}
-  - component: {fileID: 1075292081292321778}
+  - component: {fileID: 6777491425254679797}
+  - component: {fileID: 7772238166298507905}
   m_Layer: 0
   m_Name: State Control
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1075292081292321778
+--- !u!114 &6777491425254679797
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,18 +45,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 2
+  version: 3
   unityVersion: 2022.3.6f1
-  vrcfuryVersion: 1.694.0
-  config:
-    features:
-    - rid: 878159515254521856
-    - rid: 878159515254521864
+  vrcfuryVersion: 1.822.0
   somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 7880059164575924234
   references:
     version: 2
     RefIds:
-    - rid: 878159515254521856
+    - rid: 7880059164575924234
       type: {class: FullController, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 4
@@ -68,33 +69,29 @@ MonoBehaviour:
               States/FX - VRCFT - States.controller
             objRef: {fileID: 9100000, guid: 405f942000f51334da5e4a8b38ac37bd, type: 2}
           type: 5
-          ResetMePlease2: 0
         menus:
         - menu:
             version: 1
             fileID: 0
             guid: 
-            id: 7fc3cb4b2a38ba6499e013e8a4a42d85|Packages/adjerry91.vrcft.templates/Animators/Tracking
-              States/MM - States.asset
+            id: 7fc3cb4b2a38ba6499e013e8a4a42d85|Packages/adjerry91.vrcft.templates/Menu/Menu
+              - States.asset
             objRef: {fileID: 11400000, guid: 7fc3cb4b2a38ba6499e013e8a4a42d85, type: 2}
           prefix: Face Tracking
-          ResetMePlease2: 0
         prms:
         - parameters:
             version: 1
             fileID: 0
             guid: 
             id: 454123732c6963b49af22701a6101049|Packages/adjerry91.vrcft.templates/Animators/Tracking
-              States/Para - VRCFT - States.asset
+              States/Para - States.asset
             objRef: {fileID: 11400000, guid: 454123732c6963b49af22701a6101049, type: 2}
-          ResetMePlease2: 0
         smoothedPrms: []
         globalParams:
         - '*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
-        useSecurityForToggle: 0
         rootObjOverride: {fileID: 0}
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
@@ -120,7 +117,31 @@ MonoBehaviour:
         submenu: 
         removePrefixes: []
         addPrefix: 
-    - rid: 878159515254521864
+        useSecurityForToggle: 0
+--- !u!114 &7772238166298507905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592779010130449399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  unityVersion: 2022.3.6f1
+  vrcfuryVersion: 1.822.0
+  somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 7880059164575924235
+  references:
+    version: 2
+    RefIds:
+    - rid: 7880059164575924235
       type: {class: SetIcon, ns: VF.Model.Feature, asm: VRCFury}
       data:
         version: 1
