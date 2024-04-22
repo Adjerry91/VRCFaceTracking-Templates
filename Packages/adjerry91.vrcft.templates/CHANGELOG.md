@@ -1,5 +1,10 @@
 # Changelog
 
+## [5.3.5] - 2024-04-22
+- Fix SRanipal debug panel animations
+- Change SRanipal Lip Funnel Logic
+- Change Tracking State Logic
+
 ## [5.3.4] - 2024-02-28
 - Bug with importing getting hung up by Blender files
 
