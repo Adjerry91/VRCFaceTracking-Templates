@@ -1,5 +1,8 @@
 # Changelog
 
+## [5.3.6] - 2024-04-26
+- Fix tracking state when loading new worlds
+
 ## [5.3.5] - 2024-04-26
 - Fix SRanipal debug panel animations
 - Change SRanipal Lip Funnel Logic
