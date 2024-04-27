@@ -1,5 +1,9 @@
 # Changelog
 
+## [5.3.7] - 2024-04-27
+- Fix viseme save state between worlds
+- Change eyebrow tracking to EyeTrackingActive
+
 ## [5.3.6] - 2024-04-26
 - Fix tracking state when loading new worlds
 
