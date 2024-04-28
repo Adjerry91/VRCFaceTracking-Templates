@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.0.0] - 2024-04-28
+- OSC Float local
+
+WILL BREAK AVATARS FOR IMBEDDED TEMPLATES
+
 ## [5.3.7] - 2024-04-27
 - Fix viseme save state between worlds
 - Change eyebrow tracking from LipTrackingActive to EyeTrackingActive
