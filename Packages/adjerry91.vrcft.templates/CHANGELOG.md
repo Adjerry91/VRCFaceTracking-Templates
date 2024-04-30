@@ -1,7 +1,9 @@
 # Changelog
 
-## [6.0.0] - 2024-04-28
+## [6.0.0] - 2024-04-30
 - OSC Float local
+- Frame time smoothing
+- Frame time debug
 
 WILL BREAK AVATARS FOR IMBEDDED TEMPLATES
 
