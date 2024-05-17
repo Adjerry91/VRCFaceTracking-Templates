@@ -45,13 +45,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e94e501a2d4c95bff3d5601013d923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 2
+  version: 3
   unityVersion: 2022.3.6f1
-  vrcfuryVersion: 1.694.0
-  config:
-    features:
-    - rid: 878159515254521860
+  vrcfuryVersion: 1.851.0
   somethingIsBroken: 0
+  config:
+    features: []
+  content:
+    rid: 878159515254521860
   references:
     version: 2
     RefIds:
@@ -68,7 +69,6 @@ MonoBehaviour:
               Expressions Blendshapes/Breakout/FX - UE - Lip.controller
             objRef: {fileID: 9100000, guid: 7e5ffd5c4237eb14caeb11ecd52a052d, type: 2}
           type: 5
-          ResetMePlease2: 0
         menus: []
         prms:
         - parameters:
@@ -78,17 +78,18 @@ MonoBehaviour:
             id: 740db2147a67cc64d977eeddff4ba432|Packages/adjerry91.vrcft.templates/Animators/Unified
               Expressions Blendshapes/Breakout/Para - UE - Lip.asset
             objRef: {fileID: 11400000, guid: 740db2147a67cc64d977eeddff4ba432, type: 2}
-          ResetMePlease2: 0
         smoothedPrms: []
         globalParams:
         - '*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
-        useSecurityForToggle: 0
         rootObjOverride: {fileID: 0}
         rootBindingsApplyToAvatar: 0
-        rewriteBindings: []
+        rewriteBindings:
+        - from: 
+          to: 
+          delete: 0
         allowMissingAssets: 0
         controller:
           version: 1
@@ -111,6 +112,7 @@ MonoBehaviour:
         submenu: 
         removePrefixes: []
         addPrefix: 
+        useSecurityForToggle: 0
 --- !u!1001 &6179471500342063126
 PrefabInstance:
   m_ObjectHideFlags: 0

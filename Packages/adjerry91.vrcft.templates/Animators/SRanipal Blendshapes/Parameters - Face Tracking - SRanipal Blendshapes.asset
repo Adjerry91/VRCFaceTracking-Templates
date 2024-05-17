@@ -26,7 +26,7 @@ MonoBehaviour:
   - name: EyeDilationEnable
     valueType: 2
     saved: 1
-    defaultValue: 1
+    defaultValue: 0
     networkSynced: 1
   - name: VisemesEnable
     valueType: 2
@@ -42,11 +42,6 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 0
-    networkSynced: 0
-  - name: State/VisemesEnable
-    valueType: 2
-    saved: 1
-    defaultValue: 1
     networkSynced: 0
   - name: FT/v2/EyeLidLeft
     valueType: 1
@@ -73,6 +68,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/PupilDilation
+    valueType: 1
+    saved: 0
+    defaultValue: 0.43
+    networkSynced: 0
   - name: FT/v2/PupilDilation1
     valueType: 2
     saved: 0
@@ -88,6 +88,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/EyeSquintLeft
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/EyeSquintLeft1
     valueType: 2
     saved: 0
@@ -103,6 +108,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/EyeSquintRight
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/EyeSquintRight1
     valueType: 2
     saved: 0
@@ -133,6 +143,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/MouthLowerDown
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/MouthLowerDown1
     valueType: 2
     saved: 0
@@ -148,6 +163,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/LipFunnel
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/LipFunnel1
     valueType: 2
     saved: 0
@@ -163,6 +183,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/LipPucker
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/LipPucker1
     valueType: 2
     saved: 0
@@ -178,6 +203,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/LipSuckUpper
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/LipSuckUpper1
     valueType: 2
     saved: 0
@@ -193,6 +223,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/LipSuckLower
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/LipSuckLower1
     valueType: 2
     saved: 0
@@ -208,6 +243,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/SmileSadLeft
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/SmileSadLeft1
     valueType: 2
     saved: 0
@@ -228,6 +268,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/SmileSadRight
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/SmileSadRight1
     valueType: 2
     saved: 0
@@ -248,6 +293,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/MouthX
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/MouthX1
     valueType: 2
     saved: 0
@@ -273,6 +323,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/JawX
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/JawX1
     valueType: 2
     saved: 0
@@ -293,6 +348,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/MouthRaiserLower
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/MouthRaiserLower1
     valueType: 2
     saved: 0
@@ -308,6 +368,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/CheekPuffSuckLeft
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/CheekPuffSuckLeft1
     valueType: 2
     saved: 0
@@ -328,6 +393,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/CheekPuffSuckRight
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/CheekPuffSuckRight1
     valueType: 2
     saved: 0
@@ -348,6 +418,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/TongueOut
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/TongueOut1
     valueType: 2
     saved: 0
@@ -363,6 +438,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/TongueX
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/TongueX1
     valueType: 2
     saved: 0
@@ -383,6 +463,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/TongueY
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/TongueY1
     valueType: 2
     saved: 0
@@ -403,6 +488,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/JawForward
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/JawForward4
     valueType: 2
     saved: 0
@@ -418,6 +508,11 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
+  - name: FT/v2/TongueRoll
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
   - name: FT/v2/TongueRoll1
     valueType: 2
     saved: 0
