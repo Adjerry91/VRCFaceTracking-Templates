@@ -3362,18 +3362,10 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/BlendSet
+    m_DirectBlendParameter: EyeTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e1e4034269612ca4fb713e8dbbd42401, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/TimeSinceLoad
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1ca40e68e90e4b44d8086563058aec2c, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -3381,16 +3373,24 @@ BlendTree:
     m_DirectBlendParameter: OSCm/TimeSinceLoad
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ba1429d03fb43c546b6238d2de0d37a1, type: 2}
+    m_Motion: {fileID: 7400000, guid: 1ca40e68e90e4b44d8086563058aec2c, type: 2}
     m_Threshold: 3
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: OSCm/TimeSinceLoad
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: ba1429d03fb43c546b6238d2de0d37a1, type: 2}
+    m_Threshold: 4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: OSCm/LastTimeSinceLoad
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: be3c555cfbf4309428da929a53bffa0f, type: 2}
-    m_Threshold: 4
+    m_Motion: {fileID: 7400000, guid: 4c46e036d7ef73f4ba157d8c4a317838, type: 2}
+    m_Threshold: 5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -3399,7 +3399,7 @@ BlendTree:
   m_BlendParameter: Blend
   m_BlendParameterY: Blend
   m_MinThreshold: 0
-  m_MaxThreshold: 4
+  m_MaxThreshold: 5
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 4
@@ -47960,18 +47960,10 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/BlendSet
+    m_DirectBlendParameter: EyeTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: e1e4034269612ca4fb713e8dbbd42401, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/TimeSinceLoad
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1ca40e68e90e4b44d8086563058aec2c, type: 2}
     m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -47979,16 +47971,24 @@ BlendTree:
     m_DirectBlendParameter: OSCm/TimeSinceLoad
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ba1429d03fb43c546b6238d2de0d37a1, type: 2}
+    m_Motion: {fileID: 7400000, guid: 1ca40e68e90e4b44d8086563058aec2c, type: 2}
     m_Threshold: 3
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: OSCm/TimeSinceLoad
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: ba1429d03fb43c546b6238d2de0d37a1, type: 2}
+    m_Threshold: 4
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: OSCm/LastTimeSinceLoad
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1a94321e2c1d628448157e49ea696e37, type: 2}
-    m_Threshold: 4
+    m_Motion: {fileID: 7400000, guid: a21dfff8f64c4144384e046e99ceaea8, type: 2}
+    m_Threshold: 5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -47997,7 +47997,7 @@ BlendTree:
   m_BlendParameter: Blend
   m_BlendParameterY: Blend
   m_MinThreshold: 0
-  m_MaxThreshold: 4
+  m_MaxThreshold: 5
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 4
@@ -50385,13 +50385,13 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
   - m_Name: OSCm/Local/PupilDilationSmoothing
     m_Type: 1
-    m_DefaultFloat: 0.5
+    m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
   - m_Name: OSCm/Remote/PupilDilationSmoothing
     m_Type: 1
-    m_DefaultFloat: 0.2
+    m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
