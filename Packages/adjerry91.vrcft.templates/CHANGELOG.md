@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.0.2] - 2024-05-23
+- Fix broken eye rotation smoothing
+
 ## [6.0.1] - 2024-05-23
 - Fix bugs with frame time smoothing for remote users
 - Add disable smoothing with face tracking toggles
