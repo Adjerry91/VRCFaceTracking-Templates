@@ -1,5 +1,11 @@
 # Changelog
 
+## [6.1.0] - 2024-05-30
+- Add EyeTrackingActive and LipTrackingActive to enable disable smoothing
+- Remote and local smoothing is now in one blendtree
+- Binary decode only animates for remote users
+- Fix SRanipal and ARkit debug panel for v6
+
 ## [6.0.2] - 2024-05-23
 - Fix broken eye rotation smoothing
 
