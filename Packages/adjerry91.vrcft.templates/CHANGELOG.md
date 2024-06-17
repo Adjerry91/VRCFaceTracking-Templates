@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.1.1] - 2024-06-10
+- Fix visemes not saving previous saved states
+
 ## [6.1.0] - 2024-05-30
 - Add EyeTrackingActive and LipTrackingActive to enable disable smoothing
 - Remote and local smoothing is now in one blendtree
