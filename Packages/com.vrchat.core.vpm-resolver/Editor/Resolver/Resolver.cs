@@ -113,7 +113,7 @@ namespace VRC.PackageManagement.Resolver
         public static void CreateManifest()
         {
             VPMProjectManifest.Load(ProjectDir);
-            ResolverWindow.Refresh();
+            ResolverWindow.Refresh().ConfigureAwait(false);
         }
         
         public static void ResolveManifest()

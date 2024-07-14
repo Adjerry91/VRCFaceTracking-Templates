@@ -31,6 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1916077647242682148}
   - {fileID: 3124685371209721276}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.6f1
-  vrcfuryVersion: 1.751.0
+  vrcfuryVersion: 1.942.0
   somethingIsBroken: 0
   config:
     features: []
@@ -70,16 +71,6 @@ MonoBehaviour:
               Expressions Blendshapes/FX - Face Tracking - UE Blendshapes.controller
             objRef: {fileID: 9100000, guid: 3e24e4c5e5551bc409c5a49e228d590f, type: 2}
           type: 5
-          ResetMePlease2: 0
-        - controller:
-            version: 1
-            fileID: 9100000
-            guid: f2fc3717cf3f8394f933f21469a6ebbc
-            id: f2fc3717cf3f8394f933f21469a6ebbc|Packages/adjerry91.vrcft.templates/Animators/Eye
-              Rotation/Additive - Eye Tracking - Eye Rotation.controller
-            objRef: {fileID: 9100000, guid: f2fc3717cf3f8394f933f21469a6ebbc, type: 2}
-          type: 2
-          ResetMePlease2: 0
         menus:
         - menu:
             version: 1
@@ -89,7 +80,6 @@ MonoBehaviour:
               Expressions Blendshapes/Face Tracking Control - UE Blendshapes.asset
             objRef: {fileID: 11400000, guid: 36335ab195d33f84199a79cd56e6a010, type: 2}
           prefix: Face Tracking
-          ResetMePlease2: 0
         prms:
         - parameters:
             version: 1
@@ -98,14 +88,12 @@ MonoBehaviour:
             id: 9415cab947986f14198e5340846ccda9|Packages/adjerry91.vrcft.templates/Animators/Unified
               Expressions Blendshapes/Parameters - Face Tracking - UE Blendshapes.asset
             objRef: {fileID: 11400000, guid: 9415cab947986f14198e5340846ccda9, type: 2}
-          ResetMePlease2: 0
         smoothedPrms: []
         globalParams:
         - '*'
         allNonsyncedAreGlobal: 0
         ignoreSaved: 0
         toggleParam: 
-        useSecurityForToggle: 0
         rootObjOverride: {fileID: 0}
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
@@ -131,6 +119,7 @@ MonoBehaviour:
         submenu: 
         removePrefixes: []
         addPrefix: 
+        useSecurityForToggle: 0
 --- !u!114 &8564351167947611669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.6f1
-  vrcfuryVersion: 1.751.0
+  vrcfuryVersion: 1.942.0
   somethingIsBroken: 0
   config:
     features: []
@@ -238,4 +227,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4315911109072205343, guid: 08ac0acd768e6834590625dd5c5d200d,
     type: 3}
   m_PrefabInstance: {fileID: 1204764041767654307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8799139348568660356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2728448342756374627}
+    m_Modifications:
+    - target: {fileID: 6352857496762540402, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_Name
+      value: Eye Rotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25f63ab7cdf9c954c981417c99707344, type: 3}
+--- !u!4 &1916077647242682148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
+    type: 3}
+  m_PrefabInstance: {fileID: 8799139348568660356}
   m_PrefabAsset: {fileID: 0}

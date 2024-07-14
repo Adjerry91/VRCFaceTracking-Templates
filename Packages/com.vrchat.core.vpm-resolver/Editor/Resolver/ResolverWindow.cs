@@ -118,7 +118,13 @@ namespace VRC.PackageManagement.Resolver
         /// </summary>
         private void CreateGUI()
         {
-            _rootView = rootVisualElement;
+            ScrollView scrollView = new ScrollView()
+            {
+                horizontalScrollerVisibility = ScrollerVisibility.Hidden,
+            };
+            rootVisualElement.Add(scrollView);
+            
+            _rootView = scrollView;
             _rootView.name = "root-view";
             _rootView.styleSheets.Add((StyleSheet)Resources.Load("ResolverWindowStyle"));
 
@@ -158,7 +164,10 @@ namespace VRC.PackageManagement.Resolver
             _manifestInfo.Add(_manifestLabel);
             _manifestInfoText = new Label();
             _manifestInfo.Add(_manifestInfoText);
-            _manifestPackageList = new VisualElement();
+            _manifestPackageList = new ScrollView()
+            {
+                verticalScrollerVisibility = ScrollerVisibility.Hidden,
+            };
             _manifestPackageList.style.flexDirection = FlexDirection.Column;
             _manifestPackageList.style.alignItems = Align.Stretch;
             _manifestInfo.Add(_manifestPackageList);
@@ -171,7 +180,7 @@ namespace VRC.PackageManagement.Resolver
             {
                 // When manually refreshing - ensure package manager is also up to date
                 Resolver.ForceRefresh();
-                Refresh();
+                Refresh().ConfigureAwait(false);
             })
             {
                 text = "Refresh",
@@ -192,7 +201,7 @@ namespace VRC.PackageManagement.Resolver
                 Resolver.ForceRefresh();
             }
 
-            rootVisualElement.schedule.Execute(() => Refresh()).ExecuteLater(100);
+            rootVisualElement.schedule.Execute(() => Refresh().ConfigureAwait(false)).ExecuteLater(100);
         }
 
         private static VisualElement CreateDependencyRow(string id, string version, UnityProject project, IVRCPackage package, List <string> allVersions)
@@ -209,11 +218,11 @@ namespace VRC.PackageManagement.Resolver
             column1.style.minWidth = 200;
             column1.style.width = new StyleLength(new Length(40, LengthUnit.Percent));
             column2.style.minWidth = 100;
-            column2.style.width = new StyleLength(new Length(20, LengthUnit.Percent));
+            column2.style.width = new StyleLength(new Length(19f, LengthUnit.Percent));
             column3.style.minWidth = 100;
-            column3.style.width = new StyleLength(new Length(20, LengthUnit.Percent));
+            column3.style.width = new StyleLength(new Length(19f, LengthUnit.Percent));
             column4.style.minWidth = 100;
-            column4.style.width = new StyleLength(new Length(20, LengthUnit.Percent));
+            column4.style.width = new StyleLength(new Length(19f, LengthUnit.Percent));
 
             row.Add(column1);
             row.Add(column2);
@@ -245,7 +254,8 @@ namespace VRC.PackageManagement.Resolver
             var currVersion = Mathf.Max(0, havePackage ? allVersions.IndexOf(package.Version) : 0);
             var popupField = new PopupField<string>(allVersions, 0)
             {
-                value = allVersions[currVersion]
+                value = allVersions[currVersion],
+                style = { flexGrow = 1}
             };
 
             column3.Add(popupField);
@@ -351,7 +361,7 @@ namespace VRC.PackageManagement.Resolver
             await Task.Delay(500);
             project.UpdateVPMPackage(package);
             _isUpdating = false;
-            Refresh();
+            await Refresh();
             Resolver.ForceRefresh();
         }
 
