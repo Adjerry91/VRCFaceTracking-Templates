@@ -1,6 +1,6 @@
 # Changelog
 
-## [6.2.0] - 2024-07-15
+## [6.2.1] - 2024-07-15
 - Update to Unity 2022.3.22f1
 - Add new UE prefab to use TongueOutStep1 and TongueOutStep2. This prefab is to be used for avatars with tongue placed low in the mouth.
 - Split out eye rotation from the main face tracking. Some avatar do not use eye rotation for eye tracking.
