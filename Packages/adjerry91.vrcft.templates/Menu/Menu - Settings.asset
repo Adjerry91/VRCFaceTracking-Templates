@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
-  m_Name: Menu - States
+  m_Name: Menu - Settings
   m_EditorClassIdentifier: 
   controls:
   - name: <size=150%><voffset=4.75em><color=#DDDDDD><b>VRCFT v5 INFO</b></color>
@@ -23,23 +23,14 @@ MonoBehaviour:
     subMenu: {fileID: 11400000, guid: e9c00772df216f14e8cced3b7abd6451, type: 2}
     subParameters: []
     labels: []
-  - name: Facial Expression Disabled
-    icon: {fileID: 2800000, guid: 70532155452b91149bd82125c362ca6b, type: 3}
-    type: 102
+  - name: Local Smoothing
+    icon: {fileID: 2800000, guid: 5cbddbb7b8afbec4f907bacec60a7fa4, type: 3}
+    type: 203
     parameter:
-      name: FacialExpressionsDisabled
+      name: 
     value: 1
     style: 0
     subMenu: {fileID: 0}
-    subParameters: []
-    labels: []
-  - name: Visemes Enabled
-    icon: {fileID: 2800000, guid: b10af621e35b08a409353bd770722b10, type: 3}
-    type: 102
-    parameter:
-      name: VisemesEnable
-    value: 1
-    style: 0
-    subMenu: {fileID: 0}
-    subParameters: []
+    subParameters:
+    - name: Smoothing/Local
     labels: []
