@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: Menu - Settings
   m_EditorClassIdentifier: 
+  Parameters: {fileID: 11400000, guid: 9415cab947986f14198e5340846ccda9, type: 2}
   controls:
   - name: <size=150%><voffset=4.75em><color=#DDDDDD><b>VRCFT v5 INFO</b></color>
     icon: {fileID: 2800000, guid: 974dcd4fe1c7a9b4bacf1ba75fad62af, type: 3}
@@ -22,6 +23,17 @@ MonoBehaviour:
     style: 0
     subMenu: {fileID: 11400000, guid: e9c00772df216f14e8cced3b7abd6451, type: 2}
     subParameters: []
+    labels: []
+  - name: Remote Testing
+    icon: {fileID: 2800000, guid: 6fd63e9e28dde9c428f23dd316356f13, type: 3}
+    type: 102
+    parameter:
+      name: RemoteModeActive
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: Smoothing/Local
     labels: []
   - name: Local Smoothing
     icon: {fileID: 2800000, guid: 5cbddbb7b8afbec4f907bacec60a7fa4, type: 3}
