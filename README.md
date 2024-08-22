@@ -29,7 +29,8 @@ Post in ```#template-help``` for advance support on [Jerry's Face Tracking Disco
 
 ## Face Tracking Animation Tips:
 
-* Modification to the thresholds may be needed for some animation sensitivity for different faces
-* Driver, binary, and smooth layer require write defaults ON
+* It is recommend to to remove template and add again when updating versions.
+* Do not embed templates without VRCFury or modifiying animators in products. Embedding will break face tracking template support for future updates.
+* Change FBX rig configuration muscle settings for bone rotation adjustments.
 
 
