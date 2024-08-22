@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.3.0] - 2024-08-22
+- Optimized FX and Additive Controllers - Azuki Pull Request #10
+	- One layer face tracking
+	- Local Smoothing Adjust
+	- Remote Smoothing Test
+	- Performance upgrade 
+- Advance prefabs has been moved to Legacy. Difficult to maintain and support. No more updates.
+
 ## [6.2.1] - 2024-07-15
 - Update to Unity 2022.3.22f1
 - Add new UE prefab to use TongueOutStep1 and TongueOutStep2. This prefab is to be used for avatars with tongue placed low in the mouth.
