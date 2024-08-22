@@ -7,6 +7,7 @@
 	- Remote Smoothing Test
 	- Performance upgrade 
 - Advance prefabs has been moved to Legacy. Difficult to maintain and support. No more updates.
+- Seperate CheekSquint from MouthSmile and reduce the influence by 50% and update to debug panel accordingly.
 
 ## [6.2.1] - 2024-07-15
 - Update to Unity 2022.3.22f1
