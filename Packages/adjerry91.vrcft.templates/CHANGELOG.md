@@ -1,5 +1,9 @@
 # Changelog
 
+## [6.3.1] - 2024-08-25
+- Add eye tracking state back to FX controllers for blend shape eye tracking only setups.
+- Update tracking state transitions
+
 ## [6.3.0] - 2024-08-22
 - Optimized FX and Additive Controllers - Azuki Pull Request #10
 	- One layer face tracking
