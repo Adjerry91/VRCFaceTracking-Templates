@@ -2449,7 +2449,8 @@ BlendTree:
     m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -7984302575538670895, guid: b8e8f5c8b324bd640bcdf960351194c1, type: 2}
+    m_Motion: {fileID: -7984302575538670895, guid: b8e8f5c8b324bd640bcdf960351194c1,
+      type: 2}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -5634,9 +5635,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 4
     m_ConditionEvent: EyeTrackingActive
     m_EventTreshold: 0.008
-  - m_ConditionMode: 2
-    m_ConditionEvent: State/EyeTracking
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4854093398641829742}
   m_Solo: 0
@@ -6767,12 +6765,6 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 0}
-  - m_Name: State/EyeTracking
-    m_Type: 4
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: Smoothing/Local
     m_Type: 1
     m_DefaultFloat: 0
@@ -7793,9 +7785,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 3
     m_ConditionEvent: EyeTrackingActive
     m_EventTreshold: 0.992
-  - m_ConditionMode: 2
-    m_ConditionEvent: State/EyeTracking
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6132279644546881554}
   m_Solo: 0
@@ -14227,7 +14216,8 @@ BlendTree:
     m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: -8698732481135377226, guid: b8e8f5c8b324bd640bcdf960351194c1, type: 2}
+    m_Motion: {fileID: -8698732481135377226, guid: b8e8f5c8b324bd640bcdf960351194c1,
+      type: 2}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
