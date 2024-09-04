@@ -12,13 +12,17 @@ VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://g
 ## Setup 
 
 1. Add/Import [VRCFury](https://vrcfury.com/download)
-2. Add/Import VRCFT Jerry's Templates from [Jerry's VRCFT Templates Listing](https://adjerry91.github.io/VRCFaceTracking-Templates/) Repository Listing URL https://Adjerry91.github.io/VRCFaceTracking-Templates/index.json
-3. Add face tracking prefab to your avatar located in ```Packages/VRCFT - Jerry's Templates/Prefabs```
-   * Uses the corresponding face tracking shapes prefab, if not sure look this [Face Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit?usp=sharing)
+2. Add/Import VRCFT Jerry's Templates from [Jerry's VRCFT Templates Listing](https://adjerry91.github.io/VRCFaceTracking-Templates/) repository listing URL https://Adjerry91.github.io/VRCFaceTracking-Templates/index.json
+3. Go to ```Packages/VRCFT - Jerry's Templates/Prefabs``` in Unity project window
+4. Add the corresponding face tracking prefab onto your avatar
+   * If not sure which standard shapes are being used, use the following [Face Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit?usp=sharing)
 
 [Detailed setup PDF guide](https://github.com/Adjerry91/VRCFaceTracking-Templates/blob/main/Packages/adjerry91.vrcft.templates/VRCFaceTracking%20Template%20Setup.pdf)
 
-Video guide on my YouTube [https://youtu.be/Ub1c6PiVc9U](https://youtu.be/Ub1c6PiVc9U)
+## Video Guides
+
+- Template setup guide [https://youtu.be/Ub1c6PiVc9U](https://youtu.be/Ub1c6PiVc9U)
+- Template debug guide [https://youtu.be/Q4BN0xp_Tsg](https://youtu.be/Q4BN0xp_Tsg)
 
 ## Change Log
 [VRCFT - Jerry's Template Change Log](https://github.com/Adjerry91/VRCFaceTracking-Templates/blob/main/Packages/adjerry91.vrcft.templates/CHANGELOG.md)
@@ -32,5 +36,5 @@ Post in ```#template-help``` for advance support on [Jerry's Face Tracking Disco
 * It is recommend to remove template and add again when updating versions.
 * Do not embed templates without VRCFury or modifiying animators in products. Embedding will break face tracking template support for future updates.
 * Change FBX rig configuration muscle settings for bone rotation adjustments.
-
+* OSC does not work on Test Avatar Uploads
 
