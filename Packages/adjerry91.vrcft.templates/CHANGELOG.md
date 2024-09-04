@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.3.2] - 2024-09-03
+- VRC contraints for debug
+- Fix viseme state
+- Change eye tracking state back to old logic
+
 ## [6.3.1] - 2024-08-25
 - Add eye tracking state back to FX controllers for blend shape eye tracking only setups.
 - Update tracking state transitions
