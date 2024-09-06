@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.3.3] - 2024-09-06
+- Change debug prefab constraints to work with non-standard bone rotations causing the debug menu to spawn in undesirable locations.
+
 ## [6.3.2] - 2024-09-03
 - VRC contraints for debug
 - Fix viseme state
