@@ -5,7 +5,7 @@ VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://g
 ## Prerequisites
 
 * Unity 2022 (Required after v5.2.0+)
-* VRChat SDK 3.7.0 (Required after v6.3.2 becasue VRC Constraints for face tracking debug panel)
+* VRChat SDK 3.7.0 (Required after v6.3.2+ becasue VRC Constraints for face tracking debug panel)
 * [Latest VRCFaceTracking Release](https://github.com/benaclejames/VRCFaceTracking/releases/latest)
 * Avatar with [SRanipal](https://docs.vrcft.io/docs/v4.0/category/intermediate), [ARKit (Perfect Sync)](https://arkit-face-blendshapes.com/), or [Unified Expressions](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes) face tracking shapekeys
 * Face tracking animations are pointed to the ```Body``` skinned mesh render by default. If face tracking shapes are on a different skinned mesh render, you will need to change VRCFury component to rewrite animations clips prefix. For example if face tracking shapes are on ```Face``` mesh you will need to rewrite ```Body``` to ```Face```
