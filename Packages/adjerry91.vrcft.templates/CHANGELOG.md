@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.4.0] - 2024-10-07
+- Add VRCFury Gesture Disable prefab
+
 ## [6.3.3] - 2024-09-06
 - Change debug prefab constraints to work with non-standard bone rotations causing the debug menu to spawn in undesirable locations.
 

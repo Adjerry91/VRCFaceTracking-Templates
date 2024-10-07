@@ -32,6 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4186412320221618590}
+  - {fileID: 6085722409890605314}
   - {fileID: 879646980273183928}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.980.0
+  vrcfuryVersion: 1.1098.0
   somethingIsBroken: 0
   config:
     features: []
@@ -98,6 +99,7 @@ MonoBehaviour:
         rootBindingsApplyToAvatar: 0
         rewriteBindings: []
         allowMissingAssets: 1
+        injectSpsDepthParam: 
         controller:
           version: 1
           fileID: 0
@@ -134,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.980.0
+  vrcfuryVersion: 1.1098.0
   somethingIsBroken: 0
   config:
     features: []
@@ -212,10 +214,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2920856189151696953, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: latestValidExecutionGroupIndex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4543720110938074328, guid: 23e2704402837f245a243b9eac4e2e62,
         type: 3}
       propertyPath: m_Name
       value: Face Tracking ARkit Debug
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807323455255864690, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: latestValidExecutionGroupIndex
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -301,4 +313,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
     type: 3}
   m_PrefabInstance: {fileID: 6526431894917048126}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6705198142092023883
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6492838171411412058}
+    m_Modifications:
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6105582856652731800, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+        type: 3}
+      propertyPath: m_Name
+      value: Disable Hand Gestures
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 735f9d8e50f3ad240a34c9cc5290d183, type: 3}
+--- !u!4 &6085722409890605314 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 682702603270287689, guid: 735f9d8e50f3ad240a34c9cc5290d183,
+    type: 3}
+  m_PrefabInstance: {fileID: 6705198142092023883}
   m_PrefabAsset: {fileID: 0}
