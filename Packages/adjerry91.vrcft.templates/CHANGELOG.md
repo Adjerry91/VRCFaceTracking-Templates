@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.4.1] - 2024-10-10
+- Add missing VRCFury Gesture Disable prefab to UE Blendshape TongueSteps 
+
 ## [6.4.0] - 2024-10-07
 - Add VRCFury Gesture Disable prefab
 
