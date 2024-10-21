@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.4.2] - 2024-20-21
+- Remove Gesture Disable Prefab. Causes issue with other avatar components. Custom setup will be required to setup FacialExpressionDisabled.
+
 ## [6.4.1] - 2024-10-10
 - Add missing VRCFury Gesture Disable prefab to UE Blendshape TongueSteps 
 
