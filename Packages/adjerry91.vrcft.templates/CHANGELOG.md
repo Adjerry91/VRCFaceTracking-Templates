@@ -1,6 +1,9 @@
 # Changelog
 
-## [6.4.2] - 2024-20-21
+## {6.5.0] - 2024-12-15
+- Add smoothing cutoff, disables smoothing for low fps
+
+## [6.4.2] - 2024-10-21
 - Remove Gesture Disable Prefab. Causes issue with other avatar components. Custom setup will be required to setup FacialExpressionDisabled.
 
 ## [6.4.1] - 2024-10-10
