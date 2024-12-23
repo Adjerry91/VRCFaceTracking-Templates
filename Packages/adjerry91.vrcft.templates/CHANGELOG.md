@@ -1,7 +1,9 @@
 # Changelog
 
-## {6.5.0] - 2024-12-15
-- Add smoothing cutoff, disables smoothing for low fps
+## [6.5.0] - 2024-12-23
+- Add smoothing cutoff, disables smoothing for 30ms+ CPU frame time
+- Slight modification to blend tree for EyeSquint and EyeClosed
+- EyeClosedSquintCorrectiveLeft and EyeCloseQuintCorrectiveRight for EyeClosed + EyeSquint. This optional blendshape to be used to fix clipping issue with the combination of the two blendshapes.
 
 ## [6.4.2] - 2024-10-21
 - Remove Gesture Disable Prefab. Causes issue with other avatar components. Custom setup will be required to setup FacialExpressionDisabled.
