@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.5.1] - 2025-02-07
+- Change smoothing cutoff to 40ms+ CPU frame time
+
 ## [6.5.0] - 2024-12-23
 - Add smoothing cutoff, disables smoothing for 30ms+ CPU frame time
 - Slight modification to blend tree for EyeSquint and EyeClosed
