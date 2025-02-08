@@ -1,6 +1,15 @@
 # Changelog
 
-## [6.5.1] - 2025-02-07
+## [6.5.2] - 2025-02-08
+- Add Eye Closed and Brow Corrective blend shapes to Unified Expressions template
+	- Add EyeClosedBrowDownLeftCorrective
+	- Add EyeClosedBrowDownRightCorrective
+	- Add EyeClosedBrowInnerUpCorrective
+	- Add EyeClosedBrowOuterUpLeftCorrective
+	- Add EyeClosedBrowOuterUpRightCorrective
+- Add NoseSneer to brow down emulation
+
+## [6.5.1] - 2025-02-02
 - Change smoothing cutoff to 40ms+ CPU frame time
 
 ## [6.5.0] - 2024-12-23
