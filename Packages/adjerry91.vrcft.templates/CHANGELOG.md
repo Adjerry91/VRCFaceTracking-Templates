@@ -1,5 +1,11 @@
 # Changelog
 
+## [6.5.3] - 2025-02-08
+- Remove JawFoward limits
+- Remove ToungeOut limits
+- Simplify eye lid tracking blend tree
+	- Remove MouthSmile from triggering squint
+
 ## [6.5.2] - 2025-02-08
 - Add Eye Closed and Brow Corrective blend shapes to Unified Expressions template
 	- Add EyeClosedBrowDownLeftCorrective
