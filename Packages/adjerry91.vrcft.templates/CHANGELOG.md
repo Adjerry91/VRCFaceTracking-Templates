@@ -1,5 +1,10 @@
 # Changelog
 
+## [6.6.0] - 2025-02-12
+- Overhaul on smoothing
+	- Smoothing math was incorrect. Causing issues at high frame rates not being smoothed enough. Old logic > smoothing factor = frametime * scaler
+	- Smoothing math is now > smoothing factor = frametime * scaler + mod offset
+
 ## [6.5.3] - 2025-02-08
 - Remove JawFoward limits
 - Remove ToungeOut limits
