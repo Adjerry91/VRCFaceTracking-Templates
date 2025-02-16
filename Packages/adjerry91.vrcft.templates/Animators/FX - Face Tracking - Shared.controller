@@ -356,7 +356,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: OSCm/FrameTime
+    m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -3783816859828428964}
@@ -372,7 +372,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: IsLocal
+    m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -5565060277688097161}
@@ -815,7 +815,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: IsLocal
+    m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -4825753747804690976}
@@ -6819,13 +6819,13 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Local/FloatScaler
     m_Type: 1
-    m_DefaultFloat: 12.5
+    m_DefaultFloat: 15
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Local/FloatMod
     m_Type: 1
-    m_DefaultFloat: 0.6
+    m_DefaultFloat: 0.5425
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -6837,13 +6837,13 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Local/PupilDilationScaler
     m_Type: 1
-    m_DefaultFloat: 5
+    m_DefaultFloat: 15
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Local/PupilDilationMod
     m_Type: 1
-    m_DefaultFloat: 0.05
+    m_DefaultFloat: 0.0225
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -6855,13 +6855,13 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/FloatScaler
     m_Type: 1
-    m_DefaultFloat: 3
+    m_DefaultFloat: 15
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/FloatMod
     m_Type: 1
-    m_DefaultFloat: 0.2
+    m_DefaultFloat: 0.05
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -6873,13 +6873,13 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/EyeLidScaler
     m_Type: 1
-    m_DefaultFloat: 5
+    m_DefaultFloat: 15
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/EyeLidMod
     m_Type: 1
-    m_DefaultFloat: 0.4
+    m_DefaultFloat: 0.2
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -6891,13 +6891,13 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/BinaryScaler
     m_Type: 1
-    m_DefaultFloat: 3
+    m_DefaultFloat: 15
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/BinaryMod
     m_Type: 1
-    m_DefaultFloat: 0.2
+    m_DefaultFloat: 0.05
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
@@ -6909,13 +6909,13 @@ AnimatorController:
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/PupilDilationScaler
     m_Type: 1
-    m_DefaultFloat: 5
+    m_DefaultFloat: 15
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: OSCm/Remote/PupilDilationMod
     m_Type: 1
-    m_DefaultFloat: 0.05
+    m_DefaultFloat: -0.06
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
