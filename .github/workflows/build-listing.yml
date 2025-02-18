@@ -26,7 +26,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  
+
+  # Build the VPM Listing Website and deploy to GitHub Pages
   build-listing:
     name: build-listing
     environment:
@@ -35,34 +36,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
-      - uses: actions/checkout@v3 # check out this repo
-      - uses: actions/checkout@v3 # check out automation repo
+      # Checkout Local Repository
+      - name: Checkout Local Repository
+        uses: actions/checkout@v4
+
+      # Checkout Automation Repository without removing prior checkouts
+      - name: Checkout Automation Repository
+        uses: actions/checkout@v4
         with:
           repository: vrchat-community/package-list-action
-          path: ${{env.pathToCi}}
-          clean: false # otherwise the local repo will no longer be checked out
-          
+          path: ${{ env.pathToCi }}
+          clean: false
+
+      # Load cached data from previous runs
       - name: Restore Cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
-            ${{env.pathToCi}}/.nuke/temp
+            ${{ env.pathToCi }}/.nuke/temp
             ~/.nuget/packages
           key: ${{ runner.os }}-${{ hashFiles('**/global.json', '**/*.csproj') }}
-          
+      
+      # Build Package Version Listing with Nuke
       - name: Build Package Version Listing
-        run: ${{env.pathToCi}}/build.cmd BuildRepoListing --root ${{env.pathToCi}} --list-publish-directory $GITHUB_WORKSPACE/${{env.listPublishDirectory}} --current-package-name ${{env.CurrentPackageName}}
+        run: ${{ env.pathToCi }}/build.cmd BuildRepoListing --root ${{ env.pathToCi }} --list-publish-directory $GITHUB_WORKSPACE/${{ env.listPublishDirectory }} --current-package-name ${{ vars.PACKAGE_NAME }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
- 
+
+      # Prepare for GitHub Pages deployment
       - name: Setup Pages
-        uses: actions/configure-pages@v3
-        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/configure-pages@v5
+      
+      # Upload the VPM Listing Website to GitHub Pages artifacts
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{env.listPublishDirectory}}
-          
+          path: ${{ env.listPublishDirectory }}
+      
+      # Deploy the uploaded VPM Listing Website to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
