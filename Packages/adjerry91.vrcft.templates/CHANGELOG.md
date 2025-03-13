@@ -1,6 +1,16 @@
 # Changelog
 
-## [6.6.0] - 2025-02-16
+## [6.7.0] - 2025-03-12
+- Lip Funnel should not have MouthUpperUp, MouthLowerDown, and LipPucker. These Shapes cause many conflicts and are not desirable.
+  - Remove LipPucker Lip Funnel limits
+  - Add Lip Funnel to Mouth Upper Up Limits
+  - Add Lip Funnel to Mouth Lower Down Limits
+  - Add Lip Funnel to Lip Pucker Limits
+- Modify the Eye Dilation thresholds to reach maximum dilation and constrict
+- Weird shape with MouthUpperUpLeft/Right with Mouth X. Reduce MouthX on MouthUpperUpLeft and MouthUpperUpRight by 75%
+- Remove PDF guide from template
+
+## [6.6.0] - 2025-02-19
 - Update smoothing math
 	- Changes in smoothing math 
 	- Smoothing math is now > smoothing factor = frametime * scaler + mod offset
