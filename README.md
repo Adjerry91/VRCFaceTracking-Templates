@@ -17,7 +17,7 @@ VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://g
 3. Go to ```Packages/VRCFT - Jerry's Templates/Prefabs``` in Unity project window
 4. Add the corresponding face tracking prefab onto your avatar
    * If not sure which standard shapes are being used, use the following [Face Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit?usp=sharing)
-5. Add FacialExpressionsDisabled and set to "FALSE" to the hand gestures transitions. The Prefab will NOT do this automatically. See detailed Wiki Guide for more information.
+5. Add ```FacialExpressionsDisabled``` and set to "FALSE" to the hand gestures transitions. The Prefab will NOT do this automatically. See detailed Wiki Guide for more information.
 
 [Detailed Wiki guide](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup)
 
