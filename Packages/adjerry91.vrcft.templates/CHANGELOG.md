@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.7.1] - 2025-04-11
+- Reduced the sensitivity of EyeSquint
+
 ## [6.7.0] - 2025-03-12
 - Lip Funnel should not have MouthUpperUp, MouthLowerDown, and LipPucker. These Shapes cause many conflicts and are not desirable.
   - Remove LipPucker Lip Funnel limits
