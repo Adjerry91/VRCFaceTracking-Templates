@@ -42,3 +42,4 @@ Post in ```#template-help``` for advance support on [Jerry's Face Tracking Disco
 * Change FBX rig configuration muscle settings for bone rotation adjustments.
 * OSC does not work on Test Avatar Uploads
 * Eye movement should be on bones by default. Any eye movements with blendshapes will double the movement amount. To remove doubling of rotation unpack and remove the "Eye Rotation" sub prefab.
+* All parameters are exposed on the template prefab. Do NOT use FT/v2/ parameters as these are the raw data coming from OSC and majority of them are floats that are not networked sync'd. Please use OSCm/Proxy/FT/v2 parameters when using in custom animations.
