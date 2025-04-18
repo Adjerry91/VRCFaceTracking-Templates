@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.7.2] - 2025-04-17
+- Fix MouthLowerDown threshold on the UE Blendshapes TongueSteps animator
+
 ## [6.7.1] - 2025-04-11
 - Reduced the sensitivity of EyeSquint
 
