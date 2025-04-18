@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7418910644520331119}
   - component: {fileID: 8550375348933281429}
   m_Layer: 0
-  m_Name: VRCFury - Face Tracking - ARKit Blendshapes
+  m_Name: VF_ARKit_VRCFT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1098.0
+  vrcfuryVersion: 1.1204.0
   somethingIsBroken: 0
   config:
     features: []
@@ -99,6 +99,7 @@ MonoBehaviour:
         rewriteBindings: []
         allowMissingAssets: 1
         injectSpsDepthParam: 
+        injectSpsVelocityParam: 
         controller:
           version: 1
           fileID: 0
@@ -135,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 3
   unityVersion: 2022.3.22f1
-  vrcfuryVersion: 1.1098.0
+  vrcfuryVersion: 1.1204.0
   somethingIsBroken: 0
   config:
     features: []
@@ -215,13 +216,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2920856189151696953, guid: 23e2704402837f245a243b9eac4e2e62,
         type: 3}
+      propertyPath: cachedExecutionGroupIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920856189151696953, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
       propertyPath: latestValidExecutionGroupIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4543720110938074328, guid: 23e2704402837f245a243b9eac4e2e62,
         type: 3}
       propertyPath: m_Name
-      value: Face Tracking ARkit Debug
+      value: VF_ARKit_Debug
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807323455255864690, guid: 23e2704402837f245a243b9eac4e2e62,
+        type: 3}
+      propertyPath: cachedExecutionGroupIndex
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6807323455255864690, guid: 23e2704402837f245a243b9eac4e2e62,
         type: 3}
@@ -250,7 +261,7 @@ PrefabInstance:
     - target: {fileID: 6352857496762540402, guid: 25f63ab7cdf9c954c981417c99707344,
         type: 3}
       propertyPath: m_Name
-      value: Eye Rotation
+      value: VF_EyeRotation
       objectReference: {fileID: 0}
     - target: {fileID: 6956817781164574368, guid: 25f63ab7cdf9c954c981417c99707344,
         type: 3}
