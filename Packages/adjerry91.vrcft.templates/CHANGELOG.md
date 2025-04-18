@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.8.0] - 2025-04-18
+- Add Modular Avatar prefabs
+
 ## [6.7.2] - 2025-04-17
 - Fix MouthLowerDown threshold on the UE Blendshapes TongueSteps animator
 
