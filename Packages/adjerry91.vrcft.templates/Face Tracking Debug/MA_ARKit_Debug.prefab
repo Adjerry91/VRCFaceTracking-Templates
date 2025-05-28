@@ -57,8 +57,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1620206744170111336}
   - component: {fileID: 3866201116448296017}
-  - component: {fileID: 1852182085840349491}
   - component: {fileID: 4395075730409922013}
+  - component: {fileID: 1949428999806849589}
   m_Layer: 0
   m_Name: MA_ARKit_Debug
   m_TagString: Untagged
@@ -106,19 +106,6 @@ MonoBehaviour:
     targetObject: {fileID: 0}
   layerPriority: 0
   mergeAnimatorMode: 0
---- !u!114 &1852182085840349491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4543720110938074328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f466f7723759d354eb033e300906f8cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters: {fileID: 11400000, guid: deb2a02297af6984ba1526dec05e4cc3, type: 2}
 --- !u!114 &4395075730409922013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +120,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuToAppend: {fileID: 11400000, guid: b9704ca8343de87448637cc3f420b461, type: 2}
   installTargetMenu: {fileID: 11400000, guid: e164e7c81fe6fd64884fb392f4e2218a, type: 2}
+--- !u!114 &1949428999806849589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4543720110938074328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: FT/Debug
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
 --- !u!1 &4716714802424655596
 GameObject:
   m_ObjectHideFlags: 0

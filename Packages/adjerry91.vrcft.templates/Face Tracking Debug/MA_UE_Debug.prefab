@@ -294,8 +294,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4315911109072205343}
   - component: {fileID: 4089715924645472815}
-  - component: {fileID: 2216355450815618833}
   - component: {fileID: 1846408171457167997}
+  - component: {fileID: 4389712281754851921}
   m_Layer: 0
   m_Name: MA_UE_Debug
   m_TagString: Untagged
@@ -343,19 +343,6 @@ MonoBehaviour:
     targetObject: {fileID: 0}
   layerPriority: 0
   mergeAnimatorMode: 0
---- !u!114 &2216355450815618833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3700473513992153795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f466f7723759d354eb033e300906f8cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters: {fileID: 11400000, guid: deb2a02297af6984ba1526dec05e4cc3, type: 2}
 --- !u!114 &1846408171457167997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,6 +357,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuToAppend: {fileID: 11400000, guid: b9704ca8343de87448637cc3f420b461, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 36335ab195d33f84199a79cd56e6a010, type: 2}
+--- !u!114 &4389712281754851921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3700473513992153795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: FT/Debug
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
 --- !u!1 &4153609807217169986
 GameObject:
   m_ObjectHideFlags: 0

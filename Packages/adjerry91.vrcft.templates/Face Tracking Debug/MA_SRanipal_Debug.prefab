@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 926930932112017415}
   - component: {fileID: 2132119148685578880}
-  - component: {fileID: 1192674634980347402}
   - component: {fileID: 5033611026893243110}
+  - component: {fileID: 3115861073918475978}
   m_Layer: 0
   m_Name: MA_SRanipal_Debug
   m_TagString: Untagged
@@ -59,19 +59,6 @@ MonoBehaviour:
     targetObject: {fileID: 0}
   layerPriority: 0
   mergeAnimatorMode: 0
---- !u!114 &1192674634980347402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3756743679566761705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f466f7723759d354eb033e300906f8cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parameters: {fileID: 11400000, guid: deb2a02297af6984ba1526dec05e4cc3, type: 2}
 --- !u!114 &5033611026893243110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +73,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuToAppend: {fileID: 11400000, guid: b9704ca8343de87448637cc3f420b461, type: 2}
   installTargetMenu: {fileID: 11400000, guid: 27b4da0be8cf54d48a945ad27507436f, type: 2}
+--- !u!114 &3115861073918475978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3756743679566761705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a96d4ea0c344f39e277d82035bf9bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parameters:
+  - nameOrPrefix: FT/Debug
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
 --- !u!1 &4775844100656576843
 GameObject:
   m_ObjectHideFlags: 0
