@@ -1,7 +1,8 @@
 # Changelog
 
-## [6.8.0] - 2025-04-18
+## [6.8.0] - 2025-05-29
 - Add Modular Avatar prefabs
+- Remove EyeTrackingActive requirement for brow emulation
 
 ## [6.7.2] - 2025-04-17
 - Fix MouthLowerDown threshold on the UE Blendshapes TongueSteps animator
