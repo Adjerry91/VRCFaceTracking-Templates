@@ -106,7 +106,7 @@
 - Frame time smoothing
 - Frame time debug
 
-WILL BREAK AVATARS FOR IMBEDDED TEMPLATES
+WILL BREAK AVATARS FOR EMBEDDED TEMPLATES
 
 ## [5.3.7] - 2024-04-27
 - Fix viseme save state between worlds
