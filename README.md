@@ -17,14 +17,15 @@ VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://g
 1. Add/Import [VRCFury](https://vrcfury.com/download) or [Modular Avatar](https://modular-avatar.nadena.dev/)
 2. Add/Import VRCFT Jerry's Templates from [Jerry's VRCFT Templates Listing](https://adjerry91.github.io/VRCFaceTracking-Templates/) repository listing URL https://Adjerry91.github.io/VRCFaceTracking-Templates/index.json
 3. Go to ```Packages/VRCFT - Jerry's Templates/Prefabs``` in Unity project window\
-![PrefabFolder](https://github.com/user-attachments/assets/0421d5d7-c237-46e1-82be-a6e05ef9a5d8)
-   * Note prefix of the prefab "VF" is VRCFury and "MA" is Modular Avatar
+![PrefabFolder](https://github.com/user-attachments/assets/0421d5d7-c237-46e1-82be-a6e05ef9a5d8)\
+   _Note - Prefix of the prefab "VF" is VRCFury and "MA" is Modular Avatar_\
+   _Note - There are two version of Unified Expressions template. Use normal one for TongueOut blend shape and use TongueSteps for TongueOutStep1 and TongueOutStep2 blend shapes._
 4. Add the corresponding face tracking prefab onto your avatar
 ![Prefab](https://github.com/user-attachments/assets/5b48ab3d-5291-4cdc-ba60-718a12b32b5f)
    * If not sure which standard shapes are being used, use the following [Face Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit?usp=sharing)
 5. Add ```FacialExpressionsDisabled``` and set to "FALSE" to the hand gestures transitions. The Prefab will NOT do this automatically. See detailed Wiki Guide for more information.
 
-[Detailed Wiki guide](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup)
+### [Detailed Wiki guide](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup)
 
 ## Video Guides
 - Template setup guide [https://youtu.be/Ub1c6PiVc9U](https://youtu.be/Ub1c6PiVc9U)
