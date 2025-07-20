@@ -1,5 +1,11 @@
 # Changelog
 
+## [6.8.1] - 2025-07-20
+- Add LipFunnel limits for TongueOut to help against false tongue trigger from Vive Face Tracker
+- Change labeling on the debug menu to make more clear of Blendshapes (Active) and OSC (Raw)
+- Add Head Mask to Additive - Eye Tracking - Eye Rotations controller to fix issues with other additive layer conflicts
+- Fix UE Face Tracking Debug RawTongueUp blendshape breaking 
+
 ## [6.8.0] - 2025-05-29
 - Add Modular Avatar prefabs
 - Remove EyeTrackingActive requirement for brow emulation
