@@ -45,10 +45,7 @@ Avatars using face tracking templates are available at [Jerry's Mod](https://vrc
 
 Post in ```#template-help``` for advance support on [Jerry's Face Tracking Discord](https://discord.gg/yQtTsVSqx8)
 
-## Face Tracking Animation Tips:
+## Notes
 
-* It is recommend to remove template and add again when updating versions.
 * Do __NOT__ embed (copying out the animators) templates without VRCFury or modifiying animators in products. Embedding will break face tracking template support for future updates.
-* Change FBX rig configuration muscle settings for bone rotation adjustments.
-* Eye movement should be on bones by default. Any eye movements with blendshapes will double the movement amount. To remove doubling of rotation unpack and remove the "VF_EyeRotation" or "MA_EyeRotation" sub prefab.
 * All parameters are exposed on the template prefab. Do NOT use FT/v2/ parameters as these are the raw data coming from OSC and majority of them are floats that are not networked sync'd. Please use OSCm/Proxy/FT/v2 parameters when using in custom animations.
