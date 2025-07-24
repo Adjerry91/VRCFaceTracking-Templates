@@ -1,21 +1,22 @@
-# VRCFaceTracking-Templates
+## Overview
 
-VRChat Face Tracking Unity templates to be used with [VRCFaceTracking](https://github.com/benaclejames/VRCFaceTracking)
+[VRCFT](https://github.com/benaclejames/VRCFaceTracking) - Jerry's templates is a Unity package that uses [VRCFury](https://vrcfury.com/download)/[Modular Avatar](https://modular-avatar.nadena.dev/) prefabs that simply add face tracking animations and controllers to an avatar. When applied to an avatar will link [VRCFT](https://github.com/benaclejames/VRCFaceTracking) OSC communication to drive face tracking blendshapes on the avatar. 
 
-## Prerequisites
-* Unity 2022 (Required after v5.2.0+)
-* VRChat SDK 3.7.0+ (Required after v6.3.2+ for VRC Constraints used in the face tracking debug panel)
-* [VRCFaceTracking](https://docs.vrcft.io/docs/intro/getting-started) v5 setup and working. i.e. Test public face tracking avatars first before doing customs. 
+## Requirements
+* Unity 2022
+* VRChat SDK 3.7.0+ 
+* [VRCFaceTracking](https://docs.vrcft.io/docs/intro/getting-started) 
 * Avatar with [SRanipal](https://docs.vrcft.io/docs/v4.0/category/intermediate), [ARkit](https://arkit-face-blendshapes.com/), or [UnifiedExpressions](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes) face tracking blend shapes (Case Sensitive). 
- If you don’t know take a look at this [Face Tracking Conversion](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit) for naming
-   * This is NOT related to the headset you are using!
-* Avoid unpacking FBX, make sure eye bones are assigned rig configuration before unpacking.
-* Face tracking animations are pointed to the ```Body``` skinned mesh render by default. If face tracking shapes are on a different skinned mesh render, you will need to change VRCFury component to rewrite animations clips prefix. For example if face tracking shapes are on ```Face``` mesh you will need to rewrite ```Body``` to ```Face```. Rewrite feature is __NOT__ available on Modular Avatar prefabs. See Additional Setup - [Non-Standard Mesh Names](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup#additional-setup---non-standard-mesh-names) section 
+   * See blendshapes [Face Tracking Conversion](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit) for each standard naming.
+   * Blendshapes are __NOT__ related to the headset you are using.
+* Face tracking animations are pointed to the ```Body``` skinned mesh render (Case Sensitive)
+   * If face tracking shapes are on a different skinned mesh render. See Additional Setup - [Non-Standard Mesh Names](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup#additional-setup---non-standard-mesh-names) in the detailed guide.
+   * Rewrite feature is __NOT__ available on Modular Avatar prefabs.
 
-## Setup 
+## Quick Setup Guide
 
 1. Add/Import [VRCFury](https://vrcfury.com/download) or [Modular Avatar](https://modular-avatar.nadena.dev/)
-2. Add/Import VRCFT Jerry's Templates from [Jerry's VRCFT Templates Listing](https://adjerry91.github.io/VRCFaceTracking-Templates/) repository listing URL https://Adjerry91.github.io/VRCFaceTracking-Templates/index.json
+2. Add/Import VRCFT Jerry's Templates from [Jerry's VRCFT Templates Listing](https://adjerry91.github.io/VRCFaceTracking-Templates/)
 3. Go to ```Packages/VRCFT - Jerry's Templates/Prefabs``` in Unity project window\
 ![PrefabFolder](https://github.com/user-attachments/assets/0421d5d7-c237-46e1-82be-a6e05ef9a5d8)\
    _Note - Prefix of the prefab "VF" is VRCFury and "MA" is Modular Avatar_\
@@ -35,6 +36,10 @@ _Please note video guides can get out of date_
 
 ## Change Log
 [VRCFT - Jerry's Template Change Log](https://github.com/Adjerry91/VRCFaceTracking-Templates/blob/main/Packages/adjerry91.vrcft.templates/CHANGELOG.md)
+
+## Demos
+
+Avatars using face tracking templates are available at [Jerry's Mod](https://vrchat.com/home/launch?worldId=wrld_b24fbb7c-9369-4cff-9242-32a35d44a8e8)
 
 ## Support
 
