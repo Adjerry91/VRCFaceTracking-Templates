@@ -26,7 +26,9 @@
    * If not sure which standard shapes are being used, use the following [Face Tracking Spreadsheet](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit?usp=sharing)
 5. Add ```FacialExpressionsDisabled``` and set to "FALSE" to the hand gestures transitions. The Prefab will NOT do this automatically. See detailed Wiki Guide for more information.
 
-### [Detailed Wiki guide](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup)
+### See [Detailed Wiki guide](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup) for more detailed setup directions.
+
+### Prefab not working? Check the [Troubleshooting Wiki](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Troubleshooting)
 
 ## Video Guides
 - Template setup guide [https://youtu.be/Ub1c6PiVc9U](https://youtu.be/Ub1c6PiVc9U)
@@ -34,18 +36,14 @@
 
 _Please note video guides can get out of date_
 
-## Change Log
-[VRCFT - Jerry's Template Change Log](https://github.com/Adjerry91/VRCFaceTracking-Templates/blob/main/Packages/adjerry91.vrcft.templates/CHANGELOG.md)
-
 ## Demos
 
 Avatars using face tracking templates are available at [Jerry's Mod](https://vrchat.com/home/launch?worldId=wrld_b24fbb7c-9369-4cff-9242-32a35d44a8e8)
-
-## Support
-
-Post in ```#template-help``` for advance support on [Jerry's Face Tracking Discord](https://discord.gg/yQtTsVSqx8)
 
 ## Notes
 
 * Do __NOT__ embed (copying out the animators) templates without VRCFury or modifiying animators in products. Embedding will break face tracking template support for future updates.
 * All parameters are exposed on the template prefab. Do NOT use FT/v2/ parameters as these are the raw data coming from OSC and majority of them are floats that are not networked sync'd. Please use OSCm/Proxy/FT/v2 parameters when using in custom animations.
+
+## Change Log
+[VRCFT - Jerry's Template Change Log](https://github.com/Adjerry91/VRCFaceTracking-Templates/blob/main/Packages/adjerry91.vrcft.templates/CHANGELOG.md)
