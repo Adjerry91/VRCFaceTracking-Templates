@@ -3,12 +3,13 @@
 [VRCFT](https://github.com/benaclejames/VRCFaceTracking) - Jerry's templates is a Unity package that uses [VRCFury](https://vrcfury.com/download)/[Modular Avatar](https://modular-avatar.nadena.dev/) prefabs that simply add face tracking animations and controllers to an avatar. When applied to an avatar will link [VRCFT](https://github.com/benaclejames/VRCFaceTracking) OSC communication to drive face tracking blendshapes on the avatar. 
 
 ## Requirements
-* Unity 2022
-* VRChat SDK 3.7.0+ 
-* [VRCFaceTracking](https://docs.vrcft.io/docs/intro/getting-started) 
 * Avatar with [SRanipal](https://docs.vrcft.io/docs/v4.0/category/intermediate), [ARkit](https://arkit-face-blendshapes.com/), or [UnifiedExpressions](https://docs.vrcft.io/docs/tutorial-avatars/tutorial-avatars-extras/unified-blendshapes) face tracking blend shapes (Case Sensitive). 
    * See blendshapes [Face Tracking Conversion](https://docs.google.com/spreadsheets/d/118jo960co3Mgw8eREFVBsaJ7z0GtKNr52IB4Bz99VTA/edit) for each standard naming.
    * Blendshapes are __NOT__ related to the headset you are using.
+   * ⚠️ Naming is case sensitive ⚠️
+* Unity 2022
+* VRChat SDK 3.7.0+ 
+* [VRCFaceTracking](https://docs.vrcft.io/docs/intro/getting-started) 
 * Face tracking animations are pointed to the ```Body``` skinned mesh render (Case Sensitive)
    * If face tracking shapes are on a different skinned mesh render. See Additional Setup - [Non-Standard Mesh Names](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup#additional-setup---non-standard-mesh-names) in the detailed guide.
    * Rewrite feature is __NOT__ available on Modular Avatar prefabs.
