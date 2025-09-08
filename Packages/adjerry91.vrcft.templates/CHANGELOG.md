@@ -1,5 +1,8 @@
 # Changelog
 
+## [6.8.2] - 2025-09-08
+- Remove Blender files as it causing failures to import
+
 ## [6.8.1] - 2025-07-20
 - Add LipFunnel limits for TongueOut to help against false tongue trigger from Vive Face Tracker
 - Change labeling on the debug menu to make more clear of Blendshapes (Active) and OSC (Raw)
