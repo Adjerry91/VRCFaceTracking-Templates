@@ -1,5 +1,14 @@
 # Changelog
 
+## [7.0.0] - 2025-09-24
+- Add FaceTrackingEmulation toggle in settings menu (Default On). Turning emulation toggle off will disable any emulation of other face tracking blend shapes with other face tracking parameters. 
+- Add FaceTrackingLimits toggle in setting menu (Default On). Turning limits toggle off will remove any limits from OSC values. 
+- Remove MouthUpperUpLeft and MouthUpperUpRight emulation in favor of using native face tracking.
+- Seperate MouthUpperUp to MouthUpperUpLeft and MouthUpperUpRight OSC
+- Change MouthUpperUpLeft and MouthUpperUpRight to binary parameters
+- Change MouthX from 4 bit binary to 3 bit binary
+- Remove MouthDimple OSC and add to emulations with MouthSmileLeft and MouthSmileRight
+
 ## [6.8.2] - 2025-09-08
 - Remove Blender files as it causing failures to import
 

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: -1506855854, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: Parameters - Face Tracking - ARkit Blendshapes
   m_EditorClassIdentifier: 
+  isEmpty: 0
   parameters:
   - name: EyeTrackingActive
     valueType: 2
@@ -27,11 +28,21 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 1
-    networkSynced: 0
+    networkSynced: 1
   - name: FacialExpressionsDisabled
     valueType: 2
     saved: 1
     defaultValue: 0
+    networkSynced: 1
+  - name: FaceTrackingEmulation
+    valueType: 2
+    saved: 1
+    defaultValue: 1
+    networkSynced: 1
+  - name: FaceTrackingLimits
+    valueType: 2
+    saved: 1
+    defaultValue: 1
     networkSynced: 1
   - name: RemoteModeActive
     valueType: 2
@@ -338,8 +349,43 @@ MonoBehaviour:
     saved: 0
     defaultValue: 0
     networkSynced: 1
-  - name: FT/v2/MouthUpperUp
+  - name: FT/v2/MouthUpperUpRight
     valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
+  - name: FT/v2/MouthUpperUpRight1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: FT/v2/MouthUpperUpRight2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: FT/v2/MouthUpperUpRight4
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: FT/v2/MouthUpperUpLeft
+    valueType: 1
+    saved: 0
+    defaultValue: 0
+    networkSynced: 0
+  - name: FT/v2/MouthUpperUpLeft1
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: FT/v2/MouthUpperUpLeft2
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
+  - name: FT/v2/MouthUpperUpLeft4
+    valueType: 2
     saved: 0
     defaultValue: 0
     networkSynced: 1
@@ -379,11 +425,6 @@ MonoBehaviour:
     defaultValue: 0
     networkSynced: 1
   - name: FT/v2/MouthX4
-    valueType: 2
-    saved: 0
-    defaultValue: 0
-    networkSynced: 1
-  - name: FT/v2/MouthX8
     valueType: 2
     saved: 0
     defaultValue: 0
