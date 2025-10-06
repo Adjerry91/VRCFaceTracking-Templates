@@ -10,7 +10,7 @@
 * Unity 2022
 * VRChat SDK 3.7.0+ 
 * [VRCFaceTracking](https://docs.vrcft.io/docs/intro/getting-started) 
-* Face tracking animations are pointed to the ```Body``` skinned mesh render (Case Sensitive)
+* ⚠️ Face tracking animations are pointed to the ```Body``` skinned mesh render (Case Sensitive) ⚠️
    * If face tracking shapes are on a different skinned mesh render. See Additional Setup - [Non-Standard Mesh Names](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup#additional-setup---non-standard-mesh-names) in the detailed guide.
    * Rewrite feature is __NOT__ available on Modular Avatar prefabs.
 
