@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 2317578388721632190}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.511346e-15, y: 1.5369887, z: 0.035447836}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -405,8 +405,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4153609807217169986}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.28185326, y: -0.000012650032, z: -0.000012650031, w: 0.9594575}
-  m_LocalPosition: {x: 2.511346e-15, y: 1.5369887, z: 0.035447836}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -778,7 +778,12 @@ MonoBehaviour:
   - ReferenceMesh:
       referencePath: Body
       targetObject: {fileID: 0}
-    Blendshape: MouthDimple
+    Blendshape: MouthDimpleLeft
+    LocalBlendshape: 
+  - ReferenceMesh:
+      referencePath: Body
+      targetObject: {fileID: 0}
+    Blendshape: MouthDimpleRight
     LocalBlendshape: 
   - ReferenceMesh:
       referencePath: Body
