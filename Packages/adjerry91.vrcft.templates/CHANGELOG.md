@@ -1,5 +1,9 @@
 # Changelog
 
+## [7.0.1] - 2025-10-11
+- Fix TongueRoll1 missing from Parameters - Face Tracking - UE Blendshapes
+- Add menu icons for new toggles
+
 ## [7.0.0] - 2025-10-08
 - Add FaceTrackingEmulation toggle in settings menu (Default On). Turning emulation toggle off will disable any emulation of other face tracking blend shapes with other face tracking parameters. 
 - Add FaceTrackingLimits toggle in setting menu (Default On). Turning limits toggle off will remove any limits from OSC values. 
