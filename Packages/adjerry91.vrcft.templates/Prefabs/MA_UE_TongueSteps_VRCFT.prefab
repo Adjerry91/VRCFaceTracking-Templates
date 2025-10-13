@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6183067558891811503}
   - component: {fileID: 8336237520826333437}
   - component: {fileID: 8391474922587590648}
-  - component: {fileID: -8196697587121848330}
+  - component: {fileID: 6304510097665820712}
   m_Layer: 0
   m_Name: MA_UE_TongueSteps_VRCFT
   m_TagString: Untagged
@@ -103,7 +103,7 @@ MonoBehaviour:
   isDefault: 0
   automaticValue: 1
   label: Face Tracking
---- !u!114 &-8196697587121848330
+--- !u!114 &6304510097665820712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,12 +151,42 @@ MonoBehaviour:
     internalParameter: 0
     isPrefix: 0
     syncType: 3
-    localOnly: 1
+    localOnly: 0
     defaultValue: 1
     saved: 1
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
   - nameOrPrefix: FacialExpressionsDisabled
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 1
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FaceTrackingEmulation
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 1
+    saved: 1
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FaceTrackingLimits
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 1
+    saved: 1
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/EyeSync
     remapTo: 
     internalParameter: 0
     isPrefix: 0
@@ -876,11 +906,81 @@ MonoBehaviour:
     saved: 0
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: FT/v2/MouthUpperUp
+  - nameOrPrefix: FT/v2/MouthUpperUpRight
     remapTo: 
     internalParameter: 0
     isPrefix: 0
     syncType: 2
+    localOnly: 1
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/MouthUpperUpRight1
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/MouthUpperUpRight2
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/MouthUpperUpRight4
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/MouthUpperUpLeft
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 2
+    localOnly: 1
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/MouthUpperUpLeft1
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/MouthUpperUpLeft2
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/MouthUpperUpLeft4
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
     localOnly: 0
     defaultValue: 0
     saved: 0
@@ -957,16 +1057,6 @@ MonoBehaviour:
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
   - nameOrPrefix: FT/v2/MouthX4
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 3
-    localOnly: 0
-    defaultValue: 0
-    saved: 0
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: FT/v2/MouthX8
     remapTo: 
     internalParameter: 0
     isPrefix: 0
@@ -1157,46 +1247,6 @@ MonoBehaviour:
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
   - nameOrPrefix: FT/v2/MouthStretchRight4
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 3
-    localOnly: 0
-    defaultValue: 0
-    saved: 0
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: FT/v2/MouthDimple
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 2
-    localOnly: 1
-    defaultValue: 0
-    saved: 0
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: FT/v2/MouthDimple1
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 3
-    localOnly: 0
-    defaultValue: 0
-    saved: 0
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: FT/v2/MouthDimple2
-    remapTo: 
-    internalParameter: 0
-    isPrefix: 0
-    syncType: 3
-    localOnly: 0
-    defaultValue: 0
-    saved: 0
-    hasExplicitDefaultValue: 0
-    m_overrideAnimatorDefaults: 0
-  - nameOrPrefix: FT/v2/MouthDimple4
     remapTo: 
     internalParameter: 0
     isPrefix: 0
@@ -1537,6 +1587,46 @@ MonoBehaviour:
     hasExplicitDefaultValue: 0
     m_overrideAnimatorDefaults: 0
   - nameOrPrefix: FT/v2/TongueYNegative
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/TongueRoll
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 2
+    localOnly: 1
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/TongueRoll1
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/TongueRoll2
+    remapTo: 
+    internalParameter: 0
+    isPrefix: 0
+    syncType: 3
+    localOnly: 0
+    defaultValue: 0
+    saved: 0
+    hasExplicitDefaultValue: 0
+    m_overrideAnimatorDefaults: 0
+  - nameOrPrefix: FT/v2/TongueRoll4
     remapTo: 
     internalParameter: 0
     isPrefix: 0

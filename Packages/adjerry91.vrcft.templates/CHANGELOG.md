@@ -1,5 +1,8 @@
 # Changelog
 
+## [7.0.2] - 2025-10-13
+- Fix parameters for MA prefabs
+
 ## [7.0.1] - 2025-10-11
 - Fix TongueRoll1 missing from Parameters - Face Tracking - UE Blendshapes
 - Add menu icons for new toggles
