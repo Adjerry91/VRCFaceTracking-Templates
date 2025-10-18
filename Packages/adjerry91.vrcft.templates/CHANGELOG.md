@@ -1,5 +1,8 @@
 # Changelog
 
+## [7.0.3] - 2025-10-18
+- Fix eye dilation emulation not working on lip tracking only
+
 ## [7.0.2] - 2025-10-13
 - Fix parameters for MA prefabs
 

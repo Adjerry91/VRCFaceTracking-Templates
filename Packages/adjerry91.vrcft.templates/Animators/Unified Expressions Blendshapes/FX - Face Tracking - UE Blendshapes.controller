@@ -687,20 +687,20 @@ BlendTree:
   m_Name: Eye Wide
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -4989433524771570907}
+    m_Motion: {fileID: 7400000, guid: c05fc2b663a0351499cd7705d40c5c74, type: 2}
     m_Threshold: 0.5
-    m_Position: {x: 0.75, y: 0.75}
+    m_Position: {x: 1, y: 1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: EyeTrackingActive
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: c05fc2b663a0351499cd7705d40c5c74, type: 2}
+    m_Motion: {fileID: -4989433524771570907}
     m_Threshold: 1
-    m_Position: {x: 1, y: 1}
+    m_Position: {x: 0.75, y: 0.75}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
+    m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   m_BlendParameter: OSCm/Proxy/FT/v2/EyeLidLeft
   m_BlendParameterY: OSCm/Proxy/FT/v2/EyeLidRight
@@ -9146,7 +9146,7 @@ BlendTree:
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
-    m_DirectBlendParameter: EyeTrackingActive
+    m_DirectBlendParameter: FT/DirectBlend
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: -1147033601857416370}
