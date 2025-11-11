@@ -12,6 +12,12 @@
 * ⚠️ Face tracking animations are pointed to the ```Body``` skinned mesh render (Case Sensitive) ⚠️
    * If face tracking shapes are on a different skinned mesh render. See Additional Setup - [Non-Standard Mesh Names](https://github.com/Adjerry91/VRCFaceTracking-Templates/wiki/Face-Tracking-Template-Setup#additional-setup---non-standard-mesh-names) in the detailed guide.
    * Rewrite feature is __NOT__ available on Modular Avatar prefabs.
+* ⚠️Do __NOT__ embed (copying out the animators) templates without VRCFury or modifiying animators in products. Embedding will break face tracking template support for future updates.⚠️
+
+## Credit Requirement
+Products utilizing this project must include visible credit on their store or product page.\
+Please include the following text and link:\
+“Face tracking blendshapes are animated by [Adjerry91’s Face Tracking Templates](https://github.com/Adjerry91/VRCFaceTracking-Templates)”
 
 ## Quick Setup Guide
 
@@ -42,7 +48,6 @@ Avatars using face tracking templates are available at [Jerry's Mod](https://vrc
 
 ## Notes
 
-* ⚠️Do __NOT__ embed (copying out the animators) templates without VRCFury or modifiying animators in products. Embedding will break face tracking template support for future updates.⚠️
 * All parameters are exposed on the template prefab. Do NOT use FT/v2/ parameters as these are the raw data coming from OSC and majority of them are floats that are not networked sync'd. Please use OSCm/Proxy/FT/v2 parameters when using in custom animations.
 
 ## Change Log
