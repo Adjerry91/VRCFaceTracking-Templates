@@ -1,5 +1,10 @@
 # Changelog
 
+## [7.0.4] - 2025-11-18
+- Corrections to rotation proxy animations for sensitivity - PR22 Antarcticsiclepop
+- Add menu icons for sensitivity - PR22 Antarcticsiclepop
+- Remove unused second keyframes in scaler animations for smoothing
+
 ## [7.0.3] - 2025-10-18
 - Fix eye dilation emulation not working on lip tracking only
 
@@ -22,6 +27,8 @@
 - Add Eyelid Sync toggle
 - Add TongueRoll to UE templates
 - Viseme state saves
+
+WILL BREAK AVATARS FOR EMBEDDED TEMPLATES
 
 ## [6.8.2] - 2025-09-08
 - Remove Blender files as it causing failures to import
