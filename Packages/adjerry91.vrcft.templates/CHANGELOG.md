@@ -1,5 +1,8 @@
 # Changelog
 
+## [7.0.5] - 2026-06-06
+- Remove "type": "template" in package.json; Template is for folder structure NOT files, causing items to fail to get updated.
+
 ## [7.0.4] - 2025-11-18
 - Corrections to rotation proxy animations for sensitivity - PR22 Antarcticsiclepop
 - Add menu icons for sensitivity - PR22 Antarcticsiclepop
