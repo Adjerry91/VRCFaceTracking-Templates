@@ -3,53 +3,85 @@ name: Build Release
 on: 
   workflow_dispatch:
 
-env:
-  packageName: "adjerry91.vrcft.templates"
-
-permissions:
-  contents: write
-
 jobs:
-  build:
+
+  # Validate Repository Configuration
+  config:
     runs-on: ubuntu-latest
+    outputs:
+      config_package: ${{ steps.config_package.outputs.configPackage }}
     steps:
-    
+
+    # Ensure that required repository variable has been created for the Package
+    - name: Validate Package Config
+      id: config_package
+      run: |
+        if [ "${{ vars.PACKAGE_NAME }}" != "" ]; then
+          echo "configPackage=true" >> $GITHUB_OUTPUT;
+        else
+          echo "configPackage=false" >> $GITHUB_OUTPUT;
+        fi
+
+  # Build and release the Package
+  # If the repository is not configured properly, this job will be skipped
+  build:
+    needs: config
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      packagePath: Packages/${{ vars.PACKAGE_NAME }}
+    if: needs.config.outputs.config_package == 'true'
+    steps:
+
+      # Checkout Local Repository
       - name: Checkout
-        uses: actions/checkout@v3
-    
-      - name: get version
+        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac
+
+      # Get the Package version based on the package.json file
+      - name: Get Version
         id: version
-        uses: notiz-dev/github-action-json-property@7c8cf5cc36eb85d8d287a8086a39dac59628eb31
+        uses: zoexx/github-action-json-file-properties@b9f36ce6ee6fe2680cd3c32b2c62e22eade7e590
         with: 
-            path: "Packages/${{env.packageName}}/package.json"
+            file_path: "${{ env.packagePath }}/package.json"
             prop_path: "version"
     
+      # Configure the Environment Variables needed for releasing the Package
       - name: Set Environment Variables
         run: |
-          echo "zipFile=${{ env.packageName }}-${{ steps.version.outputs.prop }}".zip >> $GITHUB_ENV
-          echo "unityPackage=${{ env.packageName }}-${{ steps.version.outputs.prop }}.unitypackage" >> $GITHUB_ENV
-        
-      - name: Create Zip
-        uses: thedoctor0/zip-release@09336613be18a8208dfa66bd57efafd9e2685657
-        with:
-          type: "zip"
-          directory: "Packages/${{env.packageName}}/"
-          filename: "../../${{env.zipFile}}" # make the zip file two directories up, since we start two directories in above
-          
-      - run: find "Packages/${{env.packageName}}/" -name \*.meta >> metaList
-          
+          echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}".zip >> $GITHUB_ENV
+          echo "unityPackage=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.unitypackage" >> $GITHUB_ENV
+          echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
+
+      # Zip the Package for release
+      - name: Create Package Zip
+        working-directory: "${{ env.packagePath }}"
+        run: zip -r "${{ github.workspace }}/${{ env.zipFile }}" .
+      
+      # Build a list of .meta files for future use
+      - name: Track Package Meta Files
+        run: find "${{ env.packagePath }}/" -name \*.meta >> metaList
+      
+      # Make a UnityPackage version of the Package for release
       - name: Create UnityPackage
-        uses: pCYSl5EDgo/create-unitypackage@cfcd3cf0391a5ef1306342794866a9897c32af0b
+        uses: pCYSl5EDgo/create-unitypackage@v1.2.3
         with:
           package-path: ${{ env.unityPackage }}
           include-files: metaList
-        
-        
-      - name: Make Release
-        uses: softprops/action-gh-release@1e07f4398721186383de40550babbdf2b84acfc5
+      
+      # Make a release tag of the version from the package.json file 
+      - name: Create Tag
+        id: tag_version
+        uses: rickstaa/action-create-tag@88dbf7ff6fe2405f8e8f6c6fdfd78829bc631f83
         with:
-          tag_name: ${{ steps.version.outputs.prop }}
+          tag: "${{ env.version }}"
+      
+      # Publish the Release to GitHub
+      - name: Make Release
+        uses: softprops/action-gh-release@de2c0eb89ae2a093876385947365aca7b0e5f844
+        with:
           files: |
             ${{ env.zipFile }}
             ${{ env.unityPackage }}
-            Packages/${{ env.packageName }}/package.json
+            ${{ env.packagePath }}/package.json
+          tag_name: ${{ env.version }}
