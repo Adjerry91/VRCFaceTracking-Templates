@@ -1,7 +1,6 @@
 name: Build Repo Listing
 
 env:
-  CurrentPackageName: adjerry91.vrcft.templates
   listPublishDirectory: Website
   pathToCi: ci
   
@@ -26,7 +25,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
+  
   # Build the VPM Listing Website and deploy to GitHub Pages
   build-listing:
     name: build-listing
