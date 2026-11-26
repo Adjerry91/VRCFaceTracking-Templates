@@ -1,0 +1,523 @@
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter20",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browInnerUp",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(BrowInnerUpLeft + BrowInnerUpRight ) / 2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter27",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browInnerUp",
+  "weightBlendSetName": "Emulation",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(MouthFrownLeft + MouthFrownRight) / 2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter19",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browDownRight",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "BrowLowererRight * 0.75 + BrowPinchRight * 0.25"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter29",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browDownRight",
+  "weightBlendSetName": "Emulation",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(NoseSneerLeft + NoseSneerRight) / 2 + MouthRaiserLower"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter18",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browDownLeft",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "BrowLowererLeft * 0.75 + BrowPinchLeft * 0.25"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter28",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browDownLeft",
+  "weightBlendSetName": "Emulation",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(NoseSneerLeft + NoseSneerRight) / 2 + MouthRaiserLower"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter27",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browOuterUpRight",
+  "weightBlendSetName": "Emulation",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "BrowOuterUpRight + EyeWideRight / 3"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter28",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "browOuterUpLeft",
+  "weightBlendSetName": "Emulation",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "BrowOuterUpLeft + EyeWideLeft / 3"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter1",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "jawOpen",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "JawOpen + TongueOut / 4 * (1 - JawOpen)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter3",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "jawRight",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "JawRight * (1 - abs((MouthUpperRight + MouthLowerRight - MouthUpperLeft - MouthLowerLeft) / 4))"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter2",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "jawLeft",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "JawLeft * (1 - abs((MouthUpperRight + MouthLowerRight - MouthUpperLeft - MouthLowerLeft) / 4))"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter5",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthUpperUpRight",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthUpperUpRight * (1 - (LipFunnelUpperLeft + LipFunnelUpperRight + LipFunnelLowerLeft + LipFunnelLowerRight) / 4)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter6",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthLowerDownLeft",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthLowerDownLeft * (1 - (LipFunnelUpperLeft + LipFunnelUpperRight + LipFunnelLowerLeft + LipFunnelLowerRight) / 4)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter35",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthLowerDownRight",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthLowerDownRight * (1 - (LipFunnelUpperLeft + LipFunnelUpperRight + LipFunnelLowerLeft + LipFunnelLowerRight) / 4)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter4",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthUpperUpLeft",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthUpperUpLeft * (1 - (LipFunnelUpperLeft + LipFunnelUpperRight + LipFunnelLowerLeft + LipFunnelLowerRight) / 4)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter23",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthSmileRight",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthCornerPullRight * 0.8 + MouthCornerSlantRight * 0.2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter22",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthSmileLeft",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthCornerPullLeft * 0.8 + MouthCornerSlantLeft * 0.2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter8",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthFrownRight",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthFrownRight * (1 - (MouthUpperRight + MouthLowerRight) / 6)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter7",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthFrownLeft",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "MouthFrownLeft * (1 - (MouthUpperLeft + MouthLowerLeft) / 6)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter25",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthRight",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(MouthUpperRight + MouthLowerRight) / 2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter24",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthLeft",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(MouthUpperLeft + MouthLowerLeft) / 2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter26",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthFunnel",
+  "weightBlendSetName": "Blended",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(LipFunnelUpperLeft + LipFunnelUpperRight + LipFunnelLowerLeft + LipFunnelLowerRight) / 4"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter9",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthPucker",
+  "weightBlendSetName": "LimitsDisabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(LipPuckerUpperRight + LipPuckerUpperLeft + LipPuckerLowerRight + LipPuckerLowerLeft) / 4"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter32",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthPucker",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "((LipPuckerUpperRight + LipPuckerUpperLeft + LipPuckerLowerRight + LipPuckerLowerLeft) / 4) * (1 - (LipFunnelUpperLeft + LipFunnelUpperRight + LipFunnelLowerLeft + LipFunnelLowerRight) / 4)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter33",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthRollUpper",
+  "weightBlendSetName": "LimitsDisabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(LipSuckUpperRight + LipSuckUpperLeft) / 2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter33",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthRollUpper",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "((LipSuckUpperRight + LipSuckUpperLeft) / 2) * (1 - MouthClosed / 3)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter34",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthRollLower",
+  "weightBlendSetName": "LimitsDisabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "(LipSuckLowerRight + LipSuckLowerLeft) / 2"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter34",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "mouthRollLower",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "((LipSuckLowerRight + LipSuckLowerLeft) / 2) * (1 - MouthClosed / 3)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ApplyToBlendshape",
+  "outputParameterName": "NewParameter14",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "tongueOut",
+  "weightBlendSetName": "LimitsEnabled",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "TongueOut * (1 - (LipFunnelUpperLeft + LipFunnelUpperRight + LipFunnelLowerLeft + LipFunnelLowerRight) / 2.8)"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeLidRight",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "EyeClosedRight",
+  "weightBlendSetName": "EyeClosedCompensation",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "0.75 - 0.75 * EyeClosedRight + 0.25 * EyeWideRight"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeLidLeft",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "EyeClosedLeft",
+  "weightBlendSetName": "EyeClosedCompensation",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "0.75 - 0.75 * EyeClosedLeft + 0.25 * EyeWideLeft"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeSquintRight",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "",
+  "weightBlendSetName": "",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "EyeSquintRight"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeSquintLeft",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "",
+  "weightBlendSetName": "",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "EyeSquintLeft"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeLeftX",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "",
+  "weightBlendSetName": "",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "EyeLookInLeft-EyeLookOutLeft"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeLeftY",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "",
+  "weightBlendSetName": "",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "EyeLookUpLeft-EyeLookDownLeft"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeRightY",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "",
+  "weightBlendSetName": "",
+  "inputTrackingKeys": [
+    0
+  ],
+  "inputTrackingKeyNames": [
+    "EyeLookOutRight"
+  ],
+  "inputInverted": [
+    false
+  ],
+  "combineMode": "Custom",
+  "customExpression": "EyeLookUpRight-EyeLookDownRight"
+}
+
+{
+  "version": 2,
+  "targetMode": "ForwardToAnimator",
+  "outputParameterName": "FT/EyeRightX",
+  "targetBlendSetName": "",
+  "targetBlendshapeName": "",
+  "weightBlendSetName": "",
+  "inputTrackingKeys": [],
+  "inputTrackingKeyNames": [],
+  "inputInverted": [],
+  "combineMode": "Custom",
+  "customExpression": "EyeLookOutRight-EyeLookInRight"
+}

@@ -1,5 +1,20 @@
 # Changelog
 
+## [8.0.0-beta.1] - 2026-11-25
+- Native VRChat Face Tracking
+	- Debug panel
+	- Facial Epression disable
+	- Limits Enable/disable
+	- Emulation Enable/disable
+	- Eye Sync
+	- Eye Converge
+	- Eye Adjust
+	- Eye and Face Tracking Active (Read-Only) 
+	*Note 1 - Eye Tracking must be disabled in avatar descriptor. Native eye tracking cannot be enabled at this current time with VRChat SDK.
+	*Note 2 - Eye tracking range is from the FBX armature rig not rotation in avatar descriptor.
+- Moved VRCFT OSC Face Tracking to Deprecated
+- Fix bug with no limits SRanipal Jaw
+
 ## [7.0.5] - 2026-06-06
 - Remove "type": "template" in package.json; Template is for folder structure NOT files, causing items to fail to get updated.
 
