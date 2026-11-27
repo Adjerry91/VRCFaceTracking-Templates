@@ -49,9 +49,14 @@ jobs:
       # Configure the Environment Variables needed for releasing the Package
       - name: Set Environment Variables
         run: |
-          echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}".zip >> $GITHUB_ENV
+          echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.zip" >> $GITHUB_ENV
           echo "unityPackage=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.unitypackage" >> $GITHUB_ENV
           echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
+          if [[ "${{ steps.version.outputs.value }}" == *"-"* ]]; then
+            echo "isPrerelease=true" >> $GITHUB_ENV
+          else
+            echo "isPrerelease=false" >> $GITHUB_ENV
+          fi
 
       # Zip the Package for release
       - name: Create Package Zip
@@ -85,3 +90,5 @@ jobs:
             ${{ env.unityPackage }}
             ${{ env.packagePath }}/package.json
           tag_name: ${{ env.version }}
+          prerelease: ${{ env.isPrerelease }}
+
